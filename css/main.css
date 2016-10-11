@@ -1,0 +1,52 @@
+/** import tha fonts **/
+@font-face {
+    font-family: 'Pier Sans';
+    src: url("../fonts/pier-regular.otf");
+}
+
+html, body {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    font-family: 'Pier Sans';
+}
+
+h2 {
+    position: relative;
+    margin-top: 75px;
+}  
+
+.navbar {
+    background-color: #4d79ff;
+    border-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.nav.navbar-nav li a {
+   color: #fff;
+ }
+
+.nav.navbar-nav li a:hover {
+ color: #24b06f;
+}
+
+.container {
+    position: relative;
+}
+
+#homepage-logo {
+    max-height: 55%;
+    max-width: 55%;
+    margin-top: 5em !important;
+    display: block;
+    margin: auto;
+}
+
+#typed {
+    text-align: center;
+}
