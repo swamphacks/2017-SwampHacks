@@ -13,6 +13,34 @@ $(function() {
   });
 });
 
+$(function(){
+  // Prevent elements from resizing immediately upon page load (by removing "preload" class from body upon page load)
+  $("body").removeClass("preload");
+  // Show/hide the menu bar based on scrolling position
+  var vh = $(window).height() - 200;
+  $(".navbar").hide();
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > vh) {
+        $('.navbar').fadeIn();
+      } else {
+        $('.navbar').fadeOut();
+      }
+    });
+  });
+});
+
+$(function(){
+  var vh = $(window).height() - 200;
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > vh) {
+        $('#mlh-trust-badge').fadeOut();
+      } else {
+        $('#mlh-trust-badge').fadeIn();
+      }
+    });
+});
+
 //typeit
 $('#typed').typeIt({
     strings: ['University of Florida | January 20-22, 2017'],
