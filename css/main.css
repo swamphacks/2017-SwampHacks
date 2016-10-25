@@ -252,6 +252,38 @@ p {
 
 #sponsors {
     text-align: center;
+    color: #42ace5;
+}
+
+#sponsors .sponsors-table {
+  padding: 0 140px;
+}
+
+#sponsors .row {
+  margin-bottom: 100px;
+}
+
+#sponsors .gator {
+  background-color: gray;
+}
+
+#sponsors .gator img {
+  width: 600px;
+}
+
+#sponsors .heron img {
+  margin: 0 30px;
+  width: 380px;
+}
+
+#sponsors .turtle img {
+  margin: 0 20px;
+  width: 260px;
+}
+
+#sponsors .lily-pad img {
+  margin: 0 16px;
+  width: 180px;
 }
 
 .homepage-logo {
