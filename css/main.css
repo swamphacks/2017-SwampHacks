@@ -79,17 +79,6 @@ p {
   /*width: 300px;*/
 }
 
-.left {
-  float: left;
-}
-
-.center {
-}
-
-.right {
-  float: right;
-}
-
 .blocks {
   padding: 0 140px;
   text-align: center;
@@ -184,6 +173,40 @@ p {
   padding-bottom: 200px;
 }
 
+#faqs {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 200px;
+  background-color: #73aeee;
+  color: white;
+}
+
+#faqs .faq-table {
+  padding: 0 200px;
+  text-align: left;
+  margin-top: -40px;
+}
+
+#faqs .faq-block {
+  background-color: white;
+  color: black;
+  padding: 12px 30px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+#faqs h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  margin-top: 12px;
+}
+
+#faqs .faq-block p {
+  color: #73aeee;
+}
+
+
 #faq {
     text-align: center;
     padding-top: 80px;
@@ -261,10 +284,6 @@ p {
 
 #sponsors .row {
   margin-bottom: 100px;
-}
-
-#sponsors .gator {
-  background-color: gray;
 }
 
 #sponsors .gator img {
