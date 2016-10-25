@@ -3,6 +3,32 @@
     font-family: 'Pier Sans';
     src: url("../fonts/pier-regular.otf");
 }
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../fonts/Metropolis-Medium.otf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../fonts/Metropolis-Bold.otf");
+    font-weight: bolder;
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../fonts/Metropolis-Light.otf");
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../fonts/Metropolis-Regular.otf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../fonts/Metropolis-ExtraBold.otf");
+    font-weight: 500;
+}
+/*END of fonts*/
 
 html, body {
     max-height: 100%;
@@ -10,12 +36,54 @@ html, body {
     padding: 0px;
     margin: 0px 0px;
     overflow-x: hidden;
-    font-family: 'Pier Sans';
+    font-family: 'Metropolis';
 }
 
 h2 {
     position: relative;
     margin-top: 75px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  margin: 40px 0;
+}
+
+p {
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.text-box span {
+  color: #b6e9e4;
+}
+
+.text-box p {
+  padding: 0 8px;
+  margin-bottom: 20px;
+}
+
+.text-paragraph {
+  margin: 40px 0;
+}
+
+.text-box {
+  width: 840px;
+}
+
+.text-third {
+  display: table-cell;
+  padding: 20px;
+  /*width: 300px;*/
+}
+
+.blocks {
+  padding: 0 140px;
+  text-align: center;
+  display: table;
+  margin-top: -100px;
 }
 
 .navbar {
@@ -41,7 +109,32 @@ h2 {
     padding: 100px;
 }
 
-.col-md-12 {
+#audience .col-md-4 {
+  padding: 20px;
+  /*min-height: 300px;*/
+}
+
+#audience .col-md-12 {
+  padding: 30px;
+  background-color: white;
+  color: #6addec;
+  /*min-height: 300px;*/
+  border-radius: 40px;
+}
+
+#audience .blocks h3 {
+  margin: 0;
+  margin-top: 12px;
+}
+
+#audience h4 {
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+#schedule .col-md-12 {
     border-radius: 6px;
     border: 2px solid blue;
     padding-bottom: 10px;
@@ -67,15 +160,52 @@ h2 {
   height: 680px;
 }
 
-h3 {
-  font-size: 30px;
-  font-style: oblique;
-}
-
 #summary {
   background-color: #73aeee;
   text-align: center;
+  color: white;
 }
+
+#audience {
+  background-color: #6addec;
+  text-align: center;
+  color: white;
+  padding-bottom: 200px;
+}
+
+#faqs {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 200px;
+  background-color: #73aeee;
+  color: white;
+}
+
+#faqs .faq-table {
+  padding: 0 200px;
+  text-align: left;
+  margin-top: -40px;
+}
+
+#faqs .faq-block {
+  background-color: white;
+  color: black;
+  padding: 12px 30px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+#faqs h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  margin-top: 12px;
+}
+
+#faqs .faq-block p {
+  color: #73aeee;
+}
+
 
 #faq {
     text-align: center;
@@ -89,13 +219,90 @@ h3 {
 
 #schedule {
     text-align: center;
-    background: green;
-    background: -webkit-linear-gradient(left top, yellow, purple);
-    background: -moz-linear-gradient(bottom right, purple, yellow); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, yellow, purple); /* Standard syntax */
+    background: #7dedbb;
+    color: white;
+    padding-bottom: 180px;
+    /*background: -webkit-linear-gradient(left top, yellow, purple);
+    background: -moz-linear-gradient(bottom right, purple, yellow); /* For Firefox 3.6 to 15
+    background: linear-gradient(to bottom right, yellow, purple); /* Standard syntax
+    */
 }
+
+#schedule .event-schedule-table h3 {
+  font-size: 28px;
+  font-weight: bolder;
+  margin: 20px 0;
+  margin-top: 40px;
+}
+
+#schedule .event-schedule-table {
+  padding: 0 200px;
+  text-align: left;
+  margin-top: -120px;
+}
+
+#schedule .col-md-6 {
+  padding: 40px;
+}
+
+#schedule .event-block {
+  background-color: white;
+  color: black;
+  padding: 12px 30px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+#schedule h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    margin-top: 12px;
+}
+
+#schedule h6 {
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#schedule h5 {
+  font-weight: bolder;
+  font-size: 26px;
+  margin-top: 0;
+  color: #7dedbb;
+}
+
 #sponsors {
     text-align: center;
+    color: #42ace5;
+}
+
+#sponsors .sponsors-table {
+  padding: 0 140px;
+}
+
+#sponsors .row {
+  margin-bottom: 100px;
+}
+
+#sponsors .gator img {
+  width: 600px;
+}
+
+#sponsors .heron img {
+  margin: 0 30px;
+  width: 380px;
+}
+
+#sponsors .turtle img {
+  margin: 0 20px;
+  width: 260px;
+}
+
+#sponsors .lily-pad img {
+  margin: 0 16px;
+  width: 180px;
 }
 
 .homepage-logo {
