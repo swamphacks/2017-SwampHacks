@@ -73,6 +73,30 @@ p {
   width: 840px;
 }
 
+.text-third {
+  display: table-cell;
+  padding: 20px;
+  /*width: 300px;*/
+}
+
+.left {
+  float: left;
+}
+
+.center {
+}
+
+.right {
+  float: right;
+}
+
+.blocks {
+  padding: 0 140px;
+  text-align: center;
+  display: table;
+  margin-top: -100px;
+}
+
 .navbar {
     background-color: #4EC1E7;
     border-color: #fff;
@@ -96,7 +120,32 @@ p {
     padding: 100px;
 }
 
-.col-md-12 {
+#audience .col-md-4 {
+  padding: 20px;
+  /*min-height: 300px;*/
+}
+
+#audience .col-md-12 {
+  padding: 30px;
+  background-color: white;
+  color: #6addec;
+  /*min-height: 300px;*/
+  border-radius: 40px;
+}
+
+#audience .blocks h3 {
+  margin: 0;
+  margin-top: 12px;
+}
+
+#audience h4 {
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+#schedule .col-md-12 {
     border-radius: 6px;
     border: 2px solid blue;
     padding-bottom: 10px;
@@ -126,6 +175,13 @@ p {
   background-color: #73aeee;
   text-align: center;
   color: white;
+}
+
+#audience {
+  background-color: #6addec;
+  text-align: center;
+  color: white;
+  padding-bottom: 200px;
 }
 
 #faq {
