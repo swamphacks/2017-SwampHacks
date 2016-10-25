@@ -3,6 +3,32 @@
     font-family: 'Pier Sans';
     src: url("../fonts/pier-regular.otf");
 }
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../fonts/Metropolis-Medium.otf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../fonts/Metropolis-Bold.otf");
+    font-weight: bolder;
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../fonts/Metropolis-Light.otf");
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../fonts/Metropolis-Regular.otf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../fonts/Metropolis-ExtraBold.otf");
+    font-weight: 500;
+}
+/*END of fonts*/
 
 html, body {
     max-height: 100%;
@@ -10,12 +36,41 @@ html, body {
     padding: 0px;
     margin: 0px 0px;
     overflow-x: hidden;
-    font-family: 'Pier Sans';
+    font-family: 'Metropolis';
 }
 
 h2 {
     position: relative;
     margin-top: 75px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  margin: 40px 0;
+}
+
+p {
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.text-box span {
+  color: #b6e9e4;
+}
+
+.text-box p {
+  padding: 0 8px;
+  margin-bottom: 20px;
+}
+
+.text-paragraph {
+  margin: 40px 0;
+}
+
+.text-box {
+  width: 840px;
 }
 
 .navbar {
@@ -67,14 +122,10 @@ h2 {
   height: 680px;
 }
 
-h3 {
-  font-size: 30px;
-  font-style: oblique;
-}
-
 #summary {
   background-color: #73aeee;
   text-align: center;
+  color: white;
 }
 
 #faq {
