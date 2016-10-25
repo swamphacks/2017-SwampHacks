@@ -165,14 +165,16 @@ p {
 }
 
 #summary {
-  background-color: #56aced;
+  background-color: #6badf1;
   text-align: center;
   color: white;
+
 }
 
 #audience {
-  background-color: #3ed8f1;
-  text-align: center;
+  background: -webkit-linear-gradient(left top, #5bdbec, #b2e8e4);
+  background: -moz-linear-gradient(bottom right, blue, green); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #5bdbec, #b2e8e4); /* Standard syntax */  text-align: center;
   color: white;
   padding-bottom: 200px;
 }
@@ -181,7 +183,7 @@ p {
   text-align: center;
   padding-top: 80px;
   padding-bottom: 200px;
-  background-color: #73aeee;
+  background-color: #5cacef;
   color: white;
 }
 
@@ -245,6 +247,9 @@ p {
 
 #footer {
   background-color: #77e0ed;
+  background: -webkit-linear-gradient(left top, yellow, purple);
+  background: -moz-linear-gradient(bottom right, purple, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, #47d8ef, #8be2e8); /* Standard syntax */
 }
 
 #footer .container {
@@ -256,6 +261,10 @@ p {
   width: 60px;
   height: 60px;
   border-radius: 50px;
+}
+
+.blue-teal {
+  margin-bottom: -16%;
 }
 
 .social-row {
@@ -307,7 +316,7 @@ p {
 }
 
 .teal-neighbor {
-  background-color: #3ed8f1;
+  margin-top: -200px;
 }
 
 #schedule {
@@ -315,10 +324,10 @@ p {
     background: #5aef9a;
     color: white;
     padding-bottom: 180px;
-    /*background: -webkit-linear-gradient(left top, yellow, purple);
-    background: -moz-linear-gradient(bottom right, purple, yellow); /* For Firefox 3.6 to 15
-    background: linear-gradient(to bottom right, yellow, purple); /* Standard syntax
-    */
+    background: -webkit-linear-gradient(left top, yellow, purple);
+    background: -moz-linear-gradient(bottom right, purple, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, #7eedbc, #5dec9a); /* Standard syntax */
+
 }
 
 #schedule .event-schedule-table h3 {
