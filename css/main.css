@@ -217,6 +217,28 @@ p {
     background: linear-gradient(to bottom right, green, blue); /* Standard syntax */
 }
 
+#action {
+  text-align: center;
+  color: #73aeee;
+}
+
+#action button {
+  font-size: 20px;
+  width: 180px;
+  padding: 10px 0;
+  font-weight: bold;
+  background-color: #73aeee;
+  color: white;
+  border: none;
+  border-radius: 50px;
+}
+
+#action .button-row {
+  padding: 0 10%;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
 #schedule {
     text-align: center;
     background: #7dedbb;
