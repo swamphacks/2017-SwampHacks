@@ -98,6 +98,10 @@ a:hover {
   /*width: 300px;*/
 }
 
+.divider {
+  width: 100vw;
+}
+
 .blocks {
   padding: 0 140px;
   text-align: center;
@@ -184,14 +188,16 @@ a:hover {
 }
 
 #summary {
-  background-color: #73aeee;
+  background-color: #6badf1;
   text-align: center;
   color: white;
+
 }
 
 #audience {
-  background-color: #6addec;
-  text-align: center;
+  background: -webkit-linear-gradient(left top, #5bdbec, #b2e8e4);
+  background: -moz-linear-gradient(bottom right, blue, green); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #5bdbec, #b2e8e4); /* Standard syntax */  text-align: center;
   color: white;
   padding-bottom: 200px;
 }
@@ -200,7 +206,7 @@ a:hover {
   text-align: center;
   padding-top: 0px;
   padding-bottom: 200px;
-  background-color: #73aeee;
+  background-color: #5cacef;
   color: white;
 }
 
@@ -240,15 +246,111 @@ a:hover {
     background: linear-gradient(to bottom right, green, blue); /* Standard syntax */
 }
 
+#action {
+  text-align: center;
+  color: #73aeee;
+}
+
+#action button {
+  font-size: 20px;
+  width: 180px;
+  padding: 10px 0;
+  font-weight: bold;
+  background-color: #73aeee;
+  color: white;
+  border: none;
+  border-radius: 50px;
+}
+
+#action .button-row {
+  padding: 0 10%;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+#footer {
+  background-color: #77e0ed;
+  background: -webkit-linear-gradient(left top, yellow, purple);
+  background: -moz-linear-gradient(bottom right, purple, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, #47d8ef, #8be2e8); /* Standard syntax */
+}
+
+#footer .container {
+  padding: 60px 20px;
+}
+
+#footer .social-media {
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+.blue-teal {
+  margin-bottom: -16%;
+}
+
+.social-row {
+  padding: 0 40px;
+  position: relative;
+  top: 90px;
+  transform: translateY(-50%);
+}
+
+.links {
+  text-align: right;
+  position: relative;
+  top: 90px;
+  transform: translateY(-50%);
+  padding-right: 50px;
+}
+
+.links h4 {
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+}
+
+.heart-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.heart i {
+  color: #FF4D40;
+  text-decoration: none;
+}
+.heart .fa {
+  color: white;
+  margin: 0 3px;
+  animation: pound 0.5s infinite alternate;
+  -webkit-animation: pound 0.5s infinite alternate;
+}
+
+@-webkit-keyframes pound {
+  to {
+    transform: scale(1.2);
+  }
+}
+@keyframes pound {
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.teal-neighbor {
+  margin-top: -200px;
+}
+
 #schedule {
     text-align: center;
-    background: #7dedbb;
+    background: #5aef9a;
     color: white;
     padding-bottom: 180px;
-    /*background: -webkit-linear-gradient(left top, yellow, purple);
-    background: -moz-linear-gradient(bottom right, purple, yellow); /* For Firefox 3.6 to 15
-    background: linear-gradient(to bottom right, yellow, purple); /* Standard syntax
-    */
+    background: -webkit-linear-gradient(left top, yellow, purple);
+    background: -moz-linear-gradient(bottom right, purple, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, #7eedbc, #5dec9a); /* Standard syntax */
+
 }
 
 #schedule .event-schedule-table h3 {
@@ -338,4 +440,40 @@ a:hover {
 
 #typed {
     text-align: center;
+}
+
+@media screen and (max-width:770px){
+  .container {
+    padding: 20px;
+  }
+
+  .text-box {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .blocks {
+    padding: 0 30px;
+    margin-top: -20px;
+  }
+
+  #audience .col-md-12 {
+    padding: 10px;
+  }
+
+  #schedule .event-schedule-table {
+    padding: 0;
+    padding-top: 30px;
+  }
+
+  #schedule {
+    padding-bottom: 20px; 
+  }
 }
