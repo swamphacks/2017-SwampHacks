@@ -418,3 +418,39 @@ p {
 #typed {
     text-align: center;
 }
+
+@media screen and (max-width:770px){
+  .container {
+    padding: 20px;
+  }
+
+  .text-box {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .blocks {
+    padding: 0 30px;
+    margin-top: -20px;
+  }
+
+  #audience .col-md-12 {
+    padding: 10px;
+  }
+
+  #schedule .event-schedule-table {
+    padding: 0;
+    padding-top: 30px;
+  }
+
+  #schedule {
+    padding-bottom: 20px; 
+  }
+}
