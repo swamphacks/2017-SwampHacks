@@ -56,6 +56,25 @@ p {
   font-size: 18px;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #6d6c6c;
+}
+
+#sponsors-email a {
+    text-decoration: none;
+    color: #3FABE5;
+}
+
+#sponsors-email a:hover {
+    text-decoration: none;
+}
+
 .text-box span {
   color: #b6e9e4;
 }
@@ -164,6 +183,10 @@ p {
   height: 680px;
 }
 
+#mlh-link {
+    margin-right: 3em;
+}
+
 #summary {
   background-color: #6badf1;
   text-align: center;
@@ -181,7 +204,7 @@ p {
 
 #faqs {
   text-align: center;
-  padding-top: 80px;
+  padding-top: 0px;
   padding-bottom: 200px;
   background-color: #5cacef;
   color: white;
