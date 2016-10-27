@@ -28,7 +28,7 @@ li
 #wave1
 {
 	position: absolute;
-	bottom: 0px;
+	bottom: -50px;
 	left: 0px;
 	width: 100%;
 }
@@ -36,17 +36,47 @@ li
 #wave2
 {
 	position: absolute;
-	bottom: 0px;
+	bottom: -50px;
 	right: 0px;
 	width: 100%;
 }
 
-#fish
+#fishy
 {
 	position: absolute;
-	margin-bottom: 0px;
-	width: 50%;
-	height: 50%;
+	margin-left: -10%;
+	max-width: 15%;
+	max-height: 15%;
+	bottom: 0;
 }
 
+#tree 
+{
+	position: absolute;
+	right: 0;
+	height: 100%;
+	bottom: 50px;
+}
+
+#stump
+{
+	position: absolute;
+	right: 150px;
+	bottom: 100px;
+	max-width: 20%;
+	max-height: 20%;
+}
+
+#gator
+{
+	position: absolute;
+	margin-left: 31%;
+	bottom: 110px;
+}
+
+#stork
+{
+	position: absolute;
+	top: -30px;
+}
 
