@@ -36,8 +36,9 @@ $(function() {
         duration = 2000;
 
     function floatThatStork() {
-        img.css("left", -width).animate({
+        img.css({"left": -width, "top":"0%"}).animate({
             "left": screenWidth,
+            "top": "-200px"
         }, duration, floatThatStork).delay(2000);
     }
 
