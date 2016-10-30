@@ -56,6 +56,13 @@ p {
   font-size: 18px;
 }
 
+.container-fluid {
+  max-height: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
 a {
     text-decoration: none;
     color: #fff;
@@ -285,15 +292,58 @@ h4.date {
   color: #73aeee;
 }
 
-#action button {
+#title button {
+  font-size: 20px;
+  width: 180px;
+  padding: 10px 0;
+  font-weight: bold;
+  background-color: #fff;
+  color: #73aeee;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+}
+
+#title button:active {
   font-size: 20px;
   width: 180px;
   padding: 10px 0;
   font-weight: bold;
   background-color: #73aeee;
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 50px;
+  outline: none
+}
+
+#title .button-row {
+  padding: 0 10%;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+#action button {
+    font-size: 20px;
+    width: 180px;
+    padding: 10px 0;
+    font-weight: bold;
+    background-color: #73aeee;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+}
+
+#action button:active {
+    font-size: 20px;
+    width: 180px;
+    padding: 10px 0;
+    font-weight: bold;
+    background-color: white;
+    color: #73aeee;
+    border: none;
+    border-radius: 50px;
+    outline: none;
 }
 
 #action .button-row {

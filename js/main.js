@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    //change the  background based on the time of day
+    var date = new Date();
+    var hrs = date.getHours();
+    console.log(hrs);
+
     $('img.logo').fadeIn(1000).removeClass('.logo');
     $('h2.name').fadeIn(2000).removeClass('.name');
     $('h4.date').fadeIn(3000).removeClass('.date');
@@ -36,16 +41,7 @@ $(function(){
   });
 });
 
-$(function(){
-  var vh = $(window).height() - 200;
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > vh) {
-        $('#mlh-trust-badge').fadeOut();
-      } else {
-        $('#mlh-trust-badge').fadeIn();
-      }
-    });
-});
+
 
 //typeit
 /**$('#typed').typeIt({

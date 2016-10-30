@@ -1,4 +1,5 @@
-/** Parallax styles **/
+/** Animation styles **/
+
 
 li
 {
@@ -12,7 +13,7 @@ li
 	width: 100%;
 }
 
-#title
+.day
 {
   background : -moz-linear-gradient(45.93% -26.17% -84.79deg,rgba(72, 216, 239, 1) 0%,rgba(211, 237, 225, 1) 100%);
   background : -webkit-linear-gradient(-84.79deg, rgba(72, 216, 239, 1) 0%, rgba(211, 237, 225, 1) 100%);
@@ -44,10 +45,18 @@ li
 #fishy
 {
 	position: absolute;
-	margin-left: -10%;
 	max-width: 15%;
 	max-height: 15%;
-	bottom: 0;
+	bottom: 22.5%;
+}
+
+#fishy2
+{
+	position: absolute;
+	max-width: 15%;
+	max-height: 15%;
+	bottom: 20%;
+	right: 30%;
 }
 
 #tree 
@@ -62,7 +71,7 @@ li
 {
 	position: absolute;
 	right: 150px;
-	bottom: 100px;
+	bottom: 120px;
 	max-width: 20%;
 	max-height: 20%;
 }
@@ -71,12 +80,12 @@ li
 {
 	position: absolute;
 	margin-left: 31%;
-	bottom: 110px;
+	bottom: 93px;
 }
 
 #stork
 {
 	position: absolute;
-	top: 50px;
+	bottom: 75%;
 }
 

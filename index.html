@@ -3,14 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>SwampHacks - A University of Florida Hackathon</title>
+        <title>SwampHacks</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/parallax.css">
+        <link rel="stylesheet" href="css/animation.css">
         <link rel="stylesheet" href="css/font-awesome.min.css" />
     </head>
     <body>
@@ -41,29 +41,33 @@
             </ul>
             </div>
     </nav><!--./navbar-->
-
+<div class="container-fluid">
     <img src="img/logo.png" class="logo" />
 
     <section id="title">
       <div class="container parallax-container">
-        <!-- begin parallax -->
+        <!-- begin animation -->
       <div class="header-text">
               <h2 class="name">SwampHacks</h2>
               <h4 class="date">January 20-22, 2017 | University of Florida</h4>
       </div>
         <ul id="scene">
-            <li data-depth="1.0"><img src="img/parallax/stork.png" id="stork" /></li>
-            <li data-depth="0.6"><img src="img/parallax/tree.png" id="tree"/></li>
-            <li data-depth="0.6"><img src="img/parallax/stumpy.png" id="stump"></li>
-            <li data-depth="1.0"><img src="img/parallax/fishy.png" id="fishy" /></li>
-            <li data-depth="0.8"><img src="img/parallax/gatory.png" id="gator" /></li>
-            <li id="wave1" data-depth="0.6"><img src="img/parallax/wave1.png" style="width: 100%;" /></li>
-            <li id="wave2" data-depth="0.6"><img src="img/parallax/wave2.png" style="width: 100%;" /></li>
+            <li data-depth="1.0"><img src="img/animation/stork.png" id="stork" /></li>
+            <li data-depth="0.6"><img src="img/animation/tree.png" id="tree"/></li>
+            <li data-depth="0.6"><img src="img/animation/stumpy.png" id="stump"></li>
+            <li data-depth="1.0"><img src="img/animation/fishy.png" id="fishy" /></li>
+            <li data-depth="0.8"><img src="img/animation/gatory.png" id="gator" /></li>
+            <li id="wave1" data-depth="0.6"><img src="img/animation/wave1.png" style="width: 100%;" /></li>
+            <li data-depth="1.0"><img src="img/animation/fishy2.png" id="fishy2" /></li>
+            <li id="wave2" data-depth="0.6"><img src="img/animation/wave2.png" style="width: 100%;" /></li>
         </ul>
-
+        <div class="button-row">
+          <button type="button" name="button" id="apply-now" onclick="location.href='https://my.mlh.io/oauth/authorize?client_id=4152857ec50532295c5cc45ec8a48e35ec1f093c9370aaeb71dbc2b3efe8f4aa&redirect_uri=http%3A%2F%2Fswamphacks.com%2Fthanks.html&response_type=token';">APPLY NOW!</button>
+        </div>
       </div>
-      <!-- ./parallax -->
+      <!-- ./animation -->
     </section>
+</div>
 
     <!-- BEGIN of SUMMARY -->
     <section id="summary">
@@ -324,7 +328,7 @@
       <div class="container">
         <h3>Apply to hack with us today!</h3>
         <div class="button-row">
-          <button type="button" name="button">APPLY NOW!</button>
+          <button type="button" name="button" onclick="location.href='https://my.mlh.io/oauth/authorize?client_id=4152857ec50532295c5cc45ec8a48e35ec1f093c9370aaeb71dbc2b3efe8f4aa&redirect_uri=http%3A%2F%2Fswamphacks.com%2Fthanks.html&response_type=token';">APPLY NOW!</button>
         </div>
         <h3>Want to help us? Get involved behind the scenes!</h3>
         <div class="button-row">
@@ -386,9 +390,10 @@
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/jquery.parallax.min.js"></script>
-        <script src="js/vendor/jqfloat.min.js"></script>
+        <script src="js/vendor/jquery-rotate.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/parallax.js"></script>
+        <script src="js/animation.js"></script>
     </body>
 </html>
