@@ -3,6 +3,14 @@ $(document).ready(function () {
     var date = new Date();
     var hrs = date.getHours();
     console.log(hrs);
+    var title = $("#title");
+    if (hrs > 19 || hrs < 6) {
+        title.addClass("night");
+    } else if(hrs > 16 || hrs < 19) {
+        title.addClass("sunset");
+    } else {
+        title.addClass("day");
+    }
 
     $('img.logo').fadeIn(1000).removeClass('.logo');
     $('h2.name').fadeIn(2000).removeClass('.name');
