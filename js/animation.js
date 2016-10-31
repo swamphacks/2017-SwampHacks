@@ -69,29 +69,60 @@ $(function() {
             fish.rotate({
                 angle: -180,
                 center: ["50%", "100%"],
+                animateTo:0,
+                duration: 1500,
+                easing: $.easing.easeOutBack,
+                callback: function() {
+                    rotateFish1();
+                }
+            });
+        }, 0);
+    }
+
+		function rotateFish1() {
+        setTimeout(function () {
+            fish.rotate({
+                angle: 0,
+                center: ["50%", "100%"],
                 animateTo:180,
-                duration: 3000,
-                easing: $.easing.easeInQuart,
+                duration: 1500,
+                easing: $.easing.easeOutBack,
                 callback: function() {
                     rotateFish();
                 }
             });
-        }, 500);
+        }, 0);
     }
+
     var fish2 = $('#fishy2');
     function rotateOtherFish() {
         setTimeout(function () {
             fish2.rotate({
                 angle: 180,
                 center: ["50%", "100%"],
-                animateTo:-180,
-                duration: 3000,
-                easing: $.easing.easeInQuart,
+                animateTo: 0,
+                duration: 1500,
+                easing: $.easing.easeOutBack,
+                callback: function() {
+                    rotateOtherFish1();
+                }
+            });
+        }, 1000);
+    }
+
+		function rotateOtherFish1() {
+        setTimeout(function () {
+            fish2.rotate({
+                angle: 0,
+                center: ["50%", "100%"],
+                animateTo: -180,
+                duration: 1500,
+                easing: $.easing.easeOutBack,
                 callback: function() {
                     rotateOtherFish();
                 }
             });
-        }, 1000);
+        }, 0);
     }
 
 });
