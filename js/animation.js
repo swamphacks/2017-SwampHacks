@@ -107,7 +107,7 @@ $(function() {
                     rotateOtherFish1();
                 }
             });
-        }, 1000);
+        }, 0);
     }
 
 		function rotateOtherFish1() {
