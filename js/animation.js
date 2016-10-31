@@ -36,10 +36,21 @@ $(function() {
         duration = 2000;
 
     function floatThatStork() {
-        img.css({"left": -width, "top":"0%"}).animate({
-            "left": screenWidth,
-            "top": "-200px"
-        }, duration, floatThatStork).delay(2000);
+        img.css({"fontSize": 110, "left": -width, "top":"0%"}).animate({
+						fontSize: 0
+						// "left": screenWidth,
+            // "top": "-200px"
+        }, {
+					duration: 2000,
+					easing: "swing",
+					step: function(t, fx){
+	        	var a = t / 57.296;
+	        	var x = 100 + Math.cos(a) * screenWidth;
+	        	var y = -200 + Math.sin(a) * 200;
+        		$(this).css({ left: x, top: y });
+    			},
+					complete: floatThatStork
+				}).delay(2000);
     }
 
     var gator = $("#gator"),
