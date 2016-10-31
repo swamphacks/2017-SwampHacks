@@ -8,6 +8,8 @@ $(document).ready(function () {
         title.addClass("night");
     } else if(hrs > 16 || hrs < 19) {
         title.addClass("sunset");
+    } else if(hrs > 6 || hrs < 9) {
+        title.addClass("sunrise");
     } else {
         title.addClass("day");
     }
