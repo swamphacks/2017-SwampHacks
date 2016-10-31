@@ -32,8 +32,7 @@ $(function() {
    //float that stork
     var img = $("#stork"),
         width = img.get(0).width,
-        screenWidth = $(window).width(),
-        duration = 2000;
+        screenWidth = $(window).width();
 
     function floatThatStork() {
         img.css({"fontSize": 110, "left": -width, "top":"0%"}).animate({
@@ -41,7 +40,7 @@ $(function() {
 						// "left": screenWidth,
             // "top": "-200px"
         }, {
-					duration: 2000,
+					duration: 2800,
 					easing: "swing",
 					step: function(t, fx){
 	        	var a = t / 57.296;
@@ -50,7 +49,7 @@ $(function() {
         		$(this).css({ left: x, top: y });
     			},
 					complete: floatThatStork
-				}).delay(2000);
+				}).delay(1500);
     }
 
     var gator = $("#gator"),
