@@ -32,14 +32,24 @@ $(function() {
    //float that stork
     var img = $("#stork"),
         width = img.get(0).width,
-        screenWidth = $(window).width(),
-        duration = 2000;
+        screenWidth = $(window).width();
 
     function floatThatStork() {
-        img.css({"left": -width, "top":"0%"}).animate({
-            "left": screenWidth,
-            "top": "-200px"
-        }, duration, floatThatStork).delay(2000);
+        img.css({"fontSize": 110, "left": -width, "top":"0%"}).animate({
+						fontSize: 0
+						// "left": screenWidth,
+            // "top": "-200px"
+        }, {
+					duration: 2800,
+					easing: "swing",
+					step: function(t, fx){
+	        	var a = t / 57.296;
+	        	var x = 100 + Math.cos(a) * screenWidth;
+	        	var y = -200 + Math.sin(a) * 200;
+        		$(this).css({ left: x, top: y });
+    			},
+					complete: floatThatStork
+				}).delay(1500);
     }
 
     var gator = $("#gator"),
@@ -58,29 +68,60 @@ $(function() {
             fish.rotate({
                 angle: -180,
                 center: ["50%", "100%"],
-                animateTo:180,
-                duration: 3000,
-                easing: $.easing.easeInQuart,
+                animateTo:0,
+                duration: 1500,
+                easing: $.easing.easeOutBack,
                 callback: function() {
-                    rotateFish();
+                    rotateFish1();
                 }
             });
         }, 500);
     }
+
+		function rotateFish1() {
+        setTimeout(function () {
+            fish.rotate({
+                angle: 0,
+                center: ["50%", "100%"],
+                animateTo:180,
+                duration: 1500,
+                easing: $.easing.easeOutBack,
+                callback: function() {
+                    rotateFish();
+                }
+            });
+        }, 0);
+    }
+
     var fish2 = $('#fishy2');
     function rotateOtherFish() {
         setTimeout(function () {
             fish2.rotate({
                 angle: 180,
                 center: ["50%", "100%"],
-                animateTo:-180,
-                duration: 3000,
-                easing: $.easing.easeInQuart,
+                animateTo: 0,
+                duration: 1500,
+                easing: $.easing.easeOutBack,
+                callback: function() {
+                    rotateOtherFish1();
+                }
+            });
+        }, 1000);
+    }
+
+		function rotateOtherFish1() {
+        setTimeout(function () {
+            fish2.rotate({
+                angle: 0,
+                center: ["50%", "100%"],
+                animateTo: -180,
+                duration: 1500,
+                easing: $.easing.easeOutBack,
                 callback: function() {
                     rotateOtherFish();
                 }
             });
-        }, 1000);
+        }, 0);
     }
 
 });
