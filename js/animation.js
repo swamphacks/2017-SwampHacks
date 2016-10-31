@@ -76,7 +76,7 @@ $(function() {
                     rotateFish1();
                 }
             });
-        }, 0);
+        }, 500);
     }
 
 		function rotateFish1() {
@@ -107,7 +107,7 @@ $(function() {
                     rotateOtherFish1();
                 }
             });
-        }, 0);
+        }, 1000);
     }
 
 		function rotateOtherFish1() {
