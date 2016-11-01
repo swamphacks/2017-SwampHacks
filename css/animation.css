@@ -16,7 +16,7 @@ li
 #wave1
 {
 	position: absolute;
-	bottom: -50px;
+	bottom: 0px;
 	left: 0px;
 	width: 100%;
 }
@@ -24,7 +24,7 @@ li
 #wave2
 {
 	position: absolute;
-	bottom: -50px;
+	bottom: 0px;
 	right: 0px;
 	width: 100%;
 }
