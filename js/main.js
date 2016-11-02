@@ -12,7 +12,7 @@ $(document).ready(function () {
         title.addClass("sunset");
     } else if(hrs >= 6 && hrs < 9) {
         title.addClass("sunrise");
-    } else {
+    }   else {
         title.addClass("day");
     }
 
