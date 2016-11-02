@@ -1,0 +1,86 @@
+/** Animation styles **/
+
+
+li
+{
+	list-style: none;
+}
+
+.parallax-container
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+#wave1
+{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+#wave2
+{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+}
+
+#fishy
+{
+	position: absolute;
+	left: 10%;
+	max-width: 15%;
+	max-height: 15%;
+	bottom: 22.5%;
+}
+
+#fishy2
+{
+	position: absolute;
+	max-width: 15%;
+	max-height: 15%;
+	bottom: 20%;
+	right: 30%;
+}
+
+#tree 
+{
+	position: absolute;
+	right: 0;
+	height: 100%;
+	bottom: 50px;
+}
+
+#stump
+{
+	position: absolute;
+	right: 150px;
+	bottom: 120px;
+	max-width: 20%;
+	max-height: 20%;
+}
+
+#gator
+{
+	position: absolute;
+	margin-left: 31%;
+	bottom: 93px;
+}
+
+#stork
+{
+	position: absolute;
+	bottom: 75%;
+}
+
+#reeds
+{
+	position: absolute;
+	bottom: 10%;
+	left: 0;
+}
+
