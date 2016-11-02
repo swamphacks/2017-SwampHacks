@@ -1,0 +1,27 @@
+html, body
+{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+label, input
+{
+    display: block;
+}
+
+#resume-button
+{
+    margin-bottom: 2em;
+}
+
+#email
+{
+    margin-bottom: 1em;
+}
+
+#password
+{
+    margin-bottom: 1em;
+}
