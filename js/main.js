@@ -1,14 +1,16 @@
 $(document).ready(function () {
+
+    //$("#scene").parallax();
     //change the  background based on the time of day
     var date = new Date();
     var hrs = date.getHours();
     console.log(hrs);
     var title = $("#title");
-    if (hrs > 19 || hrs < 6) {
+    if (hrs >= 19 || hrs < 6) {
         title.addClass("night");
-    } else if(hrs > 16 && hrs < 19) {
+    } else if(hrs >= 16 && hrs < 19) {
         title.addClass("sunset");
-    } else if(hrs > 6 && hrs < 9) {
+    } else if(hrs >= 6 && hrs < 9) {
         title.addClass("sunrise");
     } else {
         title.addClass("day");
