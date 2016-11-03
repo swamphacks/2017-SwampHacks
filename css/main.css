@@ -194,6 +194,18 @@ h4.date {
 .outer {
   margin-top: -140px;
 }
+.sunrise
+{
+    background : -moz-linear-gradient(42.11% -10.25% -78.69deg,rgba(251, 176, 64, 1) 0%,rgba(239, 65, 54, 1) 100%);
+    background : -webkit-linear-gradient(-78.69deg, rgba(251, 176, 64, 1) 0%, rgba(239, 65, 54, 1) 100%);
+    background : -webkit-gradient(linear,42.11% -10.25% ,65.13% 165.57% ,color-stop(0,rgba(251, 176, 64, 1) ),color-stop(1,rgba(239, 65, 54, 1) ));
+    background : -o-linear-gradient(-78.69deg, rgba(251, 176, 64, 1) 0%, rgba(239, 65, 54, 1) 100%);
+    background : -ms-linear-gradient(-78.69deg, rgba(251, 176, 64, 1) 0%, rgba(239, 65, 54, 1) 100%);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBB040', endColorstr='#EF4136' ,GradientType=0)";
+    background : linear-gradient(168.69deg, rgba(251, 176, 64, 1) 0%, rgba(239, 65, 54, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBB040',endColorstr='#EF4136' , GradientType=1);
+    background-repeat: no-repeat;
+}
 
 #audience .col-md-4 {
   padding: 20px;
@@ -248,6 +260,7 @@ h4.date {
 }
 
 .name {
+    margin-top: 12%;
   color: white;
 }
 
