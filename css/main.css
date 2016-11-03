@@ -636,6 +636,13 @@ h4.date {
     margin-top: 0px;
   }
 
+  .top {
+    margin-top: -100px;
+  }
+
+  #audience {
+    padding-bottom: 90px;
+  }
 
   #audience .col-md-12 {
     padding: 20px;
@@ -758,6 +765,29 @@ h4.date {
 
   #action .button-row {
     margin-bottom: 20px;
+  }
+
+  #footer .social-row {
+    top: 0;
+  }
+
+  #footer img {
+    width: 100%;
+    margin: 30px auto 2px;
+  }
+
+  #footer .social-row {
+    padding: 0;
+  }
+
+  #footer .social-media {
+    margin: auto;
+  }
+
+  #footer .links {
+    text-align: center;
+    padding: 0;
+    top: 70px;
   }
 
 
