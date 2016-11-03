@@ -1,4 +1,4 @@
-/** import tha fonts **/
+x/** import tha fonts **/
 @font-face {
     font-family: 'Pier Sans';
     src: url("../fonts/pier-regular.otf");
@@ -253,10 +253,10 @@ h4.date {
 .logo {
     position: absolute;
     margin: auto;
-    left: 0; 
+    left: 0;
     right: 0;
     top: -75%;
-    bottom: 0;  
+    bottom: 0;
 }
 
 #title {
@@ -271,7 +271,10 @@ h4.date {
   background-color: #6badf1;
   text-align: center;
   color: white;
+}
 
+#summary .text-box {
+  padding-bottom: 0;
 }
 
 #audience {
@@ -280,6 +283,7 @@ h4.date {
   background: linear-gradient(to bottom right, #5bdbec, #b2e8e4); /* Standard syntax */  text-align: center;
   color: white;
   padding-bottom: 200px;
+  padding-top: 12%;
 }
 
 #faqs {
@@ -410,6 +414,7 @@ h4.date {
 }
 
 .blue-teal {
+  margin-top: -1px;
   margin-bottom: -16%;
 }
 
@@ -461,7 +466,8 @@ h4.date {
   }
 }
 
-.teal-neighbor {
+.top {
+  margin-bottom: -4px;
   margin-top: -200px;
 }
 
@@ -489,36 +495,57 @@ h4.date {
   margin-top: -120px;
 }
 
-#schedule .col-md-6 {
-  padding: 40px;
+#schedule .col-x-6 {
+  padding: 20px;
+  min-width: 420px;
+  max-width: 40%;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#schedule .event-day {
+  background-color: white;
+  padding: 10px 0;
+  border-radius: 30px;
 }
 
 #schedule .event-block {
-  background-color: white;
   color: black;
   padding: 12px 30px;
-  border-radius: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.event-block .left {
+  padding: 0;
+}
+
+.event-block .right {
+  padding: 0;
+  height: 100%;
 }
 
 #schedule h4 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 6px;
-    margin-top: 12px;
+    margin-top: 6px;
 }
 
 #schedule h6 {
   margin: 6px 0;
   font-size: 14px;
   font-weight: normal;
+  opacity: 0.4;
 }
 
 #schedule h5 {
   font-weight: bolder;
-  font-size: 26px;
-  margin-top: 0;
+  font-size: 20px;
+  margin: 6px 0;
   color: #7dedbb;
+  text-align: right;
 }
 
 #sponsors {
@@ -597,6 +624,24 @@ h4.date {
   }
 
   #schedule {
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
+  }
+
+  #schedule .event-schedule-table {
+    padding-left: 20px;
+    padding-right: 20px;
+    white-space: nowrap;
+    overflow-x: scroll !important;
+    position: relative;
+  }
+
+  #schedule .col-x-6 {
+    padding: 20px;
+    min-width: 340px;
+    max-width: 40%;
+    padding: 5px;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
   }
 }
