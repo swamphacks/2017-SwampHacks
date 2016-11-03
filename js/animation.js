@@ -13,6 +13,7 @@ $(function() {
         rotateFish();
         rotateOtherFish();
         moveGator();
+        swayReeds();
     });
 
 	function animateImageLeft() {
@@ -122,6 +123,32 @@ $(function() {
                 }
             });
         }, 0);
+    }
+
+    var reeds = $('#reeds');
+    function swayReeds() {
+        reeds.rotate({
+            angle: 0,
+            center: ["50%", "100%"],
+           animateTo: -10,
+            duration: 2000,
+            easing: $.easing.easeOutBack,
+            callback: function () {
+                swayReeds1();
+            }
+        });
+    }
+    function swayReeds1() {
+        reeds.rotate({
+            angle: -10,
+            center: ["50%", "100%"],
+            animateTo: 0,
+            duration: 2000,
+            easing: $.easing.easeOutBack,
+            callback: function () {
+                swayReeds();
+            }
+        });
     }
 
 });
