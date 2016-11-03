@@ -1,4 +1,4 @@
-/** import tha fonts **/
+x/** import tha fonts **/
 @font-face {
     font-family: 'Pier Sans';
     src: url("../fonts/pier-regular.otf");
@@ -147,10 +147,9 @@ h4.date {
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 100%;
-    max-height:100%;
-    padding: 0;
+    position: relative;
+    padding: 100px;
+    padding-top: 20px;
 }
 
 .day
@@ -192,6 +191,9 @@ h4.date {
     background-repeat: no-repeat;
 }
 
+.outer {
+  margin-top: -140px;
+}
 .sunrise
 {
     background : -moz-linear-gradient(42.11% -10.25% -78.69deg,rgba(251, 176, 64, 1) 0%,rgba(239, 65, 54, 1) 100%);
@@ -272,7 +274,7 @@ h4.date {
     left: 0;
     right: 0;
     top: -75%;
-    bottom: 0;  
+    bottom: 0;
 }
 
 #title {
@@ -287,7 +289,10 @@ h4.date {
   background-color: #6badf1;
   text-align: center;
   color: white;
+}
 
+#summary .text-box {
+  padding-bottom: 0;
 }
 
 #audience {
@@ -296,12 +301,12 @@ h4.date {
   background: linear-gradient(to bottom right, #5bdbec, #b2e8e4); /* Standard syntax */  text-align: center;
   color: white;
   padding-bottom: 200px;
+  padding-top: 14%;
 }
 
 #faqs {
   text-align: center;
   padding-top: 0px;
-  padding-bottom: 200px;
   background-color: #5cacef;
   color: white;
 }
@@ -403,8 +408,12 @@ h4.date {
 
 #action .button-row {
   padding: 0 10%;
-  margin-top: 70px;
-  margin-bottom: 100px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+#action .container {
+  padding-bottom: 0;
 }
 
 #footer {
@@ -415,7 +424,7 @@ h4.date {
 }
 
 #footer .container {
-  padding: 60px 20px;
+  padding: 20px 20px;
 }
 
 #footer .social-media {
@@ -426,6 +435,7 @@ h4.date {
 }
 
 .blue-teal {
+  margin-top: -1px;
   margin-bottom: -16%;
 }
 
@@ -477,15 +487,19 @@ h4.date {
   }
 }
 
-.teal-neighbor {
-  margin-top: -200px;
+.top {
+  margin-bottom: -4px;
+  margin-top: -300px;
+}
+
+.lower {
+  margin-top: 0;
 }
 
 #schedule {
     text-align: center;
     background: #5aef9a;
     color: white;
-    padding-bottom: 180px;
     background: -webkit-linear-gradient(left top, yellow, purple);
     background: -moz-linear-gradient(bottom right, purple, yellow); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to bottom, #7eedbc, #5dec9a); /* Standard syntax */
@@ -505,41 +519,65 @@ h4.date {
   margin-top: -120px;
 }
 
-#schedule .col-md-6 {
-  padding: 40px;
+#schedule .col-x-6 {
+  padding: 20px;
+  width: 49.5%;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#schedule .event-day {
+  background-color: white;
+  padding: 10px 0;
+  border-radius: 30px;
 }
 
 #schedule .event-block {
-  background-color: white;
   color: black;
   padding: 12px 30px;
-  border-radius: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.event-block .left {
+  padding: 0;
+}
+
+.event-block .right {
+  padding: 0;
+  height: 100%;
 }
 
 #schedule h4 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 6px;
-    margin-top: 12px;
+    margin-top: 6px;
 }
 
 #schedule h6 {
   margin: 6px 0;
   font-size: 14px;
   font-weight: normal;
+  opacity: 0.4;
 }
 
 #schedule h5 {
   font-weight: bolder;
-  font-size: 26px;
-  margin-top: 0;
+  font-size: 20px;
+  margin: 6px 0;
   color: #7dedbb;
+  text-align: right;
 }
 
 #sponsors {
     text-align: center;
     color: #42ace5;
+}
+
+#sponsors .text-box {
+  padding-bottom: 10px;
 }
 
 #sponsors .sponsors-table {
@@ -567,6 +605,10 @@ h4.date {
 #sponsors .lily-pad img {
   margin: 0 16px;
   width: 180px;
+}
+
+#sponsors .interest {
+  margin-top: -140px;
 }
 
 .homepage-logo {
@@ -603,16 +645,167 @@ h4.date {
     margin-top: -20px;
   }
 
-  #audience .col-md-12 {
-    padding: 10px;
+  .outer {
+    margin-top: 0px;
   }
 
-  #schedule .event-schedule-table {
-    padding: 0;
-    padding-top: 30px;
+  .top {
+    margin-top: -100px;
+  }
+
+  .grav {
+    margin-bottom: -2px;
+  }
+
+  #audience {
+    padding-bottom: 90px;
+  }
+
+  #audience .col-md-12 {
+    padding: 20px;
+  }
+
+  #audience .text-box {
+    padding-bottom: 0;
+  }
+
+  #audience .col-md-4 {
+    padding: 10px 20px;
+  }
+
+  #audience .blocks h3 {
+    font-size: 34px;
   }
 
   #schedule {
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
   }
+
+  #schedule .event-schedule-table {
+    padding-left: 40px;
+    padding-right: 40px;
+    white-space: nowrap;
+    overflow-x: scroll !important;
+    position: relative;
+    margin-top: -40px;
+  }
+
+  #schedule .col-x-6 h3 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  #schedule h4 {
+    white-space:normal;
+    font-size: 18px;
+  }
+
+  #schedule h5 {
+    text-align: left;
+    margin: 0;
+    font-size: 18px;
+  }
+
+  #schedule h6 {
+    font-size: 14px;
+  }
+
+  #schedule .event-block {
+    padding: 6px 30px;
+  }
+
+  #schedule .col-x-6 {
+    padding: 20px;
+    min-width: 310px;
+    max-width: 40%;
+    padding: 10px;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #schedule .right-day {
+    margin-right: 40px;
+  }
+
+  #sponsors .sponsors-table {
+    padding: 0 30px;
+  }
+
+  #sponsors .row {
+    margin-bottom: 30px;
+  }
+
+  #sponsors .gator img {
+    max-width: 320px;
+  }
+
+  #sponsors .heron img {
+    max-width: 240px;
+    margin: 5px 30px;
+  }
+
+  #sponsors .turtle img {
+    max-width: 180px;
+    margin: 5px 30px;
+  }
+
+  #sponsors .lily-pad img {
+    width: 140px;
+    margin: 5px 10px;
+  }
+
+  #sponsors .interest {
+    margin-top: -60px;
+  }
+
+  #sponsors .interest h3 {
+    margin-bottom: 10px;
+  }
+
+  #faqs .faq-table {
+    padding: 0 20px;
+    margin-top: 0;
+  }
+
+  #faqs h4 {
+    font-size: 18px;
+  }
+
+  #faqs p {
+    font-size: 14px;
+  }
+
+  #action .involved {
+    margin-bottom: 20px;
+  }
+
+  #action .button-row {
+    margin-bottom: 20px;
+  }
+
+  #footer .social-row {
+    top: 0;
+  }
+
+  #footer img {
+    width: 100%;
+    margin: 30px auto 2px;
+  }
+
+  #footer .social-row {
+    padding: 0;
+  }
+
+  #footer .social-media {
+    margin: auto;
+  }
+
+  #footer .links {
+    text-align: center;
+    padding: 0;
+    top: 70px;
+  }
+
+
 }
