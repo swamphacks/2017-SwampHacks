@@ -594,6 +594,10 @@ h4.date {
   width: 180px;
 }
 
+#sponsors .interest {
+  margin-top: -140px;
+}
+
 .homepage-logo {
     max-height: 55%;
     max-width: 55%;
@@ -699,4 +703,41 @@ h4.date {
   #schedule .right-day {
     margin-right: 40px;
   }
+
+  #sponsors .sponsors-table {
+    padding: 0 30px;
+  }
+
+  #sponsors .row {
+    margin-bottom: 30px;
+  }
+
+  #sponsors .gator img {
+    max-width: 320px;
+  }
+
+  #sponsors .heron img {
+    max-width: 240px;
+    margin: 5px 30px;
+  }
+
+  #sponsors .turtle img {
+    max-width: 180px;
+    margin: 5px 30px;
+  }
+
+  #sponsors .lily-pad img {
+    width: 140px;
+    margin: 5px 10px;
+  }
+
+  #sponsors .interest {
+    margin-top: -60px;
+  }
+
+  #sponsors .interest h3 {
+    margin-bottom: 10px;
+  }
+
+
 }
