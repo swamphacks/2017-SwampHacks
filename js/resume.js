@@ -14,11 +14,12 @@ $('#resume').on("change", function (event) {
 });
 
 $('#submit-info').click(e => {
-    if(selectedFile === null) {
+    if(selectedFile == null) {
         //scold them for not uploading their resume. naughty children!
-        $('.error').text("Naughty child! Upload your resume.").show();
+        $('.error').text("Naughty child! Upload your resume.").show().fadeOut(2000);
+    } else if(selectedFile.name.split('.').pop() != 'pdf') {
+        $('.error').text("Naughty child! Only PDF's are accepted here.").show().fadeOut(2000);
     } else {
-
     var fileName = selectedFile.name;
     console.log(fileName);
     var storageRef = firebase.storage().ref('/resumes/' + fileName);
