@@ -497,8 +497,7 @@ h4.date {
 
 #schedule .col-x-6 {
   padding: 20px;
-  min-width: 420px;
-  max-width: 40%;
+  width: 49.5%;
   margin: 0;
   display: inline-block;
   vertical-align: top;
@@ -618,30 +617,54 @@ h4.date {
     padding: 10px;
   }
 
-  #schedule .event-schedule-table {
-    padding: 0;
-    padding-top: 30px;
-  }
-
   #schedule {
     padding-bottom: 20px;
   }
 
   #schedule .event-schedule-table {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     white-space: nowrap;
     overflow-x: scroll !important;
     position: relative;
+    margin-top: -40px;
+  }
+
+  #schedule .col-x-6 h3 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  #schedule h4 {
+    white-space:normal;
+    font-size: 18px;
+  }
+
+  #schedule h5 {
+    text-align: left;
+    margin: 0;
+    font-size: 18px;
+  }
+
+  #schedule h6 {
+    font-size: 14px;
+  }
+
+  #schedule .event-block {
+    padding: 6px 30px;
   }
 
   #schedule .col-x-6 {
     padding: 20px;
-    min-width: 340px;
+    min-width: 310px;
     max-width: 40%;
-    padding: 5px;
+    padding: 10px;
     margin: 0;
     display: inline-block;
     vertical-align: top;
+  }
+
+  #schedule .right-day {
+    margin-right: 40px;
   }
 }
