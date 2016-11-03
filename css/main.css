@@ -149,6 +149,7 @@ h4.date {
 .container {
     position: relative;
     padding: 100px;
+    padding-top: 20px;
 }
 
 .day
@@ -188,6 +189,10 @@ h4.date {
     background : linear-gradient(174.79deg, rgba(0, 7, 63, 1) 0%, rgba(88, 89, 121, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00073F',endColorstr='#585979' , GradientType=1);
     background-repeat: no-repeat;
+}
+
+.outer {
+  margin-top: -140px;
 }
 
 #audience .col-md-4 {
@@ -283,13 +288,12 @@ h4.date {
   background: linear-gradient(to bottom right, #5bdbec, #b2e8e4); /* Standard syntax */  text-align: center;
   color: white;
   padding-bottom: 200px;
-  padding-top: 12%;
+  padding-top: 14%;
 }
 
 #faqs {
   text-align: center;
   padding-top: 0px;
-  padding-bottom: 200px;
   background-color: #5cacef;
   color: white;
 }
@@ -391,8 +395,12 @@ h4.date {
 
 #action .button-row {
   padding: 0 10%;
-  margin-top: 70px;
-  margin-bottom: 100px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+#action .container {
+  padding-bottom: 0;
 }
 
 #footer {
@@ -403,7 +411,7 @@ h4.date {
 }
 
 #footer .container {
-  padding: 60px 20px;
+  padding: 20px 20px;
 }
 
 #footer .social-media {
@@ -468,14 +476,17 @@ h4.date {
 
 .top {
   margin-bottom: -4px;
-  margin-top: -200px;
+  margin-top: -300px;
+}
+
+.lower {
+  margin-top: 0;
 }
 
 #schedule {
     text-align: center;
     background: #5aef9a;
     color: white;
-    padding-bottom: 180px;
     background: -webkit-linear-gradient(left top, yellow, purple);
     background: -moz-linear-gradient(bottom right, purple, yellow); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to bottom, #7eedbc, #5dec9a); /* Standard syntax */
@@ -552,6 +563,10 @@ h4.date {
     color: #42ace5;
 }
 
+#sponsors .text-box {
+  padding-bottom: 10px;
+}
+
 #sponsors .sponsors-table {
   padding: 0 140px;
 }
@@ -613,8 +628,25 @@ h4.date {
     margin-top: -20px;
   }
 
+  .outer {
+    margin-top: 0px;
+  }
+
+
   #audience .col-md-12 {
-    padding: 10px;
+    padding: 20px;
+  }
+
+  #audience .text-box {
+    padding-bottom: 0;
+  }
+
+  #audience .col-md-4 {
+    padding: 10px 20px;
+  }
+
+  #audience .blocks h3 {
+    font-size: 34px;
   }
 
   #schedule {
