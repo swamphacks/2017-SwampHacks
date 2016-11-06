@@ -50,7 +50,7 @@ $(document).ready(function(){
 
   var access_token = getUrlParameter('access_token');
 
-  $.getJSON( "https://my.mlh.io/api/v1/user.json?access_token=90084152836baa97a47c411b2c79680eeb89a08199f7347fd0b002442443d030", function( json ) {
+  $.getJSON( "https://my.mlh.io/api/v1/user.json?access_token=" + access_token, function( json ) {
     //alert( "JSON Data: " + json.status );
     $("#email").val(json.data.email);
    });
