@@ -31,3 +31,28 @@ $('#submit-info').click(e => {
         window.location.replace("index.html");
     });
 });
+
+$(document).ready(function(){
+  var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+  };
+
+  var access_token = getUrlParameter('access_token');
+
+  $.getJSON( "https://my.mlh.io/api/v2/user.json?access_token=90084152836baa97a47c411b2c79680eeb89a08199f7347fd0b002442443d030", function( json ) {
+    //alert( "JSON Data: " + json.status );
+    $("#email").val(json.data.email);
+   });
+
+});
