@@ -8,7 +8,7 @@ $(document).ready(function () {
     var title = $("#title");
     if (hrs >= 19 || hrs < 6) {
         title.addClass("night");
-    } else if(hrs >= 16 && hrs < 19) {
+    } else if(hrs > 16 && hrs < 19) {
         title.addClass("sunset");
     } else if(hrs >= 6 && hrs < 9) {
         title.addClass("sunrise");

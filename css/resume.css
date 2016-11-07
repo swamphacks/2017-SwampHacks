@@ -11,9 +11,9 @@ label, input
     display: block;
 }
 
-#resume-button
+.row
 {
-    margin-bottom: 2em;
+	margin-bottom: 3em;
 }
 
 #email
@@ -25,3 +25,10 @@ label, input
 {
     margin-bottom: 1em;
 }
+
+#submit-info
+{
+	margin-left: 3%;
+	position: relative;
+}
+
