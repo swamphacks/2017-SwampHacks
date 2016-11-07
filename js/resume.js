@@ -60,10 +60,6 @@ var populateForm = function(items) {
     //todo: see if there are any more fields we can get
     
     //submit to the database
-    firebase.database().ref('applicants').push({
-        firstname, lastname, dob, gender, phone, major, email,
-        school, diet, shirt
-    });
 };
 
 
@@ -83,17 +79,31 @@ $('#submit-info').click(e => {
     console.log(fileName);
     var storageRef = firebase.storage().ref('/resumes/' + fileName);
     var uploadTask = storageRef.put(selectedFile);
+    //grab the values
+    var firstname = $('#firstname');
+    var lastname = $('#lastname');
+    var dob = $('#dob');
+    var gender = $('#gender');
+    var phone = $('#phone');
+    var major = $('#major');
+    var email = $('#email');
+    var school = $('#school');
+    var diet = $('#diet');
+    var shirt = $('#shirt');
+    var gradYear = $('#grad');
+    var study = $('#study');
+    var linkedin = $('#linkedin');
+    var github = $('#github');
+
+
+    firebase.database().ref('applicants').push({
+        firstname, lastname, dob, gender, phone, major, email,
+        school, diet, shirt, gradYear, study, linkedin, github
+    });
     //TODO: add a progress bar
 
     //put the email and password in the database
-    e.preventDefault();
-    /**var email = $('#email').val();
-    var password = $('#password').val();
-    firebase.database().ref('users').push({
-        email,
-        password
-    })**/
-    window.location.replace("https://my.mlh.io/oauth/authorize?client_id=4152857ec50532295c5cc45ec8a48e35ec1f093c9370aaeb71dbc2b3efe8f4aa&redirect_uri=https%3A%2F%2Fbrownac.github.io%2Fthanks.html&response_type=token");
+    window.location.replace("thanks.html");
 
 }
 });
