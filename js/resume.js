@@ -31,7 +31,7 @@ $.ajax({
         //whatever
     }
 });
-        
+
 var populateForm = function(items) {
     //get the values
     var firstname = items[4];
@@ -69,31 +69,25 @@ $('#resume').on("change", function (event) {
 });
 
 $('#submit-info').click(e => {
-    if(selectedFile == null) {
-        //scold them for not uploading their resume. naughty children!
-        $('.error').text("Naughty child! Upload your resume.").show().fadeOut(2000);
-    } else if(selectedFile.name.split('.').pop() != 'pdf') {
-        $('.error').text("Naughty child! Only PDF's are accepted here.").show().fadeOut(2000);
-    } else {
-    var fileName = selectedFile.name;
-    console.log(fileName);
-    var storageRef = firebase.storage().ref('/resumes/' + fileName);
-    var uploadTask = storageRef.put(selectedFile);
+        var fileName = selectedFile.name;
+        console.log(fileName);
+        var storageRef = firebase.storage().ref('/resumes/' + fileName);
+        var uploadTask = storageRef.put(selectedFile);
     //grab the values
-    var firstname = $('#firstname');
-    var lastname = $('#lastname');
-    var dob = $('#dob');
-    var gender = $('#gender');
-    var phone = $('#phone');
-    var major = $('#major');
-    var email = $('#email');
-    var school = $('#school');
-    var diet = $('#diet');
-    var shirt = $('#shirt');
-    var gradYear = $('#grad');
-    var study = $('#study');
-    var linkedin = $('#linkedin');
-    var github = $('#github');
+        var firstname = $('#firstname').val();
+        var lastname = $('#lastname').val();
+        var dob = $('#dob').val();
+        var gender = $('#gender').val();
+        var phone = $('#phone').val();
+        var major = $('#major').val();
+        var email = $('#email').val();
+        var school = $('#school').val();
+        var diet = $('#diet').val();
+        var shirt = $('#shirt').val();
+        var gradYear = $('#grad').val();
+        var study = $('#study').val();
+        var linkedin = $('#linkedin').val();
+        var github = $('#github').val();
 
 
     firebase.database().ref('applicants').push({
@@ -103,7 +97,6 @@ $('#submit-info').click(e => {
     //TODO: add a progress bar
 
     //put the email and password in the database
-    window.location.replace("thanks.html");
 
-}
+
 });

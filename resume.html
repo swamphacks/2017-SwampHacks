@@ -61,38 +61,38 @@
 				<option value="graduate">Graduate</option>
 			</select>
 		</div>
-			<div class="row">
-				<label for="diet">Dietary restrictions <span class="asterisk">*</span></label>
-				<input type="text" class="form-control" placeholder="Dietary restrictions" aria-describedby="basic-addon1" required="required" id="diet">
-			</div>
-			<div class="row">
-				<label for="shirt">Shirt size <span class="asterisk">*</span></label>
-				<select name="shirt" id="shirt">
-					<option value="">Select shirt size</option>
-					<option value="Women's - XS">Women's - XS</option> 
-					<option value="Women's - S">Women's - S</option>
-					<option value="Women's - M">Women's - M</option>
-					<option value="Women's - L">Women's - L</option>
-					<option value="Women's - XL">Women's - XL</option>
-					<option value="Unisex - XS">Unisex - XS</option> 
-					<option value="Unisex - S">Unisex - S</option> 
-					<option value="Unisex - M">Unisex - M</option> 
-					<option value="Unisex - L">Unisex - L</option> 
-					<option value="Unisex - XL">Unisex - XL</option> 
-				</select>
-			</div>
-			<div class="row">
-				<label for="reusme" id="resume-button"> Upload your resume <span class="asterisk">*</span></label>
-					<input type="file" id="resume">
-			</div>
-			<div class="row">
-				<label for="linkedin">Linked URL</label>
-					<input type="text" class="form-control" placeholder="Linkedin" aria-describedby="basic-addon1" required="required" id="linkedin">
-			</div>
-			<div class="row">
-				<label for="github">Github URL</label>
-					<input type="text" class="form-control" placeholder="Github" aria-describedby="basic-addon1" required="required" id="github">
-			</div>
+		<div class="row">
+			<label for="diet">Dietary restrictions <span class="asterisk">*</span></label>
+			<input type="text" class="form-control" placeholder="Dietary restrictions" aria-describedby="basic-addon1" required="required" id="diet">
+		</div>
+		<div class="row">
+			<label for="shirt">Shirt size <span class="asterisk">*</span></label>
+			<select name="shirt" id="shirt">
+				<option value="">Select shirt size</option>
+				<option value="Women's - XS">Women's - XS</option> 
+				<option value="Women's - S">Women's - S</option>
+				<option value="Women's - M">Women's - M</option>
+				<option value="Women's - L">Women's - L</option>
+				<option value="Women's - XL">Women's - XL</option>
+				<option value="Unisex - XS">Unisex - XS</option> 
+				<option value="Unisex - S">Unisex - S</option> 
+				<option value="Unisex - M">Unisex - M</option> 
+				<option value="Unisex - L">Unisex - L</option> 
+				<option value="Unisex - XL">Unisex - XL</option> 
+			</select>
+		</div>
+		<div class="row">
+			<label for="reusme" id="resume-button"> Upload your resume <span class="asterisk">*</span></label>
+			<input type="file" id="resume">
+		</div>
+		<div class="row">
+			<label for="linkedin">Linked URL</label>
+			<input type="text" class="form-control" placeholder="Linkedin" aria-describedby="basic-addon1" required="required" id="linkedin">
+		</div>
+		<div class="row">
+			<label for="github">Github URL</label>
+			<input type="text" class="form-control" placeholder="Github" aria-describedby="basic-addon1" required="required" id="github">
+		</div>
 		<!--<div class="input-group">
 		<input type="email" class="form-control" placeholder="email" id="email">
 			<input type="password" class="form-control" placeholder="password" id="password">
@@ -104,24 +104,19 @@
 
 	<!-- scriptz -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/keys.js"></script>
-	<script src="js/resume.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-auth.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-database.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-messaging.js"></script>
+	<script src="js/resume.js"></script>
+	<script>
+  // Initialize Firebase
+  	var config = {
+  		apiKey: "AIzaSyCKrjgs7TMiPDl-nqaqnBTAhigNrNszQPk",
+  		authDomain: "swamphacks-a6338.firebaseapp.com",
+  		databaseURL: "https://swamphacks-a6338.firebaseio.com",
+  		storageBucket: "swamphacks-a6338.appspot.com",
+  		messagingSenderId: "949283718048"
+  	};
+  	firebase.initializeApp(config);
+</script>
 
-	<script type="text/javascript">
-		var config = {
-			apiKey: "AIzaSyCKrjgs7TMiPDl-nqaqnBTAhigNrNszQPk",
-			authDomain: "swamphacks-a6338.firebaseapp.com",
-			databaseURL: "https://swamphacks-a6338.firebaseio.com",
-			storageBucket: "swamphacks-a6338.appspot.com",
-			messagingSenderId: "949283718048"
-		};
-		firebase.initializeApp(config);
-	</script>
-	
 </body>
 </html>
