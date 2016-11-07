@@ -94,9 +94,4 @@ $('#submit-info').click(e => {
         firstname, lastname, dob, gender, phone, major, email,
         school, diet, shirt, gradYear, study, linkedin, github
     });
-    //TODO: add a progress bar
-
-    //put the email and password in the database
-
-
 });
