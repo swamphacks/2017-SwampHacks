@@ -4,31 +4,30 @@ $(function() {
 	//animating the waves
 	$(document).ready(function() {
 		//waves
-		var intId = setInterval(animateImageLeft,1000);
-		var intId = setInterval(animateupImageLeft,1000);
-		var intId = setInterval(animateImageupRight,1000);
-		var intId = setInterval(animateImageRight,1000);
-
+        setInterval(animateImageLeft, 1000);
+        setInterval(animateupImageLeft, 1000);
+        setInterval(animateImageRight, 1000);
+        setInterval(animateImageupRight, 1000);
         floatThatStork();
         rotateFish();
         rotateOtherFish();
         moveGator();
         swayReeds();
     });
+    var height = $(window).height();
 
-	function animateImageLeft() {
-		$("#wave1").animate({bottom: '-28%'}, 3000, 'swing', 1000);
-	}
-	function animateupImageLeft() {
-		$('#wave1').animate({bottom: '-25%'}, 3000, 'swing',1000 );
-	}
-	function animateImageRight() {
-		$("#wave2").animate({bottom: '-28%'}, 3000, 'swing', 1000);
-	}
-	function animateImageupRight() {
-		$('#wave2').animate({bottom: '-25%'}, 3000, 'swing', 1000);
-	}
-
+    function animateImageLeft() {
+        $("#wave1").animate({bottom: '-5%'}, 3000, 'swing', 1000);
+    }
+    function animateupImageLeft() {
+        $('#wave1').animate({bottom: '-1%'}, 3000, 'swing',1000 );
+    }
+    function animateImageRight() {
+        $("#wave2").animate({bottom: '-1%'}, 3000, 'swing', 1000);
+    }
+    function animateImageupRight() {
+        $('#wave2').animate({bottom: '-5%'}, 3000, 'swing', 1000);
+    }
 
    //float that stork
     var img = $("#stork"),

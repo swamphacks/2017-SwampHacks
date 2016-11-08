@@ -1,4 +1,4 @@
-x/** import tha fonts **/
+/** import tha fonts **/
 @font-face {
     font-family: 'Pier Sans';
     src: url("../fonts/pier-regular.otf");
@@ -146,11 +146,11 @@ h4.date {
  color: #24b06f;
 }
 
-.container {
+/**.container {
     position: relative;
     padding: 100px;
     padding-top: 20px;
-}
+}**/
 
 .day
 {
@@ -289,6 +289,7 @@ h4.date {
   background-color: #6badf1;
   text-align: center;
   color: white;
+  padding-top: 4em;
 }
 
 #summary .text-box {
