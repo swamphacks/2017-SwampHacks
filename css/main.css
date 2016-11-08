@@ -1,4 +1,4 @@
-x/** import tha fonts **/
+/** import tha fonts **/
 @font-face {
     font-family: 'Pier Sans';
     src: url("../fonts/pier-regular.otf");
@@ -105,6 +105,7 @@ h4.date {
 
 .text-paragraph {
   margin: 40px 0;
+  padding-bottom: 5%;
 }
 
 .text-box {
@@ -146,11 +147,11 @@ h4.date {
  color: #24b06f;
 }
 
-.container {
+/**.container {
     position: relative;
     padding: 100px;
     padding-top: 20px;
-}
+}**/
 
 .day
 {
@@ -289,6 +290,7 @@ h4.date {
   background-color: #6badf1;
   text-align: center;
   color: white;
+  padding-bottom: 10%;
 }
 
 #summary .text-box {
@@ -314,7 +316,6 @@ h4.date {
 #faqs .faq-table {
   padding: 0 200px;
   text-align: left;
-  margin-top: -40px;
 }
 
 #faqs .faq-block {
@@ -516,7 +517,7 @@ h4.date {
 #schedule .event-schedule-table {
   padding: 0 200px;
   text-align: left;
-  margin-top: -120px;
+  margin-top: -3%;
 }
 
 #schedule .col-x-6 {
@@ -641,8 +642,7 @@ h4.date {
   }
 
   .blocks {
-    padding: 0 30px;
-    margin-top: -20px;
+    padding-top: 20%;
   }
 
   .outer {
@@ -761,11 +761,6 @@ h4.date {
 
   #sponsors .interest h3 {
     margin-bottom: 10px;
-  }
-
-  #faqs .faq-table {
-    padding: 0 20px;
-    margin-top: 0;
   }
 
   #faqs h4 {
