@@ -11,6 +11,11 @@ label, input
     display: block;
 }
 
+.row
+{
+	margin-bottom: 3em;
+}
+
 #email
 {
     margin-bottom: 1em;
@@ -26,3 +31,4 @@ label, input
 	margin-left: 3%;
 	position: relative;
 }
+
