@@ -290,7 +290,8 @@ h4.date {
   background-color: #6badf1;
   text-align: center;
   color: white;
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 #summary .text-box {
