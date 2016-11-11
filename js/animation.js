@@ -1,9 +1,12 @@
 $(function() {
-//$('#scene').animation();
+
 
 	//animating the waves
 	$(document).ready(function() {
 		//waves
+        //var scene = document.getElementById('scene');
+        //var parallax = new Parallax(scene);
+        //parallax.enable();
         setInterval(animateImageLeft, 1000);
         setInterval(animateupImageLeft, 1000);
         setInterval(animateImageRight, 1000);

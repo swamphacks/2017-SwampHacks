@@ -156,7 +156,6 @@ h4.date {
 .day
 {
     background: -moz-linear-gradient(45.93% -26.17% -84.79deg, rgba(72, 216, 239, 1) 0%, rgba(211, 237, 225, 1) 100%);
-    background: -webkit-linear-gradient(-84.79deg, rgba(72, 216, 239, 1) 0%, rgba(211, 237, 225, 1) 100%);
     background: -webkit-gradient(linear, 45.93% -26.17%, 53.3% 111.67%, color-stop(0, rgba(72, 216, 239, 1)), color-stop(1, rgba(211, 237, 225, 1)));
     background: -o-linear-gradient(-84.79deg, rgba(72, 216, 239, 1) 0%, rgba(211, 237, 225, 1) 100%);
     background: -ms-linear-gradient(-84.79deg, rgba(72, 216, 239, 1) 0%, rgba(211, 237, 225, 1) 100%);
