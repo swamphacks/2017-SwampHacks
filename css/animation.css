@@ -11,23 +11,21 @@ li
   margin: 0 auto;
 }
 .wrapper {
-min-height: 100%;
-position: absolute;
-overflow: hidden;
-height: 100%;
-width: 110%;
-left: -5%;
-top: 0%;
+	min-height: 100%;
+	position: absolute;
+	overflow: hidden;
+	height: 100%;
+	width: 110%;
+	left: -5%;
+	top: 0%;
 }
 
-.scene {
-}
 .scene, .layer {
-display: block;
-padding: 0;
-margin: 0;
-width: 100%;
-height: 100%;
+	display: block;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .wave1
@@ -91,58 +89,47 @@ height: 100%;
   background-position: center left;
 }
 
-#fishy
-{
-	position: absolute;
-	left: 10%;
-	max-width: 15%;
-	max-height: 15%;
-	bottom: 37%;
+.fishy1 {
+  background-image: url(../img/animation/fishy.png);
+  position: absolute;
+  top: 0%;
+  left: 15%;
+  right: 77%;
+  bottom: 60%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center left;
 }
 
-#fishy2
-{
-	position: absolute;
-	max-width: 15%;
-	max-height: 15%;
-	bottom: 23%;
-	right: 30%;
+.fishy2 {
+  background-image: url(../img/animation/fishy2.png);
+  position: absolute;
+  top: 10%;
+  left: 77%;
+  right: 15%;
+  bottom: 30%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right;
 }
 
-#tree
-{
-	position: absolute;
-	right: 0;
-	height: 100%;
-	bottom: 10%;
+.stork {
+  background-image: url(../img/animation/stork.png);
+  position: absolute;
+  top: -300px;
+  left: 10%;
+  right: 77%;
+  bottom: 650px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 
-#stump
-{
-	position: absolute;
-	right: 10%;
-	bottom: 35%;
-	max-width: 20%;
-	max-height: 20%;
-}
-
-#gator
-{
-	position: absolute;
-	margin-left: 31%;
-	bottom: 30%;
-}
-
-#stork
-{
-	position: relative;
-	bottom: 75%;
-	transform: translate(50%, 0px);
-}
-
-#reeds
-{
-	position: absolute;
-	bottom: 25%;
-	left: 0;
+.sway {
+  -webkit-transform-origin: 50% 90%;
+  -moz-transform-origin: 50% 90%;
+  transform-origin: 50% 90%;
+  -webkit-animation: sway 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-animation: sway 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation: sway 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
