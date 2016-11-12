@@ -137,18 +137,33 @@ select
     display: block;
     height: 48px;
     outline: none;
-    box-shadow:none !important;
     border: none;
-    color: black !important;
+    color: #b8b8b8 !important;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     font-size: 16px;
     padding-left: 20px;
     padding-top: auto;
-    width: 90%;
+    width: 85%;
     border-radius: 30px;
+    background-color: white;
+    -webkit-box-shadow:inset 0px 0px 0px 10px #f00;
+    -moz-box-shadow:inset 0px 0px 0px 10px #f00;
+    box-shadow:inset 0px 0px 0px 2px #4cace8 !important;
+}
 
+select {
+  background-image:
+    linear-gradient(45deg, transparent 50%, #b8b8b8 50%),
+    linear-gradient(134deg, #b8b8b8 50%, transparent 50%);
+  background-position:
+    calc(100% - 28px) calc(1em + 6px),
+    calc(100% - 20px) calc(1em + 6px);
+  background-size:
+    8px 9px,
+    8px 9px;
+  background-repeat: no-repeat;
 }
 
 #submit
@@ -194,6 +209,13 @@ input[type="email"], textarea
     font-weight: bolder;
 }
 
+select:valid {
+  color: black !important;
+  -webkit-box-shadow:inset 0px 0px 0px 10px white;
+  -moz-box-shadow:inset 0px 0px 0px 10px white;
+  box-shadow:inset 0px 0px 0px 2px white !important;
+}
+
 
 
 /*placeholder text*/
@@ -207,6 +229,14 @@ input:placeholder-shown {
   -webkit-box-shadow:inset 0px 0px 0px 10px #f00;
   -moz-box-shadow:inset 0px 0px 0px 10px #f00;
   box-shadow:inset 0px 0px 0px 2px #4cace8 !important;
+}
+
+select:placeholder-shown {
+  color: red;
+}
+
+select option[data-default] {
+  color: #888;
 }
 
 /*Removing chromes autcomplete*/
