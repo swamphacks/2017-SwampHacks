@@ -148,9 +148,9 @@ select
     width: 85%;
     border-radius: 30px;
     background-color: white;
-    -webkit-box-shadow:inset 0px 0px 0px 10px #f00;
-    -moz-box-shadow:inset 0px 0px 0px 10px #f00;
-    box-shadow:inset 0px 0px 0px 2px #4cace8 !important;
+    -webkit-box-shadow:inset 0px 0px 0px 10px #00b7e8;
+    -moz-box-shadow:inset 0px 0px 0px 10px #00b7e8;
+    box-shadow:inset 0px 0px 0px 3px #00b7e8 !important;
 }
 
 select {
@@ -170,7 +170,7 @@ select:valid {
   color: black !important;
   -webkit-box-shadow:inset 0px 0px 0px 10px white;
   -moz-box-shadow:inset 0px 0px 0px 10px white;
-  box-shadow:inset 0px 0px 0px 2px white !important;
+  box-shadow:inset 0px 0px 0px 3px white !important;
 }
 
 /*resume button*/
@@ -204,15 +204,15 @@ select:valid {
     border-radius: 30px 0 0 30px;
     padding-left: 20px;
     padding-top: 13px;
-    -webkit-box-shadow:inset 0px 0px 0px 10px #4cace8;
-    -moz-box-shadow:inset 0px 0px 0px 10px #4cace8;
-    box-shadow:inset 0px 0px 0px 2px #4cace8;
+    -webkit-box-shadow:inset 0px 0px 0px 10px #00b7e8;
+    -moz-box-shadow:inset 0px 0px 0px 10px #00b7e8;
+    box-shadow:inset 0px 0px 0px 3px #00b7e8;
 }
 
 .inputAdded {
   -webkit-box-shadow:inset 0px 0px 0px 10px white;
   -moz-box-shadow:inset 0px 0px 0px 10px white;
-  box-shadow:inset 0px 0px 0px 2px white !important;
+  box-shadow:inset 0px 0px 0px 3px white !important;
 }
 
 .inputAddedText {
@@ -236,9 +236,9 @@ select:valid {
     padding: 12px 20px;
     margin-left: -10px;
     border-radius: 0 30px 30px 0;
-    -webkit-box-shadow:inset 0px 0px 0px 10px #4cace8;
-    -moz-box-shadow:inset 0px 0px 0px 10px #4cace8;
-    box-shadow:inset 0px 0px 0px 2px #4cace8;
+    -webkit-box-shadow:inset 0px 0px 0px 10px #00b7e8;
+    -moz-box-shadow:inset 0px 0px 0px 10px #00b7e8;
+    box-shadow:inset 0px 0px 0px 3px #00b7e8;
 }
 
 #resume:focus + label strong,
@@ -260,11 +260,29 @@ select:valid {
 
 #submit-info
 {
-    width: 12%;
-    border-radius: 20px;
-    background-color: #fff;
+    width: 160px;
+    border-radius: 30px;
+    background-color: #53daee;
     outline: none;
-    color: #8FE1E6;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: white;
+    padding: 12px 0;
+    height: 48px;
+    border-width: 0;
+    -webkit-box-shadow:inset 0px 0px 0px 10px white;
+    -moz-box-shadow:inset 0px 0px 0px 10px white;
+    box-shadow:inset 0px 0px 0px 3px white;
+}
+
+#submit-info:hover {
+  background-color: #2acde8;
+  color: #bdeaef;
+  -webkit-box-shadow:inset 0px 0px 0px 10px white;
+  -moz-box-shadow:inset 0px 0px 0px 10px white;
+  box-shadow:inset 0px 0px 0px 0px white;
+
 }
 
 input[type="text"], textarea
@@ -304,9 +322,9 @@ input::-webkit-input-placeholder {
 
 /*Indicate not filled in*/
 input:placeholder-shown {
-  -webkit-box-shadow:inset 0px 0px 0px 10px #f00;
-  -moz-box-shadow:inset 0px 0px 0px 10px #f00;
-  box-shadow:inset 0px 0px 0px 2px #4cace8 !important;
+  -webkit-box-shadow:inset 0px 0px 0px 3px #00b7e8;
+  -moz-box-shadow:inset 0px 0px 0px 3px #00b7e8;
+  box-shadow:inset 0px 0px 0px 3px #00b7e8 !important;
 }
 
 select:placeholder-shown {
