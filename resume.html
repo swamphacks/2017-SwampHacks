@@ -8,13 +8,19 @@
 </head>
 <body>
 	<div class="container">
-		<img src="img/logo.png" class="logo" />
-		<img src="http://placehold.it/350x150" alt="" />
+		<section id="image-header">
+			<a href="index.html">
+				<img class="back" src="img/back-arrow.png" class="logo" />
+				<img src="img/logo.png" class="logo" />
+			</a>
+			<img class="progress-circles" src="img/progress-2.png" alt="" />
+		</section>
 
 		<section id="thankyou-header">
 			<h3>Hey, you lovely human, you!  Thanks for applying to SwampHacks.</h2>
 			<p>Go ahead and review the information we got from MyMLH, then add some additional info (like your resumé, Github/Linkedin urls, etc.) and then you're all set!</p>
 		</section>
+
 		<section id="form">
 			<div class="row">
 				<label for="firstname">First Name <span class="asterisk">*</span></label>
@@ -96,11 +102,11 @@
 			</div>
 			<div class="row">
 				<label for="linkedin">Linked URL</label>
-				<input type="text" class="form-control" placeholder="Linkedin" aria-describedby="basic-addon1" required="required" id="linkedin">
+				<input type="text" class="form-control" placeholder="https://www.linkedin.com/in/..." aria-describedby="basic-addon1" required="required" id="linkedin">
 			</div>
 			<div class="row">
 				<label for="github">Github URL</label>
-				<input type="text" class="form-control" placeholder="Github" aria-describedby="basic-addon1" required="required" id="github">
+				<input type="text" class="form-control" placeholder="https://github.com/..." aria-describedby="basic-addon1" required="required" id="github">
 			</div>
 			<!--<div class="input-group">
 			<input type="email" class="form-control" placeholder="email" id="email">

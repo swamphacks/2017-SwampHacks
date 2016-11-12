@@ -40,8 +40,29 @@ html, body
     background: -webkit-linear-gradient(#5BDBED, #8FE1E6); /* For Safari 5.1 to 6.0 */
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+#image-header {
+  width: 630px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+#image-header .back {
+  width: 22px;
+  margin-right: 20px;
+}
+
+#image-header .progress-circles {
+  width: 200px;
+  margin-left: 200px;
+}
+
 #thankyou-header {
-  padding: 0 255px;
+  width: 630px;
+  margin: auto;
   margin-bottom: 40px;
 }
 
@@ -61,8 +82,9 @@ p {
 }
 
 #form {
-  padding: 0 255px;
-  padding-right: 290px;
+  width: 630px;
+  margin: auto;
+  padding-right: 30px;
 }
 
 label, input
@@ -76,37 +98,6 @@ label
     font-size: 22px;
     margin-bottom: 10px;
 }
-/*
-#grad
-{
-    display: block;
-    clear: both;
-    border-radius: 10px;
-    width: 30%;
-    margin-top: 1em;
-}
-
-#shirt
-{
-    display: block;
-    clear: both;
-    border-radius: 10px;
-    width: 30%;
-    margin-top: 1em;
-}
-
-#study
-{
-    display: block;
-    clear: both;
-    border-radius: 10px;
-    width: 30%;
-    margin-top: 1em;
-}*/
-
-/*#grad {
-  color: black !important;
-}*/
 
 .asterisk
 {
