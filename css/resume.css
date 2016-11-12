@@ -166,6 +166,90 @@ select {
   background-repeat: no-repeat;
 }
 
+select:valid {
+  color: black !important;
+  -webkit-box-shadow:inset 0px 0px 0px 10px white;
+  -moz-box-shadow:inset 0px 0px 0px 10px white;
+  box-shadow:inset 0px 0px 0px 2px white !important;
+}
+
+/*resume button*/
+#resume {
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+#resume + label span,
+#resume + label strong {
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+#resume + label span {
+    width: 60%;
+    min-height: 48px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+    color: #b8b8b8;
+    font-weight: normal;
+    background-color: white;
+    border-radius: 30px 0 0 30px;
+    padding-left: 20px;
+    padding-top: 12px;
+    -webkit-box-shadow:inset 0px 0px 0px 10px #4cace8;
+    -moz-box-shadow:inset 0px 0px 0px 10px #4cace8;
+    box-shadow:inset 0px 0px 0px 2px #4cace8;
+}
+
+.inputAdded {
+  -webkit-box-shadow:inset 0px 0px 0px 10px white;
+  -moz-box-shadow:inset 0px 0px 0px 10px white;
+  box-shadow:inset 0px 0px 0px 2px white !important;
+}
+
+.inputAddedText {
+  color: black !important;
+}
+
+#resume + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    /*background-color: white;*/
+    display: inline-block;
+    width: 100%;
+}
+
+#resume + label strong {
+    height: 48px;
+    color: white;
+    background-color: #53daee;
+    display: inline-block;
+    padding: 12px 20px;
+    margin-left: -10px;
+    border-radius: 0 30px 30px 0;
+    -webkit-box-shadow:inset 0px 0px 0px 10px #4cace8;
+    -moz-box-shadow:inset 0px 0px 0px 10px #4cace8;
+    box-shadow:inset 0px 0px 0px 2px #4cace8;
+}
+
+#resume:focus + label strong,
+#resume.has-focus + label strong,
+#resume + label:hover strong {
+    background-color: #2acde8;
+}
+
+#resume + label {
+	cursor: pointer; /* "hand" cursor */
+}
+
 #submit
 {
     margin: 0 auto;
@@ -207,13 +291,6 @@ input[type="email"], textarea
     border: none;
     color: black;
     font-weight: bolder;
-}
-
-select:valid {
-  color: black !important;
-  -webkit-box-shadow:inset 0px 0px 0px 10px white;
-  -moz-box-shadow:inset 0px 0px 0px 10px white;
-  box-shadow:inset 0px 0px 0px 2px white !important;
 }
 
 

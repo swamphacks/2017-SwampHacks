@@ -89,7 +89,10 @@
 			</div>
 			<div class="row">
 				<label for="reusme" id="resume-button"> Upload your resume <span class="asterisk">*</span></label>
-				<input type="file" id="resume">
+				<input type="file" id="resume" class="inputfile">
+				<label for="resume" class="browse">
+				<span>No file chosen</span> <strong> Choose a file...</strong></label>
+
 			</div>
 			<div class="row">
 				<label for="linkedin">Linked URL</label>
@@ -124,6 +127,35 @@
   		messagingSenderId: "949283718048"
   	};
   	firebase.initializeApp(config);
+
+		//resume input text filler
+		var inputs = document.querySelectorAll( '.inputfile' );
+		Array.prototype.forEach.call( inputs, function( input )
+		{
+			var label	 = input.nextElementSibling,
+				labelVal = label.innerHTML;
+
+			input.addEventListener( 'change', function( e )
+			{
+				var fileName = '';
+				if( this.files && this.files.length > 1 )
+					fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+				else
+					fileName = e.target.value.split( '\\' ).pop();
+
+				if( fileName ) {
+					label.querySelector( 'span' ).innerHTML = fileName;
+					var resumeSpan = label.querySelector("span");
+					var resumeStrong = label.querySelector("strong");
+					resumeSpan.classList.add("inputAdded");
+					resumeSpan.classList.add("inputAddedText");
+					resumeStrong.classList.add("inputAdded");
+				}
+
+				else
+					label.innerHTML = labelVal;
+	});
+});
 </script>
 
 </body>
