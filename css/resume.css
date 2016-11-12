@@ -41,8 +41,26 @@ html, body
     background: -webkit-linear-gradient(#5BDBED, #8FE1E6); /* For Safari 5.1 to 6.0 */
 }
 
+a, a:hover, a:active, a:focus, .btn:focus, .btn:active {
+  text-decoration: none;
+  -webkit-box-shadow:inset 0px 0px 0px 0px #00b7e8;
+  -moz-box-shadow:inset 0px 0px 0px 0px #00b7e8;
+  box-shadow:inset 0px 0px 0px 0px #00b7e8 !important;
+  outline: none;
+}
 a:hover {
   text-decoration: none;
+}
+
+a {
+  color: white;
+  font-weight: bolder;
+  border-bottom: 2px solid white;
+}
+
+a:hover {
+  color: #2acde8;
+  border-bottom: 2px solid #bdeaef;
 }
 
 /*MARK: IMAGE HEADER*/
@@ -60,6 +78,10 @@ a:hover {
   #image-header .progress-circles {
     width: 200px;
     margin-left: 200px;
+  }
+
+  #image-header a {
+    border: none;
   }
 /*END OF IMAGE HEADER*/
 
@@ -252,7 +274,7 @@ label
       margin-bottom: 10%;
   }
 
-  #submit-info
+  .btn
   {
       width: 160px;
       border-radius: 30px;
@@ -270,13 +292,14 @@ label
       box-shadow:inset 0px 0px 0px 3px white;
   }
 
-  #submit-info:hover {
+  /*#submit-info:hover {
     background-color: #2acde8;
     color: #bdeaef;
     -webkit-box-shadow:inset 0px 0px 0px 3px white;
     -moz-box-shadow:inset 0px 0px 0px 3px white;
-    box-shadow:inset 0px 0px 0px 0px white;
-  }
+    box-shadow:inset 0px 0px 0px 0px white;*/
+  /*}*/
+
 /*END OF FILE UPLOAD-TYPE FORM*/
 
 input[type="text"], textarea
