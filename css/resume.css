@@ -45,19 +45,31 @@ label, input
     display: block;
 }
 
-h2, h3
-{
-    text-align: center;
-    color: #fff !important;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
-}
-
 label
 {
     color: #fff;
 }
+
+#thankyou-header {
+  padding: 0 255px;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  line-height: 130%;
+  margin: 40px 0 10px;
+  color: white;
+}
+
+p {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 0px;
+}
+
 
 #grad
 {
