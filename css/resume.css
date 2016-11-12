@@ -32,6 +32,7 @@
 
 html, body
 {
+    overflow-x: hidden;
     max-width: 100%;
     max-height: 100%;
     margin: 0;
@@ -330,4 +331,52 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
+}
+
+@media screen and (max-width:770px){
+  .container {
+    padding: 0 40px;
+  }
+
+  #image-header {
+    margin-top: 40px;
+  }
+
+  #image-header .back {
+    width: 16px;
+    margin-right: 10px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  #image-header .progress-circles {
+    display: none;
+  }
+
+  #thankyou-header {
+    width: 100%;
+  }
+
+  #form {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  h3 {
+    margin-top: 20px;
+  }
+
+  #resume + label span {
+    width: 100%;
+    border-radius: 30px 30px 0px 0;
+  }
+
+  #resume + label strong {
+    border-radius: 0 0px 30px 30px;
+    width: 100%;
+    margin: auto;
+    margin-top: -3px;
+  }
 }
