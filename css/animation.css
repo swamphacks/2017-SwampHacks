@@ -17,14 +17,10 @@ overflow: hidden;
 height: 100%;
 width: 110%;
 left: -5%;
-top: 10%;
+top: 0%;
 }
 
 .scene {
-  padding: 0;
-  margin: 0;
-  position: relative;
-  overflow: hidden;
 }
 .scene, .layer {
 display: block;
@@ -41,7 +37,7 @@ height: 100%;
   top: 0;
   left: -5%;
   right: -5%;
-  bottom: -10%;
+  bottom: 15%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -53,10 +49,46 @@ height: 100%;
   top: 0;
   left: -5%;
   right: -5%;
-  bottom: -10%;
+  bottom: 15%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom center;
+}
+
+.tree {
+  background-image: url(../img/animation/tree.png);
+  position: absolute;
+  top: -45%;
+  left: 20%;
+  right: 0%;
+  bottom: 40%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.stump {
+  background-image: url(../img/animation/stumpy.png);
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  right: 10%;
+  bottom: 73%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.reeds {
+  background-image: url(../img/animation/reedy.png);
+  position: absolute;
+  top: 0%;
+  left: 3%;
+  right: 70%;
+  bottom: 60%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center left;
 }
 
 #fishy
