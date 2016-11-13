@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    //$("#scene").parallax();
+    $("#scene").parallax();
     //change the  background based on the time of day
     var date = new Date();
     var hrs = date.getHours();
