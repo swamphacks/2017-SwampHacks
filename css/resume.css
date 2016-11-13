@@ -71,6 +71,11 @@ a:hover {
     margin-right: 20px;
   }
 
+  #image-header a:hover {
+    opacity: 0.6;
+  }
+
+
   #image-header .progress-circles {
     width: 200px;
     margin-left: 200px;

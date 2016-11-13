@@ -73,6 +73,11 @@ a:hover {
     color: #6d6c6c;
 }
 
+p a:hover {
+  opacity: 0.6;
+  border-bottom: 2px solid currentColor;
+}
+
 img.logo {
   display: none;
 }
@@ -165,6 +170,10 @@ h4.date {
 
 .nav-left li a {
    color: #fff !important;
+ }
+
+ .nav-left a:hover, #mlh-link a:hover {
+   opacity: 0.6;
  }
 
 .nav.navbar-nav li a:hover, a:focus, a:active
@@ -615,6 +624,11 @@ button {
   color: white;
 }
 
+#footer .links a:hover h4 {
+  opacity: 0.6;
+  text-decoration: underline;
+}
+
 .heart-container {
   text-align: center;
   margin-top: 20px;
@@ -630,6 +644,15 @@ button {
   margin: 0 3px;
   animation: pound 0.5s infinite alternate;
   -webkit-animation: pound 0.5s infinite alternate;
+  transition: font-size 0.5s ease-in-out;
+}
+
+.heart a:hover {
+  color: currentColor;
+}
+
+.heart a:hover .fa{
+  font-size: 20px;
 }
 
 @-webkit-keyframes pound {
