@@ -803,6 +803,16 @@ button {
   margin-top: -100px;
 }
 
+#sponsors .sponsors-table img {
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+#sponsors .sponsors-table a:hover img {
+  /*padding-bottom: 20px;*/
+  transform: translateY(-5px);
+}
+
 .homepage-logo {
     max-height: 55%;
     max-width: 55%;
