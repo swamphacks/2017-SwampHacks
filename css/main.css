@@ -130,18 +130,33 @@ h4.date {
 }
 
 .navbar {
-    background-color: #4EC1E7;
+    background-color: #49ace7;
     border-color: none;
     border: none;
     margin-left: 0;
-    font-size: 14px;
-    opacity: .85;
-    transition: top 0.3s ease-in-out, font-size 0.3s ease-in-out, background-color 0.3s ease-in-out, margin-left 0.3s ease-in-out;
+    font-size: 20px;
+    font-weight: bolder;
+    -webkit-box-shadow: 0px 4px 0px 0px rgba(73,172,231,0.28);
+    -moz-box-shadow: 0px 4px 0px 0px rgba(73,172,231,0.28);
+    box-shadow: 0px 4px 0px 0px rgba(10,135,198,0.2);
+    transition: top 0.4s ease-in-out,
+                font-size 0.4s ease-in-out,
+                background-color 0.4s ease-in-out,
+                box-shadow 0.4s ease-in-out,
+                margin-left 0.4s ease-in-out;
+}
 
+.navbar-right {
+  margin-right: -310px;
+  transition: margin-right 0.4s ease-in-out;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
+}
+
+.nav.navbar-nav li {
+  margin: 10px 10px;
 }
 
 .nav.navbar-nav li a {
@@ -153,15 +168,51 @@ h4.date {
 }
 
 .nav-up {
-  top: -52px;
+  top: -74px;
 }
 
 .nav-top {
   background-color: transparent;
   font-size: 20px;
-  margin-left: -70px;
-  /*transition: color 0.2s ease-in-out;*/
+  margin-left: -110px;
+  box-shadow: none;
 }
+
+.nav-top .navbar-right{
+  margin-right: -50px;
+}
+
+.nav-apply {
+  pointer-events: all;
+  opacity: 1;
+  color: black !important;
+  background-color: white;
+  border-radius: 30px;
+  margin-top: 14px !important;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.nav-apply a {
+  color: #49ace7 !important;
+  font-size: 18px !important;
+  padding: 10px 20px !important;
+}
+
+.nav-top .nav-apply {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.navbar-header {
+  height: 100%;
+}
+
+.navbar-brand img{
+  margin-top: 4px;
+  margin-left: 14px;
+  width: 70px;
+}
+
 
 /**.container {
     position: relative;
