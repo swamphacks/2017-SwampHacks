@@ -21,6 +21,7 @@ $(document).ready(function () {
     $('h4.date').fadeIn(3000).removeClass('.date');
 });
 
+
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -41,19 +42,67 @@ $(function(){
   $("body").removeClass("preload");
   // Show/hide the menu bar based on scrolling position
   var vh = $(window).height() - 200;
-  $(".navbar").hide();
+  // $(".navbar").hide();
   $(function () {
     $(window).scroll(function () {
       if ($(this).scrollTop() > vh) {
-        $('.navbar').fadeIn();
+        // $('.navbar').fadeIn();
+        $('nav').removeClass('nav-top');
       } else {
-        $('.navbar').fadeOut();
+        // $('.navbar').fadeOut();
+        $('nav').addClass('nav-top');
       }
     });
   });
 });
 
+jQuery('.navbar-toggle').click(function() {
+    console.log("ASDASDASDASD");
+    if($('.navbar-toggle').attr('aria-expanded') === "false"){
+      $('.navbar-header').addClass('nav-top-collapse');
+    } else {
+      $('.navbar-header').removeClass('nav-top-collapse');
+    }
+});
 
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('nav').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+
+    var st = $(this).scrollTop();
+
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight && $('.navbar-toggle').attr('aria-expanded') === "false"){
+        // Scroll Down
+        $('nav').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('nav').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+
+    lastScrollTop = st;
+}
 
 //typeit
 /**$('#typed').typeIt({

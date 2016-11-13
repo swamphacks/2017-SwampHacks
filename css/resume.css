@@ -1,9 +1,117 @@
+/** import tha fonts **/
+@font-face {
+    font-family: 'Pier Sans';
+    src: url("../fonts/pier-regular.otf");
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../fonts/Metropolis-Medium.otf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../fonts/Metropolis-Bold.otf");
+    font-weight: bolder;
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../fonts/Metropolis-Light.otf");
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../fonts/Metropolis-Regular.otf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: url("../fonts/Metropolis-ExtraBold.otf");
+    font-weight: 500;
+}
+/*END of fonts*/
+
 html, body
 {
+    overflow-x: hidden;
     max-width: 100%;
     max-height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Metropolis';
+    background: -webkit-linear-gradient(#5BDBED, #8FE1E6); /* For Safari 5.1 to 6.0 */
+}
+
+a, a:hover, a:active, a:focus, .btn:focus, .btn:active {
+  text-decoration: none;
+  -webkit-box-shadow:inset 0px 0px 0px 0px #00b7e8;
+  -moz-box-shadow:inset 0px 0px 0px 0px #00b7e8;
+  box-shadow:inset 0px 0px 0px 0px #00b7e8 !important;
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  color: white;
+  font-weight: bolder;
+  border-bottom: 2px solid white;
+}
+
+a:hover {
+  color: #2acde8;
+  border-bottom: 2px solid #bdeaef;
+}
+
+/*MARK: IMAGE HEADER*/
+  #image-header {
+    width: 630px;
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  #image-header .back {
+    width: 22px;
+    margin-right: 20px;
+  }
+
+  #image-header .progress-circles {
+    width: 200px;
+    margin-left: 200px;
+  }
+
+  #image-header a {
+    border: none;
+  }
+/*END OF IMAGE HEADER*/
+
+/*MARK: THANK YOU HEADER*/
+  #thankyou-header {
+    width: 630px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  h3 {
+    font-size: 36px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    line-height: 130%;
+    margin: 40px 0 10px;
+    color: white;
+  }
+
+  p {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0px;
+  }
+/*END OF THANK YOU*/
+
+#form {
+  width: 630px;
+  margin: auto;
+  padding-right: 30px;
 }
 
 label, input
@@ -11,24 +119,287 @@ label, input
     display: block;
 }
 
+label
+{
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.asterisk
+{
+    color: red;
+}
+
 .row
 {
 	margin-bottom: 3em;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-#email
+.form-control
 {
-    margin-bottom: 1em;
+    border-radius: 30px !important;
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+    padding: 24px 20px;
 }
 
-#password
+/*MARK: SELECTION-TYPE FORM*/
+  select
+  {
+      display: block;
+      height: 48px;
+      outline: none;
+      border: none;
+      color: #b8b8b8 !important;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      font-size: 16px;
+      padding-left: 20px;
+      padding-top: auto;
+      width: 85%;
+      border-radius: 30px;
+      background-color: white;
+      -webkit-box-shadow:inset 0px 0px 0px 3px #00b7e8;
+      -moz-box-shadow:inset 0px 0px 0px 3px #00b7e8;
+      box-shadow:inset 0px 0px 0px 3px #00b7e8 !important;
+  }
+
+  select {
+    background-image:
+      linear-gradient(45deg, transparent 50%, #b8b8b8 50%),
+      linear-gradient(134deg, #b8b8b8 50%, transparent 50%);
+    background-position:
+      calc(100% - 28px) calc(1em + 6px),
+      calc(100% - 20px) calc(1em + 6px);
+    background-size:
+      8px 9px,
+      8px 9px;
+    background-repeat: no-repeat;
+  }
+
+  select:valid {
+    color: black !important;
+    -webkit-box-shadow:inset 0px 0px 0px 3px white;
+    -moz-box-shadow:inset 0px 0px 0px 3px white;
+    box-shadow:inset 0px 0px 0px 3px white !important;
+  }
+/*END OF SELECTION-TYPE FORM*/
+
+/*FILE UPLOAD-TYPE FORM*/
+  #resume {
+    width: 0.1px;
+  	height: 0.1px;
+  	opacity: 0;
+  	overflow: hidden;
+  	position: absolute;
+  	z-index: -1;
+  }
+
+  #resume + label span,
+  #resume + label strong {
+      padding: 0.625rem 1.25rem;
+  }
+
+  #resume + label span {
+      width: 60%;
+      min-height: 48px;
+      font-size: 16px;
+      display: inline-block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      vertical-align: top;
+      color: #b8b8b8;
+      font-weight: normal;
+      background-color: white;
+      border-radius: 30px 0 0 30px;
+      padding-left: 20px;
+      padding-top: 13px;
+      -webkit-box-shadow:inset 0px 0px 0px 3px #00b7e8;
+      -moz-box-shadow:inset 0px 0px 0px 3px #00b7e8;
+      box-shadow:inset 0px 0px 0px 3px #00b7e8;
+  }
+
+  .inputAdded {
+    -webkit-box-shadow:inset 0px 0px 0px 3px white;
+    -moz-box-shadow:inset 0px 0px 0px 3px white;
+    box-shadow:inset 0px 0px 0px 3px white !important;
+  }
+
+  .inputAddedText {
+    color: black !important;
+  }
+
+  #resume + label {
+      font-size: 1.25em;
+      font-weight: 700;
+      color: white;
+      /*background-color: white;*/
+      display: inline-block;
+      width: 100%;
+  }
+
+  #resume + label strong {
+      height: 48px;
+      color: white;
+      background-color: #53daee;
+      display: inline-block;
+      padding: 12px 20px;
+      margin-left: -10px;
+      border-radius: 0 30px 30px 0;
+      -webkit-box-shadow:inset 0px 0px 0px 3px #00b7e8;
+      -moz-box-shadow:inset 0px 0px 0px 3px #00b7e8;
+      box-shadow:inset 0px 0px 0px 3px #00b7e8;
+  }
+
+  #resume:focus + label strong,
+  #resume.has-focus + label strong,
+  #resume + label:hover strong {
+      background-color: #2acde8;
+  }
+
+  #resume + label {
+  	cursor: pointer; /* "hand" cursor */
+  }
+
+  #submit
+  {
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 10%;
+  }
+
+  .btn
+  {
+      width: 160px;
+      border-radius: 30px;
+      background-color: #53daee;
+      outline: none;
+      font-size: 20px;
+      font-weight: bolder;
+      letter-spacing: 1px;
+      color: white;
+      padding: 12px 0;
+      height: 48px;
+      border-width: 0;
+      -webkit-box-shadow:inset 0px 0px 0px 3px white;
+      -moz-box-shadow:inset 0px 0px 0px 3px white;
+      box-shadow:inset 0px 0px 0px 3px white;
+  }
+
+  /*#submit-info:hover {
+    background-color: #2acde8;
+    color: #bdeaef;
+    -webkit-box-shadow:inset 0px 0px 0px 3px white;
+    -moz-box-shadow:inset 0px 0px 0px 3px white;
+    box-shadow:inset 0px 0px 0px 0px white;*/
+  /*}*/
+
+/*END OF FILE UPLOAD-TYPE FORM*/
+
+input[type="text"], textarea
 {
-    margin-bottom: 1em;
+    outline: none;
+    box-shadow:none !important;
+    border:0px solid #ccc !important;
+    color: black;
+    font-weight: bolder;
 }
 
-#submit-info
+input[type="date"], textarea
 {
-	margin-left: 3%;
-	position: relative;
+    outline: none;
+    box-shadow:none !important;
+    border:0px solid #ccc !important;
+    color: black;
+    font-weight: bolder;
 }
 
+input[type="email"], textarea
+{
+    outline: none;
+    box-shadow:none !important;
+    border: none;
+    color: black;
+    font-weight: bolder;
+}
+
+
+
+/*placeholder text*/
+input::-webkit-input-placeholder {
+  font-weight: lighter;
+  opacity: 0.7;
+}
+
+/*Indicate not filled in*/
+input:placeholder-shown {
+  -webkit-box-shadow:inset 0px 0px 0px 3px #00b7e8;
+  -moz-box-shadow:inset 0px 0px 0px 3px #00b7e8;
+  box-shadow:inset 0px 0px 0px 3px #00b7e8 !important;
+}
+
+select option[data-default] {
+  color: #888;
+}
+
+/*Removing chromes autcomplete*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+@media screen and (max-width:770px){
+  .container {
+    padding: 0 40px;
+  }
+
+  #image-header {
+    margin-top: 40px;
+  }
+
+  #image-header .back {
+    width: 16px;
+    margin-right: 10px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  #image-header .progress-circles {
+    display: none;
+  }
+
+  #thankyou-header {
+    width: 100%;
+  }
+
+  #form {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  h3 {
+    margin-top: 20px;
+  }
+
+  #resume + label span {
+    width: 100%;
+    border-radius: 30px 30px 0px 0;
+  }
+
+  #resume + label strong {
+    border-radius: 0 0px 30px 30px;
+    width: 100%;
+    margin: auto;
+    margin-top: -3px;
+  }
+}
