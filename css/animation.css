@@ -24,8 +24,46 @@ li
 	display: block;
 	padding: 0;
 	margin: 0;
+	margin-top: 140px;
 	width: 100%;
 	height: 100%;
+}
+
+.swamphacks {
+	background-image: url(../img/logo.svg);
+	position: absolute;
+	top: 1%;
+	left: -5%;
+	right: -5%;
+	bottom: 85%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+
+.swamphacks-word {
+	background-image: url(../img/wordmark.svg);
+	position: absolute;
+	top: -3%;
+	left: -5%;
+	right: -5%;
+	bottom: 92%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+
+.swamphacks-text {
+	margin-top: 80px;
+}
+
+.swamphacks-text h4 {
+	font-weight: normal;
+	font-size: 24px;
+}
+
+.swamphacks-apply {
+	margin-top: 140px;
 }
 
 .wave1
