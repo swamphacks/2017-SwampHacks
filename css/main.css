@@ -511,6 +511,7 @@ h4.date {
 
 #footer .container {
   padding: 20px 20px;
+  padding-bottom: 30px;
 }
 
 #footer .social-media {
@@ -525,17 +526,17 @@ h4.date {
   margin-bottom: -16%;
 }
 
-.social-row {
+#footer .social-row {
   padding: 0 40px;
   position: relative;
-  top: 90px;
+  top: 60px;
   transform: translateY(-50%);
 }
 
-.links {
+#footer .links {
   text-align: right;
   position: relative;
-  top: 90px;
+  top: 60px;
   transform: translateY(-50%);
   padding-right: 50px;
 }
@@ -549,6 +550,7 @@ h4.date {
 .heart-container {
   text-align: center;
   margin-top: 20px;
+  color: white;
 }
 
 .heart i {
@@ -707,6 +709,12 @@ h4.date {
 
 #typed {
     text-align: center;
+}
+
+#footer .footer-logo {
+  display: block;
+  width: 200px;
+  margin: auto;
 }
 
 @media screen and (max-width:770px){
