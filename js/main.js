@@ -82,7 +82,7 @@ function hasScrolled() {
 
     // If they scrolled down and are past the navbar, add class .nav-up.
     // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
+    if (st > lastScrollTop && st > navbarHeight && $('.navbar-toggle').attr('aria-expanded') === "false"){
         // Scroll Down
         $('nav').removeClass('nav-down').addClass('nav-up');
     } else {

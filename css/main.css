@@ -718,6 +718,55 @@ h4.date {
     width: 100%;
   }
 
+  .navbar {
+    overflow-y: hidden;
+  }
+
+  .nav-top {
+    /*background-color: #49ace7;*/
+    background-color: transparent;
+    margin-left: 0px;
+  }
+
+  .nav-top #navbar {
+    background-color: #49ace7 !important;
+  }
+
+  .nav-up {
+    top: -52px;
+  }
+
+  .nav-apply, .nav-top .nav-apply {
+    margin-left: 20px !important;
+    opacity: 1;
+    pointer-events: all;
+    width: 110px;
+  }
+
+  .navbar-default .navbar-toggle,
+  .navbar-default .navbar-toggle:hover {
+    border-width: 0px;
+    background-color: transparent;
+  }
+
+  .navbar-collapse {
+    border-top: 0px;
+  }
+
+  .navbar-brand img {
+    margin-top: -6px;
+    margin-left: 0px;
+    transition: margin-left 0.4s ease-in-out;
+  }
+
+  .nav-top .navbar-brand img {
+    margin-left: -90px;
+  }
+
+  .nav-top .navbar-right, .navbar-right {
+    margin-right: 0px;
+  }
+
   h3 {
     font-size: 24px;
   }
