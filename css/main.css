@@ -502,6 +502,11 @@ h4.date {
   padding-bottom: 0;
 }
 
+.blue-teal {
+  margin-top: -1px;
+  margin-bottom: -16%;
+}
+
 #footer {
   background-color: #77e0ed;
   background: -webkit-linear-gradient(left top, yellow, purple);
@@ -519,11 +524,7 @@ h4.date {
   width: 60px;
   height: 60px;
   border-radius: 50px;
-}
-
-.blue-teal {
-  margin-top: -1px;
-  margin-bottom: -16%;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 #footer .social-row {
@@ -531,6 +532,29 @@ h4.date {
   position: relative;
   top: 60px;
   transform: translateY(-50%);
+}
+
+#footer .social-row .fa {
+  display: block;
+  text-align: center;
+  padding-top: 13px;
+  font-size: 34px;
+  color: #5ddbed;
+}
+
+#footer .social-row .fa-envelope {
+  font-size: 30px;
+}
+
+#footer a:hover .social-media {
+  background-color: #5ddbed;
+  -webkit-box-shadow:inset 0px 0px 0px 3px white;
+  -moz-box-shadow:inset 0px 0px 0px 3px white;
+  box-shadow:inset 0px 0px 0px 3px white !important;
+}
+
+#footer a:hover .fa {
+  color: white;
 }
 
 #footer .links {
