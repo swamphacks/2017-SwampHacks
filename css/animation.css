@@ -167,6 +167,18 @@ li
   animation: sway 2s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
+.swing-1 {
+  -webkit-animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.swing-2 {
+  -webkit-animation: swing 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-animation: swing 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation: swing 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
 .wavy {
   -webkit-animation: wave 8s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
   -moz-animation: wave 8s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
