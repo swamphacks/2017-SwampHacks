@@ -131,8 +131,13 @@ h4.date {
 
 .navbar {
     background-color: #4EC1E7;
-    border-color: #fff;
+    border-color: none;
+    border: none;
+    margin-left: 0;
+    font-size: 14px;
     opacity: .85;
+    transition: top 0.3s ease-in-out, font-size 0.3s ease-in-out, background-color 0.3s ease-in-out, margin-left 0.3s ease-in-out;
+
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -145,6 +150,17 @@ h4.date {
 
 .nav.navbar-nav li a:hover {
  color: #24b06f;
+}
+
+.nav-up {
+  top: -52px;
+}
+
+.nav-top {
+  background-color: transparent;
+  font-size: 20px;
+  margin-left: -70px;
+  /*transition: color 0.2s ease-in-out;*/
 }
 
 /**.container {
