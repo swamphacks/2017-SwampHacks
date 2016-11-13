@@ -763,31 +763,44 @@ button {
   padding: 0 140px;
 }
 
+#sponsors h4 {
+  font-size: 26px;
+  font-weight: bold;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
 #sponsors .row {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+}
+
+#sponsors .same-level-row {
+  margin-bottom: 50px;
 }
 
 #sponsors .gator img {
-  width: 600px;
+  max-width: 600px;
 }
 
 #sponsors .heron img {
   margin: 0 30px;
-  width: 380px;
+  width: 420px;
 }
 
 #sponsors .turtle img {
   margin: 0 20px;
-  width: 260px;
+  max-width: 260px;
+  max-height: 120px;
 }
 
 #sponsors .lily-pad img {
   margin: 0 16px;
-  width: 180px;
+  max-width: 180px;
+  max-height: 60px;
 }
 
 #sponsors .interest {
-  margin-top: -140px;
+  margin-top: -100px;
 }
 
 .homepage-logo {
@@ -974,6 +987,14 @@ button {
     padding: 0 30px;
   }
 
+  #sponsors .same-level-row {
+    margin-bottom: 0px;
+  }
+
+  #sponsors h4 {
+    font-size: 18px;
+  }
+
   #sponsors .row {
     margin-bottom: 30px;
   }
@@ -989,6 +1010,7 @@ button {
 
   #sponsors .turtle img {
     max-width: 180px;
+    max-height: 80px;
     margin: 5px 30px;
   }
 
