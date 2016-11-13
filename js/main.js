@@ -56,6 +56,15 @@ $(function(){
   });
 });
 
+jQuery('.navbar-toggle').click(function() {
+    console.log("ASDASDASDASD");
+    if($('.navbar-toggle').attr('aria-expanded') === "false"){
+      $('.navbar-header').addClass('nav-top-collapse');
+    } else {
+      $('.navbar-header').removeClass('nav-top-collapse');
+    }
+});
+
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;

@@ -753,6 +753,14 @@ h4.date {
     border-top: 0px;
   }
 
+  .navbar-header {
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .nav-top-collapse {
+    background-color: #49ace7 !important;
+  }
+
   .navbar-brand img {
     margin-top: -6px;
     margin-left: 0px;
