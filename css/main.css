@@ -130,21 +130,106 @@ h4.date {
 }
 
 .navbar {
-    background-color: #4EC1E7;
-    border-color: #fff;
-    opacity: .85;
+    background-color: #49ace7;
+    border-color: none;
+    border: none;
+    margin-left: 0;
+    font-size: 20px;
+    font-weight: bolder;
+    -webkit-box-shadow: 0px 4px 0px 0px rgba(73,172,231,0.28);
+    -moz-box-shadow: 0px 4px 0px 0px rgba(73,172,231,0.28);
+    box-shadow: 0px 4px 0px 0px rgba(10,135,198,0.2);
+    transition: top 0.4s ease-in-out,
+                font-size 0.4s ease-in-out,
+                background-color 0.4s ease-in-out,
+                box-shadow 0.4s ease-in-out,
+                margin-left 0.4s ease-in-out;
+}
+
+.navbar-right {
+  margin-right: -310px;
+  transition: margin-right 0.4s ease-in-out;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
 }
 
-.nav.navbar-nav li a {
-   color: #fff;
+.nav.navbar-nav li {
+  margin: 10px 10px;
+}
+
+.nav-left li a {
+   color: #fff !important;
  }
 
-.nav.navbar-nav li a:hover {
- color: #24b06f;
+.nav.navbar-nav li a:hover, a:focus, a:active
+ {
+ color: white;
+}
+
+.nav-up {
+  top: -74px;
+}
+
+.nav-top {
+  background-color: transparent;
+  font-size: 20px;
+  margin-left: -110px;
+  box-shadow: none;
+}
+
+.nav-top .navbar-right{
+  margin-right: -60px;
+}
+
+.nav-apply {
+  pointer-events: all;
+  opacity: 1;
+  background-color: white;
+  border-radius: 30px;
+  margin-top: 14px !important;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.nav-apply a {
+  color: #49ace7 !important;
+  font-size: 18px !important;
+  padding: 10px 20px !important;
+}
+
+.nav-top .nav-apply {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.navbar-header {
+  height: 100%;
+}
+
+.navbar-brand img{
+  margin-top: 4px;
+  margin-left: 14px;
+  width: 70px;
+}
+
+#mlh-link {
+  font-size: 18px;
+}
+
+#mlh-link a {
+  color: white !important;
+}
+
+#mlh-link img {
+  margin-top: -4px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+#mlh-link .dell {
+  height: 20px;
+  margin-left: 4px;
 }
 
 /**.container {
@@ -631,6 +716,63 @@ h4.date {
 
   .text-box {
     width: 100%;
+  }
+
+  .navbar {
+    overflow-y: hidden;
+  }
+
+  .nav-top {
+    /*background-color: #49ace7;*/
+    background-color: transparent;
+    margin-left: 0px;
+  }
+
+  .nav-top #navbar {
+    background-color: #49ace7 !important;
+  }
+
+  .nav-up {
+    top: -52px;
+  }
+
+  .nav-apply, .nav-top .nav-apply {
+    margin-left: 20px !important;
+    opacity: 1;
+    pointer-events: all;
+    width: 110px;
+  }
+
+  .navbar-default .navbar-toggle,
+  .navbar-default .navbar-toggle:hover {
+    border-width: 0px;
+    background-color: transparent;
+  }
+
+  .navbar-collapse {
+    border-top: 0px;
+  }
+
+  .navbar-header {
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .nav-top-collapse {
+    background-color: #49ace7 !important;
+  }
+
+  .navbar-brand img {
+    margin-top: -6px;
+    margin-left: 0px;
+    transition: margin-left 0.4s ease-in-out;
+  }
+
+  .nav-top .navbar-brand img {
+    margin-left: -90px;
+  }
+
+  .nav-top .navbar-right, .navbar-right {
+    margin-right: 0px;
   }
 
   h3 {
