@@ -1,4 +1,4 @@
-x/** import tha fonts **/
+/** import tha fonts **/
 @font-face {
     font-family: 'Pier Sans';
     src: url("../fonts/pier-regular.otf");
@@ -105,6 +105,7 @@ h4.date {
 
 .text-paragraph {
   margin: 40px 0;
+  padding-bottom: 5%;
 }
 
 .text-box {
@@ -129,33 +130,117 @@ h4.date {
 }
 
 .navbar {
-    background-color: #4EC1E7;
-    border-color: #fff;
-    opacity: .85;
+    background-color: #49ace7;
+    border-color: none;
+    border: none;
+    margin-left: 0;
+    font-size: 20px;
+    font-weight: bolder;
+    -webkit-box-shadow: 0px 4px 0px 0px rgba(73,172,231,0.28);
+    -moz-box-shadow: 0px 4px 0px 0px rgba(73,172,231,0.28);
+    box-shadow: 0px 4px 0px 0px rgba(10,135,198,0.2);
+    transition: top 0.4s ease-in-out,
+                font-size 0.4s ease-in-out,
+                background-color 0.4s ease-in-out,
+                box-shadow 0.4s ease-in-out,
+                margin-left 0.4s ease-in-out;
+}
+
+.navbar-right {
+  margin-right: -310px;
+  transition: margin-right 0.4s ease-in-out;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
 }
 
-.nav.navbar-nav li a {
-   color: #fff;
- }
-
-.nav.navbar-nav li a:hover {
- color: #24b06f;
+.nav.navbar-nav li {
+  margin: 10px 10px;
 }
 
-.container {
+.nav-left li a {
+   color: #fff !important;
+ }
+
+.nav.navbar-nav li a:hover, a:focus, a:active
+ {
+ color: white;
+}
+
+.nav-up {
+  top: -74px;
+}
+
+.nav-top {
+  background-color: transparent;
+  font-size: 20px;
+  margin-left: -110px;
+  box-shadow: none;
+}
+
+.nav-top .navbar-right{
+  margin-right: -60px;
+}
+
+.nav-apply {
+  pointer-events: all;
+  opacity: 1;
+  background-color: white;
+  border-radius: 30px;
+  margin-top: 14px !important;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.nav-apply a {
+  color: #49ace7 !important;
+  font-size: 18px !important;
+  padding: 10px 20px !important;
+}
+
+.nav-top .nav-apply {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.navbar-header {
+  height: 100%;
+}
+
+.navbar-brand img{
+  margin-top: 4px;
+  margin-left: 14px;
+  width: 70px;
+}
+
+#mlh-link {
+  font-size: 18px;
+}
+
+#mlh-link a {
+  color: white !important;
+}
+
+#mlh-link img {
+  margin-top: -4px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+#mlh-link .dell {
+  height: 20px;
+  margin-left: 4px;
+}
+
+/**.container {
     position: relative;
     padding: 100px;
     padding-top: 20px;
-}
+}**/
 
 .day
 {
     background: -moz-linear-gradient(45.93% -26.17% -84.79deg, rgba(72, 216, 239, 1) 0%, rgba(211, 237, 225, 1) 100%);
-    background: -webkit-linear-gradient(-84.79deg, rgba(72, 216, 239, 1) 0%, rgba(211, 237, 225, 1) 100%);
     background: -webkit-gradient(linear, 45.93% -26.17%, 53.3% 111.67%, color-stop(0, rgba(72, 216, 239, 1)), color-stop(1, rgba(211, 237, 225, 1)));
     background: -o-linear-gradient(-84.79deg, rgba(72, 216, 239, 1) 0%, rgba(211, 237, 225, 1) 100%);
     background: -ms-linear-gradient(-84.79deg, rgba(72, 216, 239, 1) 0%, rgba(211, 237, 225, 1) 100%);
@@ -193,6 +278,18 @@ h4.date {
 
 .outer {
   margin-top: -140px;
+}
+.sunrise
+{
+    background : -moz-linear-gradient(42.11% -10.25% -78.69deg,rgba(251, 176, 64, 1) 0%,rgba(239, 65, 54, 1) 100%);
+    background : -webkit-linear-gradient(-78.69deg, rgba(251, 176, 64, 1) 0%, rgba(239, 65, 54, 1) 100%);
+    background : -webkit-gradient(linear,42.11% -10.25% ,65.13% 165.57% ,color-stop(0,rgba(251, 176, 64, 1) ),color-stop(1,rgba(239, 65, 54, 1) ));
+    background : -o-linear-gradient(-78.69deg, rgba(251, 176, 64, 1) 0%, rgba(239, 65, 54, 1) 100%);
+    background : -ms-linear-gradient(-78.69deg, rgba(251, 176, 64, 1) 0%, rgba(239, 65, 54, 1) 100%);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBB040', endColorstr='#EF4136' ,GradientType=0)";
+    background : linear-gradient(168.69deg, rgba(251, 176, 64, 1) 0%, rgba(239, 65, 54, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBB040',endColorstr='#EF4136' , GradientType=1);
+    background-repeat: no-repeat;
 }
 
 #audience .col-md-4 {
@@ -248,6 +345,7 @@ h4.date {
 }
 
 .name {
+    margin-top: 12%;
   color: white;
 }
 
@@ -276,6 +374,8 @@ h4.date {
   background-color: #6badf1;
   text-align: center;
   color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 #summary .text-box {
@@ -301,7 +401,6 @@ h4.date {
 #faqs .faq-table {
   padding: 0 200px;
   text-align: left;
-  margin-top: -40px;
 }
 
 #faqs .faq-block {
@@ -503,7 +602,7 @@ h4.date {
 #schedule .event-schedule-table {
   padding: 0 200px;
   text-align: left;
-  margin-top: -120px;
+  margin-top: -3%;
 }
 
 #schedule .col-x-6 {
@@ -619,6 +718,63 @@ h4.date {
     width: 100%;
   }
 
+  .navbar {
+    overflow-y: hidden;
+  }
+
+  .nav-top {
+    /*background-color: #49ace7;*/
+    background-color: transparent;
+    margin-left: 0px;
+  }
+
+  .nav-top #navbar {
+    background-color: #49ace7 !important;
+  }
+
+  .nav-up {
+    top: -52px;
+  }
+
+  .nav-apply, .nav-top .nav-apply {
+    margin-left: 20px !important;
+    opacity: 1;
+    pointer-events: all;
+    width: 110px;
+  }
+
+  .navbar-default .navbar-toggle,
+  .navbar-default .navbar-toggle:hover {
+    border-width: 0px;
+    background-color: transparent;
+  }
+
+  .navbar-collapse {
+    border-top: 0px;
+  }
+
+  .navbar-header {
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .nav-top-collapse {
+    background-color: #49ace7 !important;
+  }
+
+  .navbar-brand img {
+    margin-top: -6px;
+    margin-left: 0px;
+    transition: margin-left 0.4s ease-in-out;
+  }
+
+  .nav-top .navbar-brand img {
+    margin-left: -90px;
+  }
+
+  .nav-top .navbar-right, .navbar-right {
+    margin-right: 0px;
+  }
+
   h3 {
     font-size: 24px;
   }
@@ -629,8 +785,8 @@ h4.date {
 
   .blocks {
     padding: 0 30px;
-    margin-top: -20px;
-  }
+    margin-top: -50px;
+    }
 
   .outer {
     margin-top: 0px;
