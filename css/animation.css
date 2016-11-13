@@ -174,41 +174,71 @@ li
 }
 
 .slidein {
-  animation: slidein 2.5s infinite;
+  animation: slidein 3s infinite;
 }
 
-.rotate {
+.rotate-1 {
   -webkit-animation: myOrbit 2s linear infinite; /* Chrome, Safari 5 */
      -moz-animation: myOrbit 2s linear infinite; /* Firefox 5-15 */
        -o-animation: myOrbit 2s linear infinite; /* Opera 12+ */
-          animation: myOrbit 3s linear infinite;
+          animation: myOrbit 4s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
 }
 
-@-webkit-keyframes myOrbit {
-    from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
-    to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
-}
-
-@-moz-keyframes myOrbit {
-    from { -moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
-    to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
-}
-
-@-o-keyframes myOrbit {
-    from { -o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
-    to   { -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+.rotate-2 {
+  -webkit-animation: myOrbit2 2s linear infinite; /* Chrome, Safari 5 */
+     -moz-animation: myOrbit2 2s linear infinite; /* Firefox 5-15 */
+       -o-animation: myOrbit2 2s linear infinite; /* Opera 12+ */
+          animation: myOrbit2 4.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1s infinite;
 }
 
 @keyframes myOrbit {
-    from { transform: SkewZ(0deg) translateX(0px); }
-    to   { transform: SkewZ(180deg) translateX(0px); }
+    0%{
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			transform: rotate(0deg) translateX(0px);
+			transform-origin: bottom;
+		}
+    50%   {
+			transform: rotate(180deg) translateX(0px);
+			-moz-transform: rotate(180deg) translateX(150px) rotate(0deg);
+			transform: rotate(180deg) translateX(0px);
+			transform-origin: bottom;
+		}
+		100%   {
+			webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+			-moz-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+			transform: rotate(360deg) translateX(0px);
+			transform-origin: bottom;
+		}
+}
+
+@keyframes myOrbit2 {
+    0%{
+			-webkit-transform: rotate(360deg);
+			-moz-transform: rotate(360deg);
+			transform: rotate(360deg) translateX(0px);
+			transform-origin: bottom;
+		}
+    50%   {
+			transform: rotate(180deg) translateX(0px);
+			-moz-transform: rotate(180deg) translateX(150px) rotate(0deg);
+			transform: rotate(180deg) translateX(0px);
+			transform-origin: bottom;
+		}
+		100%   {
+			webkit-transform: rotate(0deg) translateX(150px) rotate(-360deg);
+			-moz-transform: rotate(0deg) translateX(150px) rotate(-360deg);
+			transform: rotate(0deg) translateX(0px);
+			transform-origin: bottom;
+
+		}
 }
 
 @keyframes slidein {
   from {
     margin-left: -30%;
     width: 300%;
-		margin-top: 20%;
+		margin-top: 15%;
   }
 
   to {
