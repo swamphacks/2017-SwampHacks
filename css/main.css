@@ -784,8 +784,9 @@ h4.date {
   }
 
   .blocks {
-    padding-top: 20%;
-  }
+    padding: 0 30px;
+    margin-top: -50px;
+    }
 
   .outer {
     margin-top: 0px;
