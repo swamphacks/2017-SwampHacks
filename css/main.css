@@ -160,11 +160,12 @@ h4.date {
 }
 
 .nav.navbar-nav li a {
-   color: #fff;
+   color: #fff !important;
  }
 
-.nav.navbar-nav li a:hover {
- color: #24b06f;
+.nav.navbar-nav li a:hover, a:focus, a:active
+ {
+ color: white;
 }
 
 .nav-up {
