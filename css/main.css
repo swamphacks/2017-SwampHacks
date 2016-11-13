@@ -155,6 +155,10 @@ h4.date {
     background-color: white;
 }
 
+.navbar-toggle {
+  margin-right: 30px;
+}
+
 .nav.navbar-nav li {
   margin: 10px 10px;
 }
@@ -196,6 +200,16 @@ h4.date {
   color: #49ace7 !important;
   font-size: 18px !important;
   padding: 10px 20px !important;
+  border-radius: 30px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.nav-apply a:hover{
+  background-color: #49ace7 !important;
+  color: white !important;
+  -webkit-box-shadow:inset 0px 0px 0px 3px white;
+  -moz-box-shadow:inset 0px 0px 0px 3px white;
+  box-shadow:inset 0px 0px 0px 3px white !important;
 }
 
 .nav-top .nav-apply {
@@ -433,11 +447,6 @@ h4.date {
     background: linear-gradient(to bottom right, green, blue); /* Standard syntax */
 }
 
-#action {
-  text-align: center;
-  color: #73aeee;
-}
-
 #title button {
   font-size: 20px;
   width: 180px;
@@ -468,29 +477,64 @@ h4.date {
   margin-bottom: 100px;
   text-align: center;
 }
-#action button {
-    font-size: 20px;
-    width: 180px;
-    padding: 10px 0;
-    font-weight: bold;
-    background-color: #73aeee;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    outline: none;
+
+#action {
+  text-align: center;
+  color: #73aeee;
 }
 
-#action button:active {
-    font-size: 20px;
-    width: 180px;
-    padding: 10px 0;
-    font-weight: bold;
-    background-color: white;
-    color: #73aeee;
-    border: none;
-    border-radius: 50px;
-    outline: none;
+button {
+  font-size: 20px;
+  padding: 10px 0;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  transition: box-shadow 0.2s ease-in-out;
 }
+
+#title button {
+  width: 180px;
+  background-color: #fff;
+  color: #73aeee;
+}
+
+#title button:hover {
+  color: white;
+  background-color: #73aeee;
+  -webkit-box-shadow:inset 0px 0px 0px 3px white;
+  -moz-box-shadow:inset 0px 0px 0px 3px white;
+  box-shadow:inset 0px 0px 0px 3px white !important;
+}
+
+#action button {
+    width: 180px;
+    background-color: #73aeee;
+    color: white;
+}
+
+#action .internal-pos {
+  color: #5ddbed;
+}
+
+#action .internal-pos button {
+  background-color: #5ddbed;
+}
+
+#action button:hover {
+  color: currentColor;
+  background-color: white;
+  -webkit-box-shadow:inset 0px 0px 0px 3px #73aeee;
+  -moz-box-shadow:inset 0px 0px 0px 3px #73aeee;
+  box-shadow:inset 0px 0px 0px 3px #73aeee !important;
+}
+
+#action .internal-pos button:hover {
+  -webkit-box-shadow:inset 0px 0px 0px 3px #5ddbed;
+  -moz-box-shadow:inset 0px 0px 0px 3px #5ddbed;
+  box-shadow:inset 0px 0px 0px 3px #5ddbed !important;
+}
+
 
 #action .button-row {
   padding: 0 10%;
