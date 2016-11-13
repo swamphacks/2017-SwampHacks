@@ -77,7 +77,7 @@ li
   background-position: bottom right;
 }
 
-.reeds {
+.reeds1 {
   background-image: url(../img/animation/reedy.png);
   position: absolute;
   top: 0%;
@@ -89,12 +89,24 @@ li
   background-position: center left;
 }
 
+.reeds2 {
+  background-image: url(../img/animation/reedy.png);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 78%;
+  bottom: 60%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
 .fishy1 {
   background-image: url(../img/animation/fishy.png);
   position: absolute;
   top: 0%;
-  left: 15%;
-  right: 77%;
+  left: 20%;
+  right: 72%;
   bottom: 60%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -146,10 +158,64 @@ li
   animation: sway 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
+.sway-2 {
+  -webkit-transform-origin: 50% 60%;
+  -moz-transform-origin: 50% 60%;
+  transform-origin: 50% 60%;
+  -webkit-animation: sway 2s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-animation: sway 2s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation: sway 2s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
 .wavy {
   -webkit-animation: wave 8s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
   -moz-animation: wave 8s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
   animation: wave 8s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.slidein {
+  animation: slidein 2.5s infinite;
+}
+
+.rotate {
+  -webkit-animation: myOrbit 2s linear infinite; /* Chrome, Safari 5 */
+     -moz-animation: myOrbit 2s linear infinite; /* Firefox 5-15 */
+       -o-animation: myOrbit 2s linear infinite; /* Opera 12+ */
+          animation: myOrbit 3s linear infinite;
+}
+
+@-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@-moz-keyframes myOrbit {
+    from { -moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@-o-keyframes myOrbit {
+    from { -o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@keyframes myOrbit {
+    from { transform: SkewZ(0deg) translateX(0px); }
+    to   { transform: SkewZ(180deg) translateX(0px); }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -30%;
+    width: 300%;
+		margin-top: 20%;
+  }
+
+  to {
+    margin-left: 100%;
+    width: 100%;
+		margin-top: 0%;
+  }
 }
 
 @keyframes wave {
