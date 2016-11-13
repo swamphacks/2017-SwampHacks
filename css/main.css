@@ -906,6 +906,11 @@ h4.date {
     margin-bottom: 10px;
   }
 
+  #faqs .faq-table {
+    padding: 0 20px;
+    margin-top: 0;
+  }
+
   #faqs h4 {
     font-size: 18px;
   }
