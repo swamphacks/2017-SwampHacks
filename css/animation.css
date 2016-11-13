@@ -150,21 +150,21 @@ li
 }
 
 .sway {
-  -webkit-transform-origin: 50% 90%;
-  -moz-transform-origin: 50% 90%;
-  transform-origin: 50% 90%;
-  -webkit-animation: sway 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  -moz-animation: sway 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  animation: sway 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -webkit-transform-origin: 50% 70%;
+  -moz-transform-origin: 50% 70%;
+  transform-origin: 50% 70%;
+  -webkit-animation: sway 3s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-animation: sway 3s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation: sway 3s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .sway-2 {
   -webkit-transform-origin: 50% 60%;
   -moz-transform-origin: 50% 60%;
   transform-origin: 50% 60%;
-  -webkit-animation: sway 2s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  -moz-animation: sway 2s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  animation: sway 2s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -webkit-animation: sway 2.5s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-animation: sway 2.5s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation: sway 2.5s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .swing-1 {
@@ -186,7 +186,7 @@ li
 }
 
 .slidein {
-  animation: slidein 3s infinite;
+  animation: slidein 3s cubic-bezier(0.935, 0.275, 0.815, 0.540) infinite;
 }
 
 .rotate-1 {
@@ -201,6 +201,22 @@ li
      -moz-animation: myOrbit2 2s linear infinite; /* Firefox 5-15 */
        -o-animation: myOrbit2 2s linear infinite; /* Opera 12+ */
           animation: myOrbit2 4.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1s infinite;
+}
+
+.popup{
+	animation: popup 12s cubic-bezier(0.175, 0.885, 0.340, 1.175) infinite;
+}
+
+@keyframes popup {
+	0%, 10%{
+		transform: translateY(0px);
+	}
+	50%{
+		transform: translateY(80px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
 }
 
 @keyframes myOrbit {
