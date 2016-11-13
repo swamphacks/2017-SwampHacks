@@ -179,7 +179,7 @@ h4.date {
 }
 
 .nav-top .navbar-right{
-  margin-right: -50px;
+  margin-right: -60px;
 }
 
 .nav-apply {
@@ -213,6 +213,20 @@ h4.date {
   width: 70px;
 }
 
+#mlh-link {
+  font-size: 18px;
+}
+
+#mlh-link img {
+  margin-top: -4px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+#mlh-link .dell {
+  height: 20px;
+  margin-left: 4px;
+}
 
 /**.container {
     position: relative;
