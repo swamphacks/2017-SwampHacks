@@ -86,9 +86,11 @@ $('#submit-info').click(e => {
         var linkedin = $('#linkedin').val();
         var github = $('#github').val();
 
-        if(!firstname || !lastname || !dob || !phone || !major || !email || !school || !diet || !shirt || !gradyear || !study) {
-            $('.error').text( "Did you fill out all the fields?" );
+        if(!firstname || !lastname || !dob || !phone || !major || !email || !school || !diet || !shirt || !gradYear || !study || !linkedin) {
+            $('.error').text( "Did you fill out all the required fields?" );
         }
+
+        else {
 
 
 
@@ -98,4 +100,5 @@ $('#submit-info').click(e => {
     }).then(() => {
         window.location.replace('complete.html');
     });
+  }
 });
