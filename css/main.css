@@ -459,13 +459,13 @@ h4.date {
   color: #fff;
   border: none;
   border-radius: 50px;
-  outline: none
+  outline: #fff;
 }
 
 #title .button-row {
   padding: 0 10%;
-  margin-top: 70px;
-  margin-bottom: 100px;
+  margin-top: 30%;
+  margin-bottom: 30%;
   text-align: center;
 }
 #action button {
