@@ -11,9 +11,6 @@ var access_token = window.location.href.split(/[&#]/)[1].replace('access_token='
 var request_url = "https://my.mlh.io/api/v1/user/?access_token=" + access_token;
 console.log(request_url);
 
-function getData() {
-    window.location.replace('https://my.mlh.io/oauth/authorize?client_id=53fb29b55bc96a8c2582e7ed3a56e3d30da9d638f886f38f9bc6fba7142b8a87&redirect_uri=http%3A%2F%2F2017.swamphacks.com%resume.html&response_type=token');
-}
 
 $.ajax({
     type: 'GET',
@@ -89,9 +86,16 @@ $('#submit-info').click(e => {
         var linkedin = $('#linkedin').val();
         var github = $('#github').val();
 
+        if(!firstname || !lastname || !dob || !phone || !major || !email || !school || !diet || !shirt || !gradyear || !study) {
+            $('.error').text( "Did you fill out all the fields?" );
+        }
+
+
 
     firebase.database().ref('applicants').push({
         firstname, lastname, dob, gender, phone, major, email,
         school, diet, shirt, gradYear, study, linkedin, github
+    }).then(() => {
+        window.location.replace('complete.html');
     });
 });

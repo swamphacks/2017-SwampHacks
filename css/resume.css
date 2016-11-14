@@ -84,6 +84,12 @@ a:hover {
   #image-header a {
     border: none;
   }
+
+  .error 
+  {
+    text-align: center;
+    color: #fff;
+  }
 /*END OF IMAGE HEADER*/
 
 /*MARK: THANK YOU HEADER*/
