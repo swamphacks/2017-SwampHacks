@@ -73,6 +73,11 @@ a:hover {
     color: #6d6c6c;
 }
 
+p a:hover {
+  opacity: 0.6;
+  border-bottom: 2px solid currentColor;
+}
+
 img.logo {
   display: none;
 }
@@ -155,12 +160,20 @@ h4.date {
     background-color: white;
 }
 
+.navbar-toggle {
+  margin-right: 30px;
+}
+
 .nav.navbar-nav li {
   margin: 10px 10px;
 }
 
 .nav-left li a {
    color: #fff !important;
+ }
+
+ .nav-left a:hover, #mlh-link a:hover {
+   opacity: 0.6;
  }
 
 .nav.navbar-nav li a:hover, a:focus, a:active
@@ -196,6 +209,16 @@ h4.date {
   color: #49ace7 !important;
   font-size: 18px !important;
   padding: 10px 20px !important;
+  border-radius: 30px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.nav-apply a:hover{
+  background-color: #49ace7 !important;
+  color: white !important;
+  -webkit-box-shadow:inset 0px 0px 0px 3px white;
+  -moz-box-shadow:inset 0px 0px 0px 3px white;
+  box-shadow:inset 0px 0px 0px 3px white !important;
 }
 
 .nav-top .nav-apply {
@@ -433,11 +456,6 @@ h4.date {
     background: linear-gradient(to bottom right, green, blue); /* Standard syntax */
 }
 
-#action {
-  text-align: center;
-  color: #73aeee;
-}
-
 #title button {
   font-size: 20px;
   width: 180px;
@@ -468,29 +486,64 @@ h4.date {
   margin-bottom: 30%;
   text-align: center;
 }
-#action button {
-    font-size: 20px;
-    width: 180px;
-    padding: 10px 0;
-    font-weight: bold;
-    background-color: #73aeee;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    outline: none;
+
+#action {
+  text-align: center;
+  color: #73aeee;
 }
 
-#action button:active {
-    font-size: 20px;
-    width: 180px;
-    padding: 10px 0;
-    font-weight: bold;
-    background-color: white;
-    color: #73aeee;
-    border: none;
-    border-radius: 50px;
-    outline: none;
+button {
+  font-size: 20px;
+  padding: 10px 0;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  transition: box-shadow 0.2s ease-in-out;
 }
+
+#title button {
+  width: 180px;
+  background-color: #fff;
+  color: #73aeee;
+}
+
+#title button:hover {
+  color: white;
+  background-color: #73aeee;
+  -webkit-box-shadow:inset 0px 0px 0px 3px white;
+  -moz-box-shadow:inset 0px 0px 0px 3px white;
+  box-shadow:inset 0px 0px 0px 3px white !important;
+}
+
+#action button {
+    width: 180px;
+    background-color: #73aeee;
+    color: white;
+}
+
+#action .internal-pos {
+  color: #5ddbed;
+}
+
+#action .internal-pos button {
+  background-color: #5ddbed;
+}
+
+#action button:hover {
+  color: currentColor;
+  background-color: white;
+  -webkit-box-shadow:inset 0px 0px 0px 3px #73aeee;
+  -moz-box-shadow:inset 0px 0px 0px 3px #73aeee;
+  box-shadow:inset 0px 0px 0px 3px #73aeee !important;
+}
+
+#action .internal-pos button:hover {
+  -webkit-box-shadow:inset 0px 0px 0px 3px #5ddbed;
+  -moz-box-shadow:inset 0px 0px 0px 3px #5ddbed;
+  box-shadow:inset 0px 0px 0px 3px #5ddbed !important;
+}
+
 
 #action .button-row {
   padding: 0 10%;
@@ -502,6 +555,11 @@ h4.date {
   padding-bottom: 0;
 }
 
+.blue-teal {
+  margin-top: -1px;
+  margin-bottom: -16%;
+}
+
 #footer {
   background-color: #77e0ed;
   background: -webkit-linear-gradient(left top, yellow, purple);
@@ -511,6 +569,7 @@ h4.date {
 
 #footer .container {
   padding: 20px 20px;
+  padding-bottom: 30px;
 }
 
 #footer .social-media {
@@ -518,24 +577,43 @@ h4.date {
   width: 60px;
   height: 60px;
   border-radius: 50px;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
-.blue-teal {
-  margin-top: -1px;
-  margin-bottom: -16%;
-}
-
-.social-row {
+#footer .social-row {
   padding: 0 40px;
   position: relative;
-  top: 90px;
+  top: 60px;
   transform: translateY(-50%);
 }
 
-.links {
+#footer .social-row .fa {
+  display: block;
+  text-align: center;
+  padding-top: 13px;
+  font-size: 34px;
+  color: #5ddbed;
+}
+
+#footer .social-row .fa-envelope {
+  font-size: 30px;
+}
+
+#footer a:hover .social-media {
+  background-color: #5ddbed;
+  -webkit-box-shadow:inset 0px 0px 0px 3px white;
+  -moz-box-shadow:inset 0px 0px 0px 3px white;
+  box-shadow:inset 0px 0px 0px 3px white !important;
+}
+
+#footer a:hover .fa {
+  color: white;
+}
+
+#footer .links {
   text-align: right;
   position: relative;
-  top: 90px;
+  top: 60px;
   transform: translateY(-50%);
   padding-right: 50px;
 }
@@ -546,9 +624,15 @@ h4.date {
   color: white;
 }
 
+#footer .links a:hover h4 {
+  opacity: 0.6;
+  text-decoration: underline;
+}
+
 .heart-container {
   text-align: center;
   margin-top: 20px;
+  color: white;
 }
 
 .heart i {
@@ -560,6 +644,15 @@ h4.date {
   margin: 0 3px;
   animation: pound 0.5s infinite alternate;
   -webkit-animation: pound 0.5s infinite alternate;
+  transition: font-size 0.5s ease-in-out;
+}
+
+.heart a:hover {
+  color: currentColor;
+}
+
+.heart a:hover .fa{
+  font-size: 20px;
 }
 
 @-webkit-keyframes pound {
@@ -670,31 +763,54 @@ h4.date {
   padding: 0 140px;
 }
 
+#sponsors h4 {
+  font-size: 26px;
+  font-weight: bold;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
 #sponsors .row {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+}
+
+#sponsors .same-level-row {
+  margin-bottom: 50px;
 }
 
 #sponsors .gator img {
-  width: 600px;
+  max-width: 600px;
 }
 
 #sponsors .heron img {
   margin: 0 30px;
-  width: 380px;
+  width: 420px;
 }
 
 #sponsors .turtle img {
   margin: 0 20px;
-  width: 260px;
+  max-width: 260px;
+  max-height: 120px;
 }
 
 #sponsors .lily-pad img {
   margin: 0 16px;
-  width: 180px;
+  max-width: 180px;
+  max-height: 60px;
 }
 
 #sponsors .interest {
-  margin-top: -140px;
+  margin-top: -100px;
+}
+
+#sponsors .sponsors-table img {
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+#sponsors .sponsors-table a:hover img {
+  /*padding-bottom: 20px;*/
+  transform: translateY(-5px);
 }
 
 .homepage-logo {
@@ -707,6 +823,12 @@ h4.date {
 
 #typed {
     text-align: center;
+}
+
+#footer .footer-logo {
+  display: block;
+  width: 200px;
+  margin: auto;
 }
 
 @media screen and (max-width:770px){
@@ -875,6 +997,14 @@ h4.date {
     padding: 0 30px;
   }
 
+  #sponsors .same-level-row {
+    margin-bottom: 0px;
+  }
+
+  #sponsors h4 {
+    font-size: 18px;
+  }
+
   #sponsors .row {
     margin-bottom: 30px;
   }
@@ -890,6 +1020,7 @@ h4.date {
 
   #sponsors .turtle img {
     max-width: 180px;
+    max-height: 80px;
     margin: 5px 30px;
   }
 
