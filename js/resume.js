@@ -12,7 +12,7 @@ var request_url = "https://my.mlh.io/api/v1/user/?access_token=" + access_token;
 console.log(request_url);
 
 function getData() {
-    window.location.replace('https://my.mlh.io/oauth/authorize?client_id=4152857ec50532295c5cc45ec8a48e35ec1f093c9370aaeb71dbc2b3efe8f4aa&redirect_uri=https%3A%2F%2Fbrownac.github.io%2Fresume.html&response_type=token');
+    window.location.replace('https://my.mlh.io/oauth/authorize?client_id=53fb29b55bc96a8c2582e7ed3a56e3d30da9d638f886f38f9bc6fba7142b8a87&redirect_uri=http%3A%2F%2F2017.swamphacks.com%resume.html&response_type=token');
 }
 
 $.ajax({
