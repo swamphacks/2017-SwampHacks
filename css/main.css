@@ -160,9 +160,9 @@ h4.date {
     background-color: white;
 }
 
-.navbar-toggle {
+/*.navbar-toggle {
   margin-right: 30px;
-}
+}*/
 
 .nav.navbar-nav li {
   margin: 10px 10px;
@@ -482,8 +482,8 @@ h4.date {
 
 #title .button-row {
   padding: 0 10%;
-  margin-top: 30%;
-  margin-bottom: 30%;
+  /*margin-top: 30%;
+  margin-bottom: 30%;*/
   text-align: center;
 }
 

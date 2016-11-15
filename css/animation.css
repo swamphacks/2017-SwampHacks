@@ -74,7 +74,7 @@ li
   top: 0%;
   left: -7%;
   right: -7%;
-  bottom: -45%;
+  bottom: -21vw;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -86,7 +86,7 @@ li
   top: 0;
   left: -5%;
   right: -5%;
-  bottom: -45%;
+  bottom: -21vw;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -478,4 +478,118 @@ li
     -moz-transform: rotateZ(-2deg);
     transform: rotateZ(-2deg);
   }
+}
+
+@media screen and (max-width:1000px){
+	.wave1 {
+		bottom: -19vw;
+	}
+
+	.wave2 {
+		bottom: -19vw;
+	}
+}
+
+@media screen and (max-width:770px){
+
+	.swamphacks {
+		top: 18%;
+		bottom: 70%;
+	}
+
+	.swamphacks-word {
+		top: 32%;
+		bottom: 59%;
+	}
+
+	.swamphacks-text {
+		margin-top: 260px;
+		font-size: 14px;
+	}
+
+	.swamphacks-text h4 {
+		font-size: 20px;
+		padding: 0 60px;
+		line-height: 26px;
+	}
+
+	.swamphacks-apply {
+		margin-top: 360px;
+	}
+
+	.tree {
+		display: none;
+	}
+
+	.wave1 {
+		top: 0%;
+		bottom: -14vw;
+		left: -40%;
+		right: -40%;
+	}
+
+	.wave2 {
+		top: 0%;
+		bottom: -14vw;
+		left: -40%;
+		right: -40%;
+	}
+
+	.reeds1 {
+		display: none;
+	}
+
+	.reeds2 {
+		left: -5%;
+		right: 80%;
+		top: 10%;
+		bottom: -26%;
+	}
+
+	.stump {
+		top: 70%;
+		bottom: 16%;
+		right: -6%;
+	}
+
+	.fishy1 {
+		display: none;
+	}
+
+	.fishy2 {
+		display: none;
+	}
+
+	.gatory {
+		top: 40%;
+		bottom: 14%;
+		left: 30%;
+		right: 30%;
+	}
+
+	.stork {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width:350px){
+	.wave1 {
+		bottom: -4%;
+	}
+
+	.wave2 {
+		bottom: -4%;
+	}
+}
+
+@media screen and (min-width:1440px){
+	.wave1 {
+		bottom: -23vw;
+	}
+
+	.wave2 {
+		bottom: -23vw;
+	}
+
 }
