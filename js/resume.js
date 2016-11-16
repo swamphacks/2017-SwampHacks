@@ -99,7 +99,7 @@ $('#submit-info').click(e => {
                             'type': 'to'
                         }
                         ],
-                        'subject': 'Test',
+                        'subject': 'Hey ' + firstname + '! Thanks for applying to SwampHacks!',
                         'html': '<p>test content</p>'
                     }
                 }
