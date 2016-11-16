@@ -90,6 +90,7 @@ $('#submit-info').click(e => {
                 url: "https://mandrillapp.com/api/1.0/messages/send.json",
                 data: {
                     'key': 'VI7kGwBHlDIIoTRtdLcctw',
+                    "name" : "SwampHacks - Thanks!" 
                     'message': {
                         'from_email': 'info@swamphacks.com',
                         'to': [
@@ -100,7 +101,6 @@ $('#submit-info').click(e => {
                         }
                         ],
                         'subject' : 'Hey ' + firstname + '! Thanks for applying to SwampHacks!',
-                        'name' : 'SwampHacks - Thanks!' 
                     }
                 }
             });
@@ -109,8 +109,8 @@ firebase.database().ref('applicants').push({
     firstname, lastname, dob, gender, phone, major, email,
     school, diet, shirt, gradYear, study, linkedin, github
 })
-.then(() => {
+/**.then(() => {
     window.location.replace('complete.html');
-});
+});**/
 }
 });
