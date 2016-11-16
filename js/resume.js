@@ -1,7 +1,7 @@
 var selectedFile;
 //get the data from mymlh; first, we need the access token.
 var access_token = window.location.href.split(/[&#]/)[1].replace('access_token=', '');
-var request_url = "https://my.mlh.io/api/v1/user/?access_token=" + access_token;
+var request_url = "https://my.mlh.io/api/v2/user/?access_token=" + access_token;
 console.log(request_url);
 
 
@@ -11,11 +11,7 @@ $.ajax({
     url: request_url,
     success: function(res) {
         console.log(res.data);
-        var fields = $.map(res.data, function(val) {
-            return val;
-        });
-        console.log(fields);
-        populateForm(fields);
+        populateForm(res.data);
     },
     error: function(err) {
         //whatever
@@ -24,16 +20,18 @@ $.ajax({
 
 var populateForm = function(items) {
     //get the values
-    var firstname = items[4];
-    var lastname = items[5];
-    var dob = items[10];
-    var gender = items[11];
-    var phone = items[12];
-    var major = items[6];
-    var email = items[1];
-    var school = items[13]['name'];
-    var diet = items[8];
-    var shirt = items[7];
+    var firstname = items["first_name"];
+    var lastname = items["last_name"];
+    var dob = items["date_of_birth"];
+    var gender = items["gender"];
+    var phone = items["phone_number"];
+    var major = items["major"];
+    var email = items["email"];
+    var school = items["school"]["name"];
+    var diet = items["dietary_restrictions"];
+    var shirt = items["shirt_size"];
+    var graduation = items["level_of_study"];
+
 
     //put them in the fields
     $('#firstname').val(firstname);
@@ -46,7 +44,8 @@ var populateForm = function(items) {
     //grad year?
     $('#school').val(school);
     $('#diet').val(diet);
-    $('#shirt').val(shirt)
+    $('#shirt').val(shirt);
+    $('#grad').val(graduation);
     //todo: see if there are any more fields we can get
     
     //submit to the database
@@ -78,6 +77,7 @@ $('#submit-info').click(e => {
     var study = $('#study').val();
     var linkedin = $('#linkedin').val();
     var github = $('#github').val();
+    var grad = 
 
     if(!firstname || !lastname || !dob || !phone || !major || !email || !school || !diet || !shirt || !gradYear || !study || !linkedin) {
         $('.error').text( "Did you fill out all the required fields?" );
