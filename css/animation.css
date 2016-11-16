@@ -201,62 +201,56 @@ li
 
 .sway-2 {
   -webkit-transform-origin: 50% 60%;
-  -moz-transform-origin: 50% 60%;
-  transform-origin: 50% 60%;
+          transform-origin: 50% 60%;
   -webkit-animation: sway 2.5s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  -moz-animation: sway 2.5s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  animation: sway 2.5s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          animation: sway 2.5s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .swing-1 {
   -webkit-animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  -moz-animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
   animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .swing-2 {
   -webkit-animation: swing 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  -moz-animation: swing 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  animation: swing 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          animation: swing 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .wavy {
   -webkit-animation: wave 8s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  -moz-animation: wave 8s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  animation: wave 8s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          animation: wave 8s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .slidein {
-  animation: slidein 3s cubic-bezier(0.935, 0.275, 0.815, 0.540) infinite;
+  -webkit-animation: slidein 3s cubic-bezier(0.935, 0.275, 0.815, 0.540) infinite;
+          animation: slidein 3s cubic-bezier(0.935, 0.275, 0.815, 0.540) infinite;
 }
 
 .rotate-1 {
-  -webkit-animation: myOrbit 2s linear infinite; /* Chrome, Safari 5 */
-     -moz-animation: myOrbit 2s linear infinite; /* Firefox 5-15 */
-       -o-animation: myOrbit 2s linear infinite; /* Opera 12+ */
-          animation: myOrbit 4s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+          -webkit-animation: myOrbit 4s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+                  animation: myOrbit 4s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
 }
 
 .rotate-2 {
-  -webkit-animation: myOrbit2 2s linear infinite; /* Chrome, Safari 5 */
-     -moz-animation: myOrbit2 2s linear infinite; /* Firefox 5-15 */
-       -o-animation: myOrbit2 2s linear infinite; /* Opera 12+ */
-          animation: myOrbit2 4.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1s infinite;
+          -webkit-animation: myOrbit2 4.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1s infinite;
+                  animation: myOrbit2 4.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1s infinite;
 }
 
 .popup{
-	animation: popup 12s cubic-bezier(0.175, 0.885, 0.340, 1.175) infinite;
+	-webkit-animation: popup 12s cubic-bezier(0.175, 0.885, 0.340, 1.175) infinite;
+	        animation: popup 12s cubic-bezier(0.175, 0.885, 0.340, 1.175) infinite;
 }
 
 .swayaxis{
     -webkit-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
-    animation: swinging 6s ease-in-out forwards infinite;
+            transform-origin: 50% 0;]
+    -webkit-animation: swinging 6s ease-in-out forwards infinite;]
+            animation: swinging 6s ease-in-out forwards infinite;
 }
 
 .flyup{
-	animation: flyup 5s ease-in-out forwards infinite;
+	-webkit-animation: flyup 5s ease-in-out forwards infinite;
+	        animation: flyup 5s ease-in-out forwards infinite;
 }
 
 @keyframes flyup {
