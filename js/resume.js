@@ -1,11 +1,4 @@
 var selectedFile;
-/**var app = firebase.initializeApp({
-    apiKey: firebase.api_key,
-    authDomain: firebase.auth_domain,
-    databaseURL: firebase.database_url,
-    storageBucket: firebase.storage_bucket
-});**/
-
 //get the data from mymlh; first, we need the access token.
 var access_token = window.location.href.split(/[&#]/)[1].replace('access_token=', '');
 var request_url = "https://my.mlh.io/api/v1/user/?access_token=" + access_token;
@@ -91,13 +84,32 @@ $('#submit-info').click(e => {
         }
 
         else {
-
-
+            //send the mail
+            $.ajax({
+                type: "POST",
+                url: "https://mandrillapp.com/api/1.0/messages/send.json",
+                data: {
+                    'key': 'VI7kGwBHlDIIoTRtdLcctw',
+                    'message': {
+                        'from_email': 'info@swamphacks.com',
+                        'to': [
+                        {
+                            'email': email,
+                            'name': firstname,
+                            'type': 'to'
+                        }
+                        ],
+                        'subject': 'Test',
+                        'html': '<p>test content</p>'
+                    }
+                }
+            });
 
     firebase.database().ref('applicants').push({
         firstname, lastname, dob, gender, phone, major, email,
         school, diet, shirt, gradYear, study, linkedin, github
-    }).then(() => {
+    })
+    .then(() => {
         window.location.replace('complete.html');
     });
   }
