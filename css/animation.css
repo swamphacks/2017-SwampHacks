@@ -248,6 +248,32 @@ li
 	animation: popup 12s cubic-bezier(0.175, 0.885, 0.340, 1.175) infinite;
 }
 
+.swayaxis{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 6s ease-in-out forwards infinite;
+}
+
+@keyframes swinging{
+    /*0%{transform: rotate(-10deg);}
+    50%{transform: rotate(20deg)}
+    100%{transform: rotate(-10deg);}*/
+		0%{
+			transform: translateX(12%) rotate(-7deg);
+			transform-origin: 0% -100%;
+		}
+		50%{
+			transform: translateX(-12%) rotate(7deg);
+			transform-origin: 0% -100%;
+		}
+		100%{
+			transform: translateX(12%) rotate(-7deg);
+			transform-origin: 0% -100%;
+		}
+}
+
+
 @keyframes popup {
 	0%, 10%{
 		transform: translateY(0px);

@@ -101,6 +101,13 @@ h4.date {
     text-decoration: none;
 }
 
+#video{
+  position: absolute;
+  /*top: 30px;*/
+  width: 110%;
+  z-index: -1000;
+}
+
 .text-box span {
   color: #b6e9e4;
 }
