@@ -75,7 +75,7 @@ $('#submit-info').click(e => {
     var linkedin = $('#linkedin').val();
     var github = $('#github').val();
 
-    if(!firstname || !lastname || !dob || !phone || !major || !email || !school || !diet || !shirt || !study || !linkedin) {
+    if(!firstname || !lastname || !dob || !phone || !major || !email || !school || !diet || !shirt || !study) {
         $('.error').text( "Did you fill out all the required fields?" );
     }
 
