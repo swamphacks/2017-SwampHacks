@@ -530,6 +530,10 @@ li
 	.wave2 {
 		bottom: -19vw;
 	}
+
+	#video{
+		display: none;
+	}
 }
 
 @media screen and (max-width:770px){
@@ -612,7 +616,6 @@ li
 	.stork {
 		display: none;
 	}
-
 }
 
 @media screen and (max-width:350px){
