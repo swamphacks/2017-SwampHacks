@@ -1,7 +1,7 @@
 var selectedFile;
 //get the data from mymlh; first, we need the access token.
 var access_token = window.location.href.split(/[&#]/)[1].replace('access_token=', '');
-var request_url = "https://my.mlh.io/api/v2/user/?access_token=" + access_token;
+var request_url = "https://my.mlh.io/api/v1/user/?access_token=" + access_token;
 console.log(request_url);
 
 
