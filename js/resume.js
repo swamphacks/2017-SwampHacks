@@ -100,7 +100,7 @@ $('#submit-info').click(e => {
                         }
                         ],
                         'subject' : 'Hey ' + firstname + '! Thanks for applying to SwampHacks!',
-                        'slug' : 'swamphacks-thanks' 
+                        'name' : 'SwampHacks - Thanks!' 
                     }
                 }
             });
