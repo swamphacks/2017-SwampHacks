@@ -161,7 +161,7 @@ h4.date {
 }
 
 .navbar-right {
-  margin-right: -310px;
+  margin-right: -290px;
   transition: margin-right 0.4s ease-in-out;
 }
 
@@ -220,6 +220,7 @@ h4.date {
   padding: 10px 20px !important;
   border-radius: 30px;
   transition: box-shadow 0.2s ease-in-out;
+  margin-right: 5% !important;
 }
 
 .nav-apply a:hover{
@@ -246,11 +247,15 @@ h4.date {
 }
 
 #mlh-link {
+  color: white;
   font-size: 18px;
+  margin-right: 5%;
+  opacity: 70%;
 }
 
 #mlh-link a {
   color: white !important;
+  margin-right: 5%;
 }
 
 #mlh-link img {
@@ -903,7 +908,7 @@ button {
   }
 
   .nav-top .navbar-right, .navbar-right {
-    margin-right: 0px;
+    margin-right; 0px;
   }
 
   h3 {
