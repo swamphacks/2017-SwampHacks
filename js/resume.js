@@ -90,7 +90,7 @@ $('#submit-info').click(e => {
                 url: "https://mandrillapp.com/api/1.0/messages/send.json",
                 data: {
                     'key': 'VI7kGwBHlDIIoTRtdLcctw',
-                    "name" : "SwampHacks - Thanks!" 
+                    "name" : "SwampHacks - Thanks!", 
                     'message': {
                         'from_email': 'info@swamphacks.com',
                         'to': [
