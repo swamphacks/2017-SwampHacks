@@ -255,6 +255,22 @@ li
     animation: swinging 6s ease-in-out forwards infinite;
 }
 
+.flyup{
+	animation: flyup 5s ease-in-out forwards infinite;
+}
+
+@keyframes flyup {
+	0%{
+		transform: translateX(-150%) translateY(120px) rotate(10deg);;
+	}
+	50%, 100%{
+		transform: translateX(140%) translateY(-220px) rotate(-10deg);
+	}
+	/*100%{
+		transform: translateX(-50%) translateY(0px);
+	}*/
+}
+
 @keyframes swinging{
     /*0%{transform: rotate(-10deg);}
     50%{transform: rotate(20deg)}
