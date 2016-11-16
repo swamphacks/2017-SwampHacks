@@ -92,6 +92,10 @@ h4.date {
   display: none;
 }
 
+#mlh-link{
+  visibility: hidden;
+}
+
 #sponsors-email a {
     text-decoration: none;
     color: #3FABE5;
