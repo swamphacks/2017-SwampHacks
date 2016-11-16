@@ -77,7 +77,7 @@ $('#submit-info').click(e => {
     var study = $('#study').val();
     var linkedin = $('#linkedin').val();
     var github = $('#github').val();
-    var grad = 
+    var grad = $('#graduation').val();
 
     if(!firstname || !lastname || !dob || !phone || !major || !email || !school || !diet || !shirt || !gradYear || !study || !linkedin) {
         $('.error').text( "Did you fill out all the required fields?" );
