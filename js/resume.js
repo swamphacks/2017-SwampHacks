@@ -103,7 +103,7 @@ $('#submit-info').click(e => {
 
 firebase.database().ref('applicants').push({
     firstname, lastname, dob, gender, phone, major, email,
-    school, diet, shirt, gradYear, study, linkedin, github
+    school, diet, shirt, study, linkedin, github
 })
 .then(() => {
     window.location.replace('complete.html');
