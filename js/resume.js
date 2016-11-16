@@ -8,7 +8,6 @@ console.log(request_url);
 $.ajax({
     type: 'GET',
     dataType: 'json',
-    headers : {"Access-Control-Allow-Origin" : "*"},
     url: request_url,
     success: function(res) {
         console.log(res.data);
