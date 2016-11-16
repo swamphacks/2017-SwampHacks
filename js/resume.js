@@ -109,8 +109,8 @@ firebase.database().ref('applicants').push({
     firstname, lastname, dob, gender, phone, major, email,
     school, diet, shirt, gradYear, study, linkedin, github
 })
-/**.then(() => {
+.then(() => {
     window.location.replace('complete.html');
-});**/
+});
 }
 });
