@@ -66,11 +66,13 @@ p {
 a {
     text-decoration: none;
     color: #fff;
+    /*border-bottom: 1px solid currentColor;*/
+    cursor: pointer;
 }
 
 a:hover {
     text-decoration: none;
-    color: #6d6c6c;
+    color: #85f9eb;
 }
 
 p a:hover {
