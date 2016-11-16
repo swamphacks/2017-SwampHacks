@@ -30,7 +30,6 @@ var populateForm = function(items) {
     var school = items["school"]["name"];
     var diet = items["dietary_restrictions"];
     var shirt = items["shirt_size"];
-    var graduation = items["graduation"];
 
 
     //put them in the fields
@@ -45,7 +44,6 @@ var populateForm = function(items) {
     $('#school').val(school);
     $('#diet').val(diet);
     $('#shirt').val(shirt);
-    $('#grad').val(graduation);
     //todo: see if there are any more fields we can get
     
     //submit to the database
@@ -73,12 +71,11 @@ $('#submit-info').click(e => {
     var school = $('#school').val();
     var diet = $('#diet').val();
     var shirt = $('#shirt').val();
-    var gradYear = $('#grad').val();
     var study = $('#study').val();
     var linkedin = $('#linkedin').val();
     var github = $('#github').val();
 
-    if(!firstname || !lastname || !dob || !phone || !major || !email || !school || !diet || !shirt || !gradYear || !study || !linkedin) {
+    if(!firstname || !lastname || !dob || !phone || !major || !email || !school || !diet || !shirt || !study || !linkedin) {
         $('.error').text( "Did you fill out all the required fields?" );
     }
 
