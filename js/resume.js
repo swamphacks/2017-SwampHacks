@@ -9,7 +9,7 @@ $.ajax({
     type: 'GET',
     dataType: 'json',
     url: request_url,
-    headers : {"Access-Control-Allow-Origin", "*"}
+    headers : {"Access-Control-Allow-Origin", "*"},
     success: function(res) {
         console.log(res.data);
         populateForm(res.data);
