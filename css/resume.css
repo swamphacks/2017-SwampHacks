@@ -153,7 +153,7 @@ label
     outline: none;
     font-size: 16px;
     padding: 24px 20px;
-    height: auto;
+    height: 70px;
 }
 
 /*MARK: SELECTION-TYPE FORM*/
@@ -349,11 +349,20 @@ input[type="email"], textarea
     font-weight: bolder;
 }
 
-input[type="select"], textarea
+select
 {
-  height: auto;
+  height: 70px;
 }
 
+#resume + label strong
+{
+  height: 70px !important;
+}
+
+#resume + label span
+{
+  height: 70px !important;
+}
 
 
 /*placeholder text*/
