@@ -153,6 +153,7 @@ label
     outline: none;
     font-size: 16px;
     padding: 24px 20px;
+    height: auto;
 }
 
 /*MARK: SELECTION-TYPE FORM*/
@@ -316,6 +317,11 @@ label
 
 /*END OF FILE UPLOAD-TYPE FORM*/
 
+input
+{
+  height: auto;
+}
+
 input[type="text"], textarea
 {
     outline: none;
@@ -341,6 +347,11 @@ input[type="email"], textarea
     border: none;
     color: black;
     font-weight: bolder;
+}
+
+input[type="select"], textarea
+{
+  height: auto;
 }
 
 
