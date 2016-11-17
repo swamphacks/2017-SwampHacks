@@ -89,10 +89,11 @@
 				</select>
 			</div>
 			<div class="row">
-				<label for="reusme" id="resume-button"> Upload your resume <span class="asterisk">*</span></label>
+				<label for="reusme" id="resume-button"> Upload your resume (PDF's only please!) <span class="asterisk">*</span></label>
 				<input type="file" id="resume" class="inputfile" required>
 				<label for="resume" class="browse">
 				<span style="display: inline-flex; align-items: center;">No file chosen</span> <strong style="display: inline-flex; align-items: center;"> Choose a file...</strong></label>
+				<p id="valid-file" style="color: white;"></p>
 
 			</div>
 			<div class="row">
@@ -148,6 +149,10 @@
 					fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
 				else
 					fileName = e.target.value.split( '\\' ).pop();
+					console.log(fileName);
+					if (fileName.split('.').pop() != 'pdf') {
+						$('#valid-file').text(" Did you upload a PDF? ").show().fadeOut( 3000 );
+					}
 
 				if( fileName ) {
 					label.querySelector( 'span' ).innerHTML = fileName;

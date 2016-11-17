@@ -327,13 +327,13 @@ li
     50%   {
 			-webkit-transform: rotate(180deg) translateX(0px);
 			-moz-transform: rotate(180deg) translateX(150px) rotate(0deg);
-			transform: rotate(180deg) translateX(0px) translateY(175px);
+			transform: rotate(180deg) translateX(0px); 
 			transform-origin: bottom;
 		}
 		100%   {
 			-webkit-transform: rotate(0deg) translateX(150px) rotate(-360deg);
 			-moz-transform: rotate(0deg) translateX(150px) rotate(-360deg);
-			transform: rotate(0deg) translateX(0px) translateY(0px);
+			transform: rotate(0deg) translateX(0px); 
 			transform-origin: bottom;
 
 		}
