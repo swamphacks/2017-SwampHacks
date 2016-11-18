@@ -289,8 +289,8 @@ li
 			transform-origin: bottom;
 		}
     50%   {
-			-webkit-transform: rotate(180deg) translateX(0px);
-			-moz-transform: rotate(180deg) translateX(150px) rotate(0deg);
+			-webkit-transform: rotate(180deg) translateX(0px) translateY(175px);
+			-moz-transform: rotate(180deg) translateX(150px) translateY(175px) rotate(0deg);
 			transform: rotate(180deg) translateX(0px) translateY(175px);
 			transform-origin: bottom;
 		}
