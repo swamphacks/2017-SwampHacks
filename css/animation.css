@@ -331,9 +331,9 @@ li
 			transform-origin: bottom;
 		}
 		100%   {
-			-webkit-transform: rotate(0deg) translateX(150px) rotate(-360deg);
-			-moz-transform: rotate(0deg) translateX(150px) rotate(-360deg);
-			transform: rotate(0deg) translateX(0px); 
+			-webkit-transform: rotate(0deg) translateX(150px) rotate(-360deg) translateY(0px);
+			-moz-transform: rotate(0deg) translateX(150px) rotate(-360deg) translateY(0px);
+			transform: rotate(0deg) translateX(0px) translateY(0px); 
 			transform-origin: bottom;
 
 		}
