@@ -758,6 +758,7 @@ button {
   font-size: 14px;
   font-weight: normal;
   opacity: 0.4;
+  white-space: normal;
 }
 
 #schedule h5 {
@@ -1085,6 +1086,10 @@ button {
     margin: 30px auto 2px;
   }
 
+  #footer .col-xs-4 {
+    margin-bottom: 30px;
+  }
+
   #footer .social-row {
     padding: 0;
   }
@@ -1098,6 +1103,4 @@ button {
     padding: 0;
     top: 70px;
   }
-
-
 }
