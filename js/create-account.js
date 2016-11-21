@@ -31,20 +31,22 @@ $('#submit-info').click(e => {
 
 var submitData = function(email, pass) {
 	firebase.database().ref('confirmed-attendees').push({
-		email, pass
+		email
 	})
 	.then(() => {
 		// log them in and redirect to the home page
 		auth.createUserWithEmailAndPassword(email, pass);
-
-		firebase.auth().onAuthStateChanged(firebaseUser => {
-        if (firebaseUser) {
-          firebaseUser.sendEmailVerification();
-          console.log('the email sent');
-          window.location.replace('index.html');
-        } else {
-          console.log('something is wrong');
-        }
-      });
+		// show the logout button
 	});
 };
+
+// add a listener to watch for auth state changes
+firebase.auth().onAuthStateChanged(firebaseUser => {
+        if (firebaseUser) {
+          console.log(firebaseUser);
+          firebaseUser.sendEmailVerification();
+          window.location.replace('index.html');
+        } else {
+        	console.log('not logged in');
+        }
+      });
