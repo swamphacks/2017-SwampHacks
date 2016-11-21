@@ -58,3 +58,9 @@ input[type=password]
 {
     text-align: center;
 }
+
+.login
+{
+	text-align: center;
+	margin-bottom: 100%;
+}
