@@ -11,6 +11,30 @@
 </head>
 <body>
 
+	<div class="container">
+		<section class="congrats-header">
+			<h2>Log in with your SwampHacks account</h2>
+		</section>
+		<section class="form-section">
+			<form id="form">
+				<div class="row">
+				<label for="email">E-Mail <span class="asterisk">*</span></label>
+					<input type="email" class="form-control" placeholder="email@school.edu" aria-describedby="basic-addon1" id="email" required>
+				</div>
+				<div class="row">
+				<label for="password">Password <span class="asterisk">*</span></label>
+					<input type="password" class="form-control" placeholder="********" aria-describedby="basic-addon1" id="password" required>
+				</div>
+				<a class="btn btn-default" id="login">Log In</a>
+				<span class="error"></span>
+			</div>
+			</form>
+		</section>
+	</div>
+
+
+
+	<!-- scriptz -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
 	<script src="js/create-account.js"></script>

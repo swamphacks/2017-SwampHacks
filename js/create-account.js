@@ -1,12 +1,13 @@
 var error = $('.error');
 var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-var config = {
-  		apiKey: "AIzaSyCKrjgs7TMiPDl-nqaqnBTAhigNrNszQPk",
-  		authDomain: "swamphacks-a6338.firebaseapp.com",
-  		databaseURL: "https://swamphacks-a6338.firebaseio.com",
-  		storageBucket: "swamphacks-a6338.appspot.com",
-  		messagingSenderId: "949283718048"
-  	};
+ // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDz1rvxuYDgsqMrGMdZ4iBIOqUBGETAo04",
+    authDomain: "swamphacks-confirmed-attendees.firebaseapp.com",
+    databaseURL: "https://swamphacks-confirmed-attendees.firebaseio.com",
+    storageBucket: "swamphacks-confirmed-attendees.appspot.com",
+    messagingSenderId: "1008919618491"
+  };
 var app = firebase.initializeApp(config);
 var auth = app.auth();
 
@@ -36,7 +37,6 @@ var submitData = function(email, pass) {
 	.then(() => {
 		// log them in and redirect to the home page
 		auth.createUserWithEmailAndPassword(email, pass);
-		// show the logout button
 	});
 };
 
@@ -46,6 +46,7 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
           console.log(firebaseUser);
           firebaseUser.sendEmailVerification();
           window.location.replace('index.html');
+		  //TODO: show the log out  button, make the login button disappear. figure out how to not send the verification email more than once.
         } else {
         	console.log('not logged in');
         }
