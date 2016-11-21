@@ -64,3 +64,8 @@ input[type=password]
 	text-align: center;
 	margin-bottom: 100%;
 }
+
+.form-section
+{
+    margin-bottom: 100%;
+}

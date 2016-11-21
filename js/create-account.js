@@ -1,4 +1,5 @@
 var error = $('.error');
+var err = $('.err');
 var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
  // Initialize Firebase
   var config = {
@@ -40,14 +41,42 @@ var submitData = function(email, pass) {
 	});
 };
 
-// add a listener to watch for auth state changes
+//login event
+$('#login').click(() => {
+	var eMail = $('#eMail').val();
+	console.log(eMail);
+	var passWord = $('#passWord').val();
+
+	if(eMail, passWord == "") {
+		err.text( "Please don't leave any fields blank!" );
+	} else if(!eMail.match(re)) {
+		err.text( "Please enter a valid e-mail address!" );
+	} else {
+		//log them in
+		firebase.auth().signInWithEmailAndPassword(eMail, passWord)
+		.catch(err => { console.log(err.message); });
+	}
+
+});
+
+//log out event
+$('.logout').click(() => {
+	firebase.auth().signOut()
+	.catch(err => { console.log(err.message); });
+});
+
+//listener to watch for auth state changes
 firebase.auth().onAuthStateChanged(firebaseUser => {
         if (firebaseUser) {
           console.log(firebaseUser);
-          firebaseUser.sendEmailVerification();
-          window.location.replace('index.html');
+          //firebaseUser.sendEmailVerification();
+          console.log('logged in');
+          $('.login').addClass("hide");
+          $('.logout').removeClass("hide");
 		  //TODO: show the log out  button, make the login button disappear. figure out how to not send the verification email more than once.
         } else {
         	console.log('not logged in');
+        	$('.login').removeClass("hide");
+        	$('.logout').addClass("hide")
         }
-      });
+    });
