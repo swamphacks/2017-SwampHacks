@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SwampHacks - Create An Account</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/create-account.css">
+	<link rel="stylesheet" type="text/css" href="css/resume.css">
+</head>
+<body>
+
+	<div class="container">
+		<section class="congrats-header">
+			<h2>Congrats on being accepted to SwampHacks 2017!</h2>
+			<h4>Go ahead and create an account with your .edu e-mail address - you'll use this account to update your status if your plans change and you're unable to make it to SwampHacks.</h4>
+		</section>
+		<section class="form-section">
+			<form id="form">
+				<div class="row">
+				<label for="email">E-Mail <span class="asterisk">*</span></label>
+					<input type="email" class="form-control" placeholder="email@school.edu" aria-describedby="basic-addon1" id="email" required>
+				</div>
+				<div class="row">
+				<label for="password">Password <span class="asterisk">*</span></label>
+					<input type="password" class="form-control" placeholder="********" aria-describedby="basic-addon1" id="password" required>
+				</div>
+				<div class="row">
+				<label for="password">Confirm Password <span class="asterisk">*</span></label>
+					<input type="password" class="form-control" placeholder="********" aria-describedby="basic-addon1" id="password-confirm" required>
+				</div>
+			<div id="submit">
+				<a class="btn btn-default" id="submit-info">SUBMIT</a>
+				<span class="error"></span>
+			</div>
+			</form>
+		</section>
+	</div>
+
+
+
+	<!-- scriptz -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+	<script src="js/create-account.js"></script>
+</body>
+</html>

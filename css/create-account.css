@@ -1,0 +1,58 @@
+/** import tha fonts **/
+@font-face {
+    font-family: 'pier sans';
+    src: url("../fonts/pier-regular.otf");
+}
+@font-face {
+    font-family: 'metropolis';
+    src: url("../fonts/metropolis-medium.otf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'metropolis';
+    src: url("../fonts/metropolis-bold.otf");
+    font-weight: bolder;
+}
+@font-face {
+    font-family: 'metropolis';
+    src: url("../fonts/metropolis-light.otf");
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'metropolis';
+    src: url("../fonts/metropolis-regular.otf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'metropolis';
+    src: url("../fonts/metropolis-extrabold.otf");
+    font-weight: 500;
+}
+/*end of fonts*/
+
+html, body
+{
+    overflow-x: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'metropolis';
+    background: -webkit-linear-gradient(#5bdbed, #8fe1e6); /* for safari 5.1 to 6.0 */
+}
+
+h2, h4 
+{
+    padding: 2%;
+    color: white;
+}
+
+input[type=password]
+{
+    color: #000;
+}
+
+.congrats-header
+{
+    text-align: center;
+}
