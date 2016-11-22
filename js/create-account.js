@@ -38,7 +38,9 @@ var submitData = function(email, pass) {
 	.then(() => {
 		// log them in and redirect to the home page
 		auth.createUserWithEmailAndPassword(email, pass);
-	});
+	})
+	.then(() => { document.location.href = 'index.html' })
+	.catch(err => { console.log(err.message); });
 };
 
 //login event
@@ -67,17 +69,22 @@ $('.logout').click(() => {
 });
 
 //listener to watch for auth state changes
-firebase.auth().onAuthStateChanged(firebaseUser => {
-        if (firebaseUser) {
-          console.log(firebaseUser);
-          //firebaseUser.sendEmailVerification();
-          console.log('logged in');
-          $('.login').addClass("hide");
-          $('.logout').removeClass("hide");
-		  //TODO: show the log out  button, make the login button disappear. figure out how to not send the verification email more than once.
-        } else {
-        	console.log('not logged in');
-        	$('.login').removeClass("hide");
-        	$('.logout').addClass("hide")
-        }
+firebase.auth().onAuthStateChanged(user => {
+        if (user) {
+        	if (user.emailVerified) {
+
+	          console.log(user);
+	          console.log('logged in');
+	          $('.login').addClass("hide");
+	          $('.logout').removeClass("hide");
+	          } else {
+	          	user.sendEmailVerification();
+	          }
+			  //TODO: show the log out  button, make the login button disappear.
+	        } else {
+	        	console.log('not logged in');
+	        	$('.login').removeClass("hide");
+	        	$('.logout').addClass("hide")
+	        }
+	  
     });
