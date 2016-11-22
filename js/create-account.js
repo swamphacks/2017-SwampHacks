@@ -54,6 +54,7 @@ $('#login').click(() => {
 	} else {
 		//log them in
 		firebase.auth().signInWithEmailAndPassword(eMail, passWord)
+		.then(() => { document.location.href = 'index.html'; })
 		.catch(err => { console.log(err.message); });
 	}
 
