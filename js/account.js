@@ -32,6 +32,6 @@ $('#cancel-attendance').click(() => {
 				window.location.href = 'index.html';
 			}, 2000);
 		})
-		.catch(err => { console.log(err.message); });
+		.catch(err => { toastr.error(err.message); });
 	}
 })
