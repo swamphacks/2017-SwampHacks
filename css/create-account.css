@@ -39,11 +39,12 @@ html, body
     padding: 0;
     font-family: 'metropolis';
     background: -webkit-linear-gradient(#5bdbed, #8fe1e6); /* for safari 5.1 to 6.0 */
-	background: linear-gradient(#5bdbed, #8fe1e6); /* for safari 5.1 to 6.0 */
-	background: -moz-linear-gradient(#5bdbed, #8fe1e6);
+	  background: linear-gradient(#5bdbed, #8fe1e6); /* for safari 5.1 to 6.0 */
+	  background: -moz-linear-gradient(#5bdbed, #8fe1e6);
+    background-size: cover;
 }
 
-h2, h4 
+h2, h4
 {
     padding: 2%;
     color: white;
@@ -62,16 +63,8 @@ input[type=password]
 .login
 {
 	text-align: center;
-	margin-bottom: 100%;
 }
 
 .form-section
 {
-    margin-bottom: 100%;
 }
-
-#update
-{
-    margin-bottom: 100%;
-}
-

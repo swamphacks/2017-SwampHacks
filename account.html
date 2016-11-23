@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/create-account.css">
 	<link rel="stylesheet" type="text/css" href="css/resume.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 <body>
 
@@ -21,8 +22,17 @@
 				<a class="btn btn-default" id="update">CANCEL ATTENDANCE</a>
 			</div>
 		</section>
-		<section class="cancel hide">
-			<h3>blah</h3>
+		<section class="cancel" style="display: none;">
+			<h4>Enter your e-mail below. Please note that once you cancel your attendance, this <span class="asterisk">cannot</span> be undone.</h3>
+				<form id="form">
+				<div class="row">
+					<input type="email" class="form-control" placeholder="email@school.edu" aria-describedby="basic-addon1" id="cancel-email" required>
+				</div>
+			<div id="submit">
+				<a class="btn btn-default" id="cancel-attendance">SUBMIT</a>
+				<span class="error"></span>
+			</div>
+				</form>
 		</section>
 	</div>
 
@@ -31,6 +41,7 @@
 	<!-- scriptz -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
 	<script src="js/account.js"></script>
 </body>
 </html>

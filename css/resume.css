@@ -39,6 +39,10 @@ html, body
     padding: 0;
     font-family: 'metropolis';
     background: -webkit-linear-gradient(#5bdbed, #8fe1e6); /* for safari 5.1 to 6.0 */
+    background: -moz-linear-gradient(#5bdbed, #8fe1e6); /* for safari 5.1 to 6.0 */
+    background: linear-gradient(#5bdbed, #8fe1e6); /* for safari 5.1 to 6.0 */
+    background-size: cover;
+
 }
 
 a, a:hover, a:active, a:focus, .btn:focus, .btn:active {
@@ -85,7 +89,7 @@ a:hover {
     border: none;
   }
 
-  .error 
+  .error
   {
     text-align: center;
     color: #fff;
