@@ -297,6 +297,7 @@ label
     height: 48px;
     border-width: 0;
     transition: box-shadow 0.2s ease-in-out;
+    white-space: normal;
   }
 
   .btn:hover {
