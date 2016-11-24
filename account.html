@@ -22,8 +22,15 @@
 		<section class="options">
 			<h2>Choose an option: </h2>
 			<div class="row">
-				<a class="btn btn-default" id="mlh" href="https://my.mlh.io/edit" target="_blank">UPDATE INFO</a>
-				<a class="btn btn-default" id="update">CANCEL</a>
+				<div class="col-md-4">
+					<a class="btn btn-default" id="mlh" href="https://my.mlh.io/edit" target="_blank">UPDATE INFO</a>
+				</div>
+				<div class="col-md-4">
+					<a class="btn btn-default" id="update">CANCEL</a>
+				</div>
+				<div class="col-md-4">
+					<a class="btn btn-default" id="reimburse">TRAVEL</a>
+				</div>
 			</div>
 		</section>
 		<section class="cancel" style="display: none;">
@@ -37,6 +44,15 @@
 				<span class="error"></span>
 			</div>
 				</form>
+		</section>
+		<section class="travel" style="display: none;">
+			<h4>Use the form below to apply for a travel reimbursement.</h4>
+			<form id="form">
+				<div class="row">
+					<label for="location">Where are you traveling from? <span class="asterisk">*</span></label>
+					<input type="text" class="form-control" placeholder="City, State" aria-describedby="basic-addon1" id="location" required>
+				</div>
+			</form>
 		</section>
 	</div>
 

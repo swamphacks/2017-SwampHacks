@@ -14,6 +14,10 @@ $('#update').click(() => {
 	$('.cancel').slideToggle('fast');
 })
 
+$('#reimburse').click(() => {
+  $('.travel').slideToggle('fast');
+})
+
 //cancel
 
 $('#cancel-attendance').click(() => {

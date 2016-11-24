@@ -63,8 +63,8 @@ $('#login').click(() => {
     .then(() => { toastr.success('Login successful!') })
     .then(() => {
       setTimeout(() => {
-        window.location.href = 'index.html';
-      }, 1000);
+        window.location.href = 'account.html';
+      }, 500);
     })
     .catch(err => { toastr.error(err.message); });
   }
@@ -74,6 +74,7 @@ $('#login').click(() => {
 //log out event
 $('.logout').click(() => {
   firebase.auth().signOut()
+  .then(() => { toastr.success('Signed out.') })
   .catch(err => { console.log(err.message); });
 });
 

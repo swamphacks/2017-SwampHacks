@@ -72,7 +72,13 @@ input[type=password]
 
 #update
 {
-  margin-left: 10%;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+#reimburse
+{
   font-size: 16px;
   justify-content: center;
   align-items: center;
@@ -97,4 +103,21 @@ input[type=password]
 
 #header a {
   border: none;
+}
+
+@media screen and (max-width:770px)
+{
+  body
+  {
+    text-align: center;
+  }
+  .col-md-4
+  {
+    margin-bottom: 8%;
+  }
+  #header
+  {
+    text-align: left;
+    margin-left: 0;
+  }
 }
