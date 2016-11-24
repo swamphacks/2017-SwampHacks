@@ -65,6 +65,36 @@ input[type=password]
 	text-align: center;
 }
 
-.form-section
+#mlh
 {
+  font-size: 16px;
+}
+
+#update
+{
+  margin-left: 10%;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+#header
+{
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 630px;
+}
+
+#header .back {
+  width: 22px;
+  margin-right: 20px;
+}
+
+#header a:hover {
+  opacity: 0.6;
+}
+
+
+#header a {
+  border: none;
 }

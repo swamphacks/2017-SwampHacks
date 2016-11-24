@@ -7,6 +7,7 @@ var config = {
 };
 var app = firebase.initializeApp(config);
 var auth = app.auth();
+
 // expand
 
 $('#update').click(() => {
@@ -17,6 +18,7 @@ $('#update').click(() => {
 
 $('#cancel-attendance').click(() => {
 	const user = firebase.auth().currentUser;
+	console.log(user)
 	const userEmail = user.email;
 	const email = $('#cancel-email').val();
 

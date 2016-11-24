@@ -13,17 +13,21 @@
 <body>
 
 	<div class="container">
+		<section id="header">
+			<a href="index.html">
+				<img class="back" src="img/back-arrow.png" class="logo" />
+				<img class="logo" src="img/logo.png" class="logo" />
+			</a>
+		</section>
 		<section class="options">
-			<h2>I need to...</h2>
+			<h2>Choose an option: </h2>
 			<div class="row">
-				<a class="btn btn-default" href="https://my.mlh.io/edit" target="_blank">UPDATE INFO</a>
-			</div>
-			<div class="row">
-				<a class="btn btn-default" id="update">CANCEL ATTENDANCE</a>
+				<a class="btn btn-default" id="mlh" href="https://my.mlh.io/edit" target="_blank">UPDATE INFO</a>
+				<a class="btn btn-default" id="update">CANCEL</a>
 			</div>
 		</section>
 		<section class="cancel" style="display: none;">
-			<h4>Enter your e-mail below. Please note that once you cancel your attendance, this <span class="asterisk">cannot</span> be undone.</h3>
+			<h4>Enter your e-mail address below. Please note that once you cancel your attendance, this <span class="asterisk">cannot</span> be undone.</h3>
 				<form id="form">
 				<div class="row">
 					<input type="email" class="form-control" placeholder="email@school.edu" aria-describedby="basic-addon1" id="cancel-email" required>
