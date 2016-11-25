@@ -1,3 +1,5 @@
+var selectedFile;
+
 var config = {
   apiKey: "AIzaSyDz1rvxuYDgsqMrGMdZ4iBIOqUBGETAo04",
   authDomain: "swamphacks-confirmed-attendees.firebaseapp.com",
@@ -40,4 +42,36 @@ $('#cancel-attendance').click(() => {
 		})
 		.catch(err => { toastr.error(err.message); });
 	}
+})
+
+// travel reimbursement
+$('#resume').on("change", function (event) {
+  selectedFile = event.target.files[0];
+});
+
+$('#submit-travel').click(() => {
+  const usr = firebase.auth().currentUser;
+  const usrEmail = usr.email;
+  const location = $('#location').val();
+  const method = $('#method').val();
+  const cost = $('#cost').val();
+
+  if (location, method, cost == "") {
+    $('.travel-error').text("Please don't leave any fields blank!");
+  } else {
+    const fileName = selectedFile.name;
+    const storageRef = firebase.storage().ref('/receipts/' + fileName);
+    const uploadTask = storageRef.put(selectedFile);
+    //submit to firebase
+    firebase.database().ref('travel-reimbursement-applications').push({
+      usrEmail, location, method, cost
+    })
+    .then(() => {
+      toastr.success("You have applied for travel reimbursement. Keep an eye on your inbox regarding your status.");
+      setTimeout(() => {
+        window.location.href = "account.html";
+      }, 1000);
+    })
+    .catch(err => { toastr.error(err.message); });
+  }
 })

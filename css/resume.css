@@ -280,7 +280,7 @@ label
     cursor: pointer; /* "hand" cursor */
   }
 
-  #submit
+  .submit
   {
       margin: 0 auto;
       text-align: center;

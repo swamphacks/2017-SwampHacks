@@ -39,7 +39,7 @@
 				<div class="row">
 					<input type="email" class="form-control" placeholder="email@school.edu" aria-describedby="basic-addon1" id="cancel-email" required>
 				</div>
-			<div id="submit">
+			<div id="submit" style="text-align: center;">
 				<a class="btn btn-default" id="cancel-attendance">SUBMIT</a>
 				<span class="error"></span>
 			</div>
@@ -52,6 +52,26 @@
 					<label for="location">Where are you traveling from? <span class="asterisk">*</span></label>
 					<input type="text" class="form-control" placeholder="City, State" aria-describedby="basic-addon1" id="location" required>
 				</div>
+				<div class="row">
+					<label for="method">How will you be getting here? <span class="asterisk">*</span></label>
+					<input type="text" class="form-control" placeholder="Plane, train, jetpack, etc." aria-describedby="basic-addon1" id="method" required>
+				</div>
+				<div class="row">
+					<label for="cost">Please enter the estimated amount of your required reimbursement (in USD). <span class="asterisk">*</span></label>
+					<input type="text" class="form-control" placeholder="$555.55" aria-describedby="basic-addon1" id="cost" required>
+				</div>
+				<div class="row">
+					<label for="file" id="travel-file">Upload a receipt or confirmation of purchase for your method of transportation (PDF's only). <span class="asterisk">*</span></label>
+					<input type="file" id="resume" class="inputfile" required>
+					<label for="resume" class="browse">
+						<span style="display: inline-flex; align-items: center;">No file chosen</span> <strong style="display: inline-flex; align-items: center;"> Choose a file...</strong></label>
+						<p id="valid-file" style="color: white;"></p>
+				</div>
+				<div class="submit" style="text-align: center;">
+					<a class="btn btn-default" id="submit-travel">SUBMIT</a>
+					<span class="travel-error" style="color: white;"></span>
+				</div>
+
 			</form>
 		</section>
 	</div>
@@ -63,5 +83,39 @@
 	<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
 	<script src="js/account.js"></script>
+
+	<script type="text/javascript">
+	var inputs = document.querySelectorAll( '.inputfile' );
+	Array.prototype.forEach.call( inputs, function( input )
+	{
+		var label	 = input.nextElementSibling,
+		labelVal = label.innerHTML;
+
+		input.addEventListener( 'change', function( e )
+		{
+			var fileName = '';
+			if( this.files && this.files.length > 1 )
+			fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+			else
+			fileName = e.target.value.split( '\\' ).pop();
+			console.log(fileName);
+			if (fileName.split('.').pop() != 'pdf') {
+				$('#valid-file').text(" Did you upload a PDF? ").show().fadeOut( 3000 );
+			}
+
+			if( fileName ) {
+				label.querySelector( 'span' ).innerHTML = fileName;
+				var resumeSpan = label.querySelector("span");
+				var resumeStrong = label.querySelector("strong");
+				resumeSpan.classList.add("inputAdded");
+				resumeSpan.classList.add("inputAddedText");
+				resumeStrong.classList.add("inputAdded");
+			}
+
+			else
+			label.innerHTML = labelVal;
+		});
+	});
+	</script>
 </body>
 </html>
