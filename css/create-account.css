@@ -107,7 +107,14 @@ input[type=password]
 
 .travel
 {
+  width: 630px;
+  margin: auto;
   height: 100%;
+}
+
+.cancel {
+  width: 630px;
+  margin: auto;
 }
 
 
