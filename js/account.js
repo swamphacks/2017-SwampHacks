@@ -1,3 +1,5 @@
+//EVENTS FOR ACCOUNT MAANAGEMENT
+
 var selectedFile;
 
 var config = {
@@ -70,7 +72,7 @@ $('#submit-travel').click(() => {
       toastr.success("You have applied for travel reimbursement. Keep an eye on your inbox regarding your status.");
       setTimeout(() => {
         window.location.href = "account.html";
-      }, 1000);
+      }, 2000);
     })
     .catch(err => { toastr.error(err.message); });
   }

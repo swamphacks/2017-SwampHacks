@@ -38,9 +38,9 @@ html, body
     margin: 0;
     padding: 0;
     font-family: 'metropolis';
-    background: -webkit-linear-gradient(#5bdbed, #8fe1e6); /* for safari 5.1 to 6.0 */
-    background: -moz-linear-gradient(#5bdbed, #8fe1e6); /* for safari 5.1 to 6.0 */
-    background: linear-gradient(#5bdbed, #8fe1e6); /* for safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(#5bdbed, #8fe1e6) fixed; /* for safari 5.1 to 6.0 */
+	background: linear-gradient(#5bdbed, #8fe1e6) fixed; /* for safari 5.1 to 6.0 */
+	background: -moz-linear-gradient(#5bdbed, #8fe1e6) fixed;
     background-size: cover;
 
 }
@@ -280,7 +280,7 @@ label
     cursor: pointer; /* "hand" cursor */
   }
 
-  .submit
+  #submit
   {
       margin: 0 auto;
       text-align: center;
