@@ -16,10 +16,16 @@ var auth = app.auth();
 
 $('#update').click(() => {
 	$('.cancel').slideToggle('fast');
+  if($('.travel').is(":visible")){
+    $('.travel').slideToggle('fast');
+  }
 })
 
 $('#reimburse').click(() => {
   $('.travel').slideToggle('fast');
+  if($('.cancel').is(":visible")){
+    $('.cancel').slideToggle('fast');
+  }
 })
 
 //cancel

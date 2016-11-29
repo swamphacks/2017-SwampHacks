@@ -192,7 +192,7 @@ h4.date {
 }
 
 .navbar-right {
-  margin-right: -300px;
+  margin-right: -60px;
   transition: margin-right 0.4s ease-in-out;
 }
 
@@ -234,6 +234,23 @@ h4.date {
 
 .nav-top .navbar-right{
   margin-right: -60px;
+}
+
+.logged-in .navbar-right {
+  margin-right: 0px;
+}
+
+.logout {
+  margin-left: -10px !important;
+  margin-right: 20px !important;
+}
+
+.login {
+  margin-right: 80px !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
 }
 
 .nav-apply {

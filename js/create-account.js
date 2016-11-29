@@ -82,11 +82,15 @@ $('.logout').click(() => {
 firebase.auth().onAuthStateChanged(user => {
   if (user) {
     console.log('logged in');
+    $('nav').addClass("logged-in");
+    $('.nav-apply').addClass("hide");
     $('.login').addClass("hide");
     $('.logout').removeClass("hide");
     $('.account').removeClass("hide");
   } else {
     console.log('not logged in');
+    $('nav').removeClass("logged-in");
+    $('.nav-apply').removeClass("hide");
     $('.login').removeClass("hide");
     $('.logout').addClass("hide");
     $('.account').addClass("hide");

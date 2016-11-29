@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/create-account.css">
 	<link rel="stylesheet" type="text/css" href="css/resume.css">
+	<link rel="stylesheet" type="text/css" href="css/account.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 <body>
@@ -20,8 +21,12 @@
 			</a>
 		</section>
 		<section id="thankyou-header">
-			<h2>Choose an option: </h2>
-			<div class="row">
+			<h3>Welcome to your SwampHacks 2017 account</h3>
+			<p>
+				Here you can modify your current application information, provide travel reimbursement documentation, and cancel your confirmation.
+				As always, if you need more information or have additional questions, contact us at <a href="mailto:info@swamphacks.com">info@swamphacks.com</a>
+			</p>
+			<div class="row" style="margin-top: 50px;">
 				<div class="col-md-4">
 					<a class="btn btn-default" id="mlh" href="https://my.mlh.io/edit" target="_blank">UPDATE INFO</a>
 				</div>
@@ -34,20 +39,20 @@
 			</div>
 		</section>
 		<section class="cancel" style="display: none;">
-			<h3>Cancellation</h3>
-			<p>Enter your e-mail address below to cancel your confirmation of attendance for SwampHacks 2017. Please note that once you cancel your attendance, this <span class="asterisk">cannot</span> be undone.</p>
+			<p style="font-size: 36px; font-weight: bold;">Cancellation</p>
+			<p>Sorry that you have to cancel your attendance. For verification purposes, make sure to enter your email address below to confirm cancellation. Please note that once you cancel your attendance, this <span class="asterisk">cannot</span> be undone.</p>
 				<form id="form">
 				<div class="row">
 					<input type="email" class="form-control" placeholder="email@school.edu" aria-describedby="basic-addon1" id="cancel-email" required>
 				</div>
-			<div class="submit" style="text-align: center;">
+			<div id="submit" style="text-align: center;">
 				<a class="btn btn-default" id="cancel-attendance">SUBMIT</a>
 				<span class="error"></span>
 			</div>
 				</form>
 		</section>
 		<section class="travel" style="display: none;">
-			<h3>Travel</h3>
+			<p style="font-size: 36px; font-weight: bold;">Travel</p>
 			<p>Use the form below to apply for a travel reimbursement.</p>
 			<form id="form">
 				<div class="row">
