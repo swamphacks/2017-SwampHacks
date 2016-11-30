@@ -83,3 +83,4 @@ $('#submit-travel').click(() => {
     .catch(err => { toastr.error(err.message); });
   }
 })
+

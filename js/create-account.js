@@ -1,16 +1,14 @@
 var error = $('.error');
 var err = $('.err');
 var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-// Initialize Firebase
-var config = {
-  apiKey: "AIzaSyDz1rvxuYDgsqMrGMdZ4iBIOqUBGETAo04",
-  authDomain: "swamphacks-confirmed-attendees.firebaseapp.com",
-  databaseURL: "https://swamphacks-confirmed-attendees.firebaseio.com",
-  storageBucket: "swamphacks-confirmed-attendees.appspot.com",
-  messagingSenderId: "1008919618491"
-};
-var app = firebase.initializeApp(config);
-var auth = app.auth();
+var selected;
+
+
+//resume listener
+$('#resume').on("change", function (event) {
+  selected = event.target.files[0];
+  console.log(selected);
+});
 
 $('#submit-info').click(e => {
   e.preventDefault();
@@ -32,6 +30,10 @@ $('#submit-info').click(e => {
 });
 
 var submitData = function(email, pass) {
+	//submit the resume
+    const fileName = selected.name;
+    const storageRef = firebase.storage().ref('/resumes/' + fileName);
+    const uploadTask = storageRef.put(selectedFile);
   firebase.database().ref('confirmed-attendees').push({
     email
   })
