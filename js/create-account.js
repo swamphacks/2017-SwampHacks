@@ -37,7 +37,10 @@ var submitData = function(email, pass) {
   })
   .then(() => {
     // create the user and redirect to the home page
-    auth.createUserWithEmailAndPassword(email, pass);
+    auth.createUserWithEmailAndPassword(email, pass)
+    .then(user => {
+    	user.sendEmailVerification();
+    });
     toastr.success('Check your email to confirm your account! Taking you home.');
   })
   .then(() => {
@@ -95,11 +98,4 @@ firebase.auth().onAuthStateChanged(user => {
     $('.logout').addClass("hide");
     $('.account').addClass("hide");
   }
-
-  //check if the email has been confirmed
-  if(!user.emailVerified) {
-    //send the mail
-    user.sendEmailVerification();
-  }
-
 });
