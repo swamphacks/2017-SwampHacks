@@ -1,31 +1,31 @@
-/** import tha fonts **/
+/*** import tha fonts **/
 @font-face {
-    font-family: 'pier sans';
+    font-family: 'Pier Sans';
     src: url("../fonts/pier-regular.otf");
 }
 @font-face {
-    font-family: 'metropolis';
-    src: url("../fonts/metropolis-medium.otf");
+    font-family: 'Metropolis';
+    src: url("../fonts/Metropolis-Medium.otf");
     font-weight: bold;
 }
 @font-face {
-    font-family: 'metropolis';
-    src: url("../fonts/metropolis-bold.otf");
+    font-family: 'Metropolis';
+    src: url("../fonts/Metropolis-Bold.otf");
     font-weight: bolder;
 }
 @font-face {
-    font-family: 'metropolis';
-    src: url("../fonts/metropolis-light.otf");
+    font-family: 'Metropolis';
+    src: url("../fonts/Metropolis-Light.otf");
     font-weight: 100;
 }
 @font-face {
-    font-family: 'metropolis';
-    src: url("../fonts/metropolis-regular.otf");
+    font-family: 'Metropolis';
+    src: url("../fonts/Metropolis-Regular.otf");
     font-weight: normal;
 }
 @font-face {
-    font-family: 'metropolis';
-    src: url("../fonts/metropolis-extrabold.otf");
+    font-family: 'Metropolis';
+    src: url("../fonts/Metropolis-ExtraBold.otf");
     font-weight: 500;
 }
 /*end of fonts*/
@@ -37,7 +37,7 @@ html, body
     max-height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'metropolis';
+    font-family: 'Metropolis';
     background: -webkit-linear-gradient(#5bdbed, #8fe1e6) fixed; /* for safari 5.1 to 6.0 */
 	background: linear-gradient(#5bdbed, #8fe1e6) fixed; /* for safari 5.1 to 6.0 */
 	background: -moz-linear-gradient(#5bdbed, #8fe1e6) fixed;
@@ -106,7 +106,7 @@ a:hover {
 
   h3 {
     font-size: 36px;
-    font-weight: bolder;
+    font-weight: bold;
     letter-spacing: 1px;
     line-height: 130%;
     margin: 40px 0 10px;
