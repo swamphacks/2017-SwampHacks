@@ -56,8 +56,8 @@ $(function(){
   });
 });
 
-jQuery('.navbar-toggle').click(function() {
-    console.log("ASDASDASDASD");
+$('.navbar-toggle').click(function() {
+  $(this).toggleClass("active");
     if($('.navbar-toggle').attr('aria-expanded') === "false"){
       $('.navbar-header').addClass('nav-top-collapse');
     } else {

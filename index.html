@@ -12,13 +12,13 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/animation.css">
   <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 <body>
           <!-- navbar -->
           <nav class="navbar navbar-default navbar-fixed-top nav-down nav-top">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -32,15 +32,18 @@
                 <li><a href="#schedule">Schedule</a></li>
                 <li><a href="#sponsors">Sponsors</a></li>
                 <li><a href="#faqs">FAQs</a></li>
-
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 <li class="nav-apply"><a href="https://my.mlh.io/oauth/authorize?client_id=53fb29b55bc96a8c2582e7ed3a56e3d30da9d638f886f38f9bc6fba7142b8a87&redirect_uri=https%3A%2F%2Fswamphacks.github.io%2F2017Boilerplate%2Fresume.html&response_type=token" >APPLY!</a></li>
-                <li id="mlh-link">
+                <!-- <li id="mlh-link">
                   <img src="img/mlh-logo-white.svg" alt="" />
                   Member s'17
                   <img class="dell" src="img/dell-windows-logo.svg" alt="" />
-                </li>
+                </li> -->
+                <li class="login"><a href="login.html">Log In</a></li>
+                <li class="account hide"><a href="account.html">Your Account</a></li>
+                <li class="logout hide"><a href="#">Logout
+                </a></li>
               </ul>
             </div>
           </nav><!--./navbar-->
@@ -60,7 +63,7 @@
                     </div>
                   </div></li>
 
-            			<li class="layer" data-depth="0.10"><div class="background"></div></li>
+            	  <li class="layer" data-depth="0.10"><div class="background"></div></li>
                   <li class="layer" data-depth="0.10"><div class="tree"></div></li>
                   <li class="layer" data-depth="0.20"><div class="stump"></div></li>
                   <li class="layer" data-depth="0.30"><div class="wave2 swing-2"></div></li>
@@ -545,14 +548,15 @@ Gather your friends, meet some peeps at opening, or attend our team-creation eve
 
         </script>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/jquery.parallax.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
-        <script src="js/vendor/jquery-rotate.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/animation.js"></script>
+        <script src="js/account.js"></script>
+        <script src="js/create-account.js"></script>
         <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
         <script>
         // Hide Header on on scroll down

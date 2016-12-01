@@ -1,0 +1,143 @@
+/** import tha fonts **/
+@font-face {
+    font-family: 'pier sans';
+    src: url("../fonts/pier-regular.otf");
+}
+@font-face {
+    font-family: 'metropolis';
+    src: url("../fonts/metropolis-medium.otf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'metropolis';
+    src: url("../fonts/metropolis-bold.otf");
+    font-weight: bolder;
+}
+@font-face {
+    font-family: 'metropolis';
+    src: url("../fonts/metropolis-light.otf");
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'metropolis';
+    src: url("../fonts/metropolis-regular.otf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'metropolis';
+    src: url("../fonts/metropolis-extrabold.otf");
+    font-weight: 500;
+}
+/*end of fonts*/
+
+html, body
+{
+    overflow-x: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'metropolis';
+    background: -webkit-linear-gradient(#5bdbed, #8fe1e6) fixed; /* for safari 5.1 to 6.0 */
+	background: linear-gradient(#5bdbed, #8fe1e6) fixed; /* for safari 5.1 to 6.0 */
+	background: -moz-linear-gradient(#5bdbed, #8fe1e6) fixed;
+    background-size: cover;
+}
+
+h2, h4
+{
+    padding: 2%;
+    color: white;
+}
+
+input[type=password]
+{
+    color: #000;
+}
+
+.congrats-header
+{
+    text-align: center;
+}
+
+.login
+{
+	text-align: center;
+}
+
+#mlh
+{
+  font-size: 16px;
+}
+
+#update
+{
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+#reimburse
+{
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+#header
+{
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 630px;
+}
+
+#header .back {
+  width: 22px;
+  margin-right: 20px;
+}
+
+#header a:hover {
+  opacity: 0.6;
+}
+
+
+#header a {
+  border: none;
+}
+
+.travel
+{
+  width: 630px;
+  margin: auto;
+  height: 100%;
+}
+
+.cancel {
+  width: 630px;
+  margin: auto;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#thankyou-header {
+  margin-bottom: 0px !important;
+}
+
+
+
+@media screen and (max-width:770px)
+{
+  body
+  {
+    text-align: center;
+  }
+  .col-md-4
+  {
+    margin-bottom: 8%;
+  }
+  #header
+  {
+    text-align: left;
+    margin-left: 0;
+  }
+}

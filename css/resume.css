@@ -1,34 +1,34 @@
 /** import tha fonts **/
 @font-face {
-    font-family: 'Pier Sans';
+    font-family: 'pier sans';
     src: url("../fonts/pier-regular.otf");
 }
 @font-face {
-    font-family: 'Metropolis';
-    src: url("../fonts/Metropolis-Medium.otf");
+    font-family: 'metropolis';
+    src: url("../fonts/metropolis-medium.otf");
     font-weight: bold;
 }
 @font-face {
-    font-family: 'Metropolis';
-    src: url("../fonts/Metropolis-Bold.otf");
+    font-family: 'metropolis';
+    src: url("../fonts/metropolis-bold.otf");
     font-weight: bolder;
 }
 @font-face {
-    font-family: 'Metropolis';
-    src: url("../fonts/Metropolis-Light.otf");
+    font-family: 'metropolis';
+    src: url("../fonts/metropolis-light.otf");
     font-weight: 100;
 }
 @font-face {
-    font-family: 'Metropolis';
-    src: url("../fonts/Metropolis-Regular.otf");
+    font-family: 'metropolis';
+    src: url("../fonts/metropolis-regular.otf");
     font-weight: normal;
 }
 @font-face {
-    font-family: 'Metropolis';
-    src: url("../fonts/Metropolis-ExtraBold.otf");
+    font-family: 'metropolis';
+    src: url("../fonts/metropolis-extrabold.otf");
     font-weight: 500;
 }
-/*END of fonts*/
+/*end of fonts*/
 
 html, body
 {
@@ -37,10 +37,12 @@ html, body
     max-height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Metropolis';
-    background: -webkit-linear-gradient(#5BDBED, #8FE1E6); /* For Safari 5.1 to 6.0 */
-	background: linear-gradient(#5bdbed, #8fe1e6); /* for safari 5.1 to 6.0 */
-	background: -moz-linear-gradient(#5bdbed, #8fe1e6);
+    font-family: 'metropolis';
+    background: -webkit-linear-gradient(#5bdbed, #8fe1e6) fixed; /* for safari 5.1 to 6.0 */
+	background: linear-gradient(#5bdbed, #8fe1e6) fixed; /* for safari 5.1 to 6.0 */
+	background: -moz-linear-gradient(#5bdbed, #8fe1e6) fixed;
+    background-size: cover;
+
 }
 
 a, a:hover, a:active, a:focus, .btn:focus, .btn:active {
@@ -61,7 +63,7 @@ a:hover {
   color: #2acde8;
 }
 
-/*MARK: IMAGE HEADER*/
+/*mark: image header*/
   #image-header {
     width: 630px;
     margin: auto;
@@ -87,15 +89,15 @@ a:hover {
     border: none;
   }
 
-  .error 
+  .error
   {
     text-align: center;
     color: #fff;
     font-size: 16px;
   }
-/*END OF IMAGE HEADER*/
+/*end of image header*/
 
-/*MARK: THANK YOU HEADER*/
+/*mark: thank you header*/
   #thankyou-header {
     width: 630px;
     margin: auto;
@@ -116,7 +118,7 @@ a:hover {
     font-size: 18px;
     letter-spacing: 0px;
   }
-/*END OF THANK YOU*/
+/*end of thank you*/
 
 #form {
   width: 630px;
@@ -143,7 +145,7 @@ label
 
 .row
 {
-	margin-bottom: 3em;
+  margin-bottom: 3em;
   margin-left: 0;
   margin-right: 0;
 }
@@ -158,7 +160,7 @@ label
     height: 70px;
 }
 
-/*MARK: SELECTION-TYPE FORM*/
+/*mark: selection-type form*/
   select
   {
       display: block;
@@ -199,16 +201,16 @@ label
     -moz-box-shadow:inset 0px 0px 0px 3px white;
     box-shadow:inset 0px 0px 0px 3px white !important;
   }
-/*END OF SELECTION-TYPE FORM*/
+/*end of selection-type form*/
 
-/*FILE UPLOAD-TYPE FORM*/
+/*file upload-type form*/
   #resume {
     width: 0.1px;
-  	height: 0.1px;
-  	opacity: 0;
-  	overflow: hidden;
-  	position: absolute;
-  	z-index: -1;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
   }
 
   #resume + label span,
@@ -236,13 +238,13 @@ label
       box-shadow:inset 0px 0px 0px 3px #00b7e8;
   }
 
-  .inputAdded {
+  .inputadded {
     -webkit-box-shadow:inset 0px 0px 0px 3px white;
     -moz-box-shadow:inset 0px 0px 0px 3px white;
     box-shadow:inset 0px 0px 0px 3px white !important;
   }
 
-  .inputAddedText {
+  .inputaddedtext {
     color: black !important;
   }
 
@@ -275,7 +277,7 @@ label
   }
 
   #resume + label {
-  	cursor: pointer; /* "hand" cursor */
+    cursor: pointer; /* "hand" cursor */
   }
 
   #submit
@@ -299,6 +301,7 @@ label
     height: 48px;
     border-width: 0;
     transition: box-shadow 0.2s ease-in-out;
+    white-space: normal;
   }
 
   .btn:hover {
@@ -317,7 +320,7 @@ label
     box-shadow:inset 0px 0px 0px 0px white;*/
   /*}*/
 
-/*END OF FILE UPLOAD-TYPE FORM*/
+/*end of file upload-type form*/
 
 input
 {
@@ -373,7 +376,7 @@ input::-webkit-input-placeholder {
   opacity: 0.7;
 }
 
-/*Indicate not filled in*/
+/*indicate not filled in*/
 input:placeholder-shown {
   -webkit-box-shadow:inset 0px 0px 0px 3px #00b7e8;
   -moz-box-shadow:inset 0px 0px 0px 3px #00b7e8;
@@ -384,7 +387,7 @@ select option[data-default] {
   color: #888;
 }
 
-/*Removing chromes autcomplete*/
+/*removing chromes autcomplete*/
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,

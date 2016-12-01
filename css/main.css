@@ -92,6 +92,33 @@ h4.date {
   display: none;
 }
 
+.navbar-toggle .icon-bar:nth-of-type(2) {
+	  top: 1px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+  	top: 2px;
+}
+
+.navbar-toggle .icon-bar {
+	  position: relative;
+	  transition: all 500ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+	  top: 6px;
+	  transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+	  background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+	  top: -6px;
+	  transform: rotate(-45deg);
+}
+
 #mlh-link{
   visibility: hidden;
 }
@@ -165,7 +192,7 @@ h4.date {
 }
 
 .navbar-right {
-  margin-right: -300px;
+  margin-right: -60px;
   transition: margin-right 0.4s ease-in-out;
 }
 
@@ -207,6 +234,24 @@ h4.date {
 
 .nav-top .navbar-right{
   margin-right: -60px;
+}
+
+.logged-in .navbar-right {
+  margin-right: 0px;
+}
+
+.logout {
+  margin-left: -10px !important;
+  margin-right: 20px !important;
+  font-size: 16px;
+}
+
+.login {
+  margin-right: 80px !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
 }
 
 .nav-apply {
@@ -672,6 +717,8 @@ button {
 .heart a:hover .fa{
   font-size: 20px;
 }
+
+
 
 @-webkit-keyframes pound {
   to {
