@@ -401,6 +401,7 @@ input:-webkit-autofill:active {
   }
 
   #image-header {
+  	left: 0px;
     margin-top: 40px;
   }
 
