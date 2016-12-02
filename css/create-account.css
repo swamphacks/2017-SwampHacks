@@ -123,21 +123,20 @@ input[type=password]
   margin-bottom: 0px !important;
 }
 
-
-
 @media screen and (max-width:770px)
 {
-  body
-  {
-    text-align: center;
-  }
   .col-md-4
   {
     margin-bottom: 8%;
+    text-align: center;
   }
   #header
   {
     text-align: left;
     margin-left: 0;
+  }
+  .cancel, .travel
+  {
+  	width: 100%;
   }
 }
