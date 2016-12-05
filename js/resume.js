@@ -4,7 +4,7 @@ var url_params = window.location.href.split(/[&#]/);
 
 if (url_params.length > 1) {
   var access_token = url_params[1].replace('access_token=', '');
-  var request_url = "https://my.mlh.io/api/v1/user/?access_token=" + access_token;
+  var request_url = "https://my.mlh.io/api/v2/user/?access_token=" + access_token;
   console.log(request_url);
 
 
