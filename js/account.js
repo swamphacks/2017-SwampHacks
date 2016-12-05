@@ -37,7 +37,9 @@ $('#cancel-attendance').click(() => {
 	const email = $('#cancel-email').val();
 
 
-	if (userEmail.match(email)) {
+	if(email == "") { 	
+		$('.error').text("Please enter an email address!");
+	} else if (userEmail.match(email)) {
 		//DESTROY
 		user.delete()
 		.then(() => {
