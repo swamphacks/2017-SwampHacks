@@ -34,6 +34,7 @@ if (url_params.length > 1) {
       var diet = items["dietary_restrictions"];
       var shirt = items["shirt_size"];
       var levelOfStudy = items["level_of_study"];
+      console.log(levelOfStudy);
 
 
       //put them in the fields
@@ -44,12 +45,10 @@ if (url_params.length > 1) {
       $('#phone').val(phone);
       $('#major').val(major);
       $('#email').val(email);
-      //grad year?
       $('#school').val(school);
       $('#diet').val(diet);
       $('#shirt').val(shirt);
       $('#study').val(levelOfStudy);
-      //todo: see if there are any more fields we can get
 
       //submit to the database
   };
