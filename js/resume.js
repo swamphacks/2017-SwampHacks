@@ -33,6 +33,7 @@ if (url_params.length > 1) {
       var school = items["school"]["name"];
       var diet = items["dietary_restrictions"];
       var shirt = items["shirt_size"];
+      var levelOfStudy = items["level_of_study"];
 
 
       //put them in the fields
@@ -47,6 +48,7 @@ if (url_params.length > 1) {
       $('#school').val(school);
       $('#diet').val(diet);
       $('#shirt').val(shirt);
+      $('#study').val(levelOfStudy);
       //todo: see if there are any more fields we can get
 
       //submit to the database
@@ -110,7 +112,7 @@ if (url_params.length > 1) {
   })
   .then(() => {
       window.location.replace('complete.html');
-  });
+  	});
   }
   });
 }
