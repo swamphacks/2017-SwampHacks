@@ -395,6 +395,23 @@ input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
 }
 
+
+/** TEAM PAGE STYLES **/
+.our-team {
+	text-align: center;
+}
+
+.gif {
+	text-align: center;
+}
+
+.giffy {
+	border-radius: 200px;
+	max-height: 30%;
+	max-width: 30%;
+	margin: auto;
+}
+
 @media screen and (max-width:770px){
   .container {
     padding: 0 40px;
