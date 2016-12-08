@@ -165,6 +165,7 @@ h4.date {
 
 .divider {
   width: 100vw;
+  margin-bottom: -2px;
 }
 
 .blocks {
