@@ -412,6 +412,17 @@ input:-webkit-autofill:active {
 	margin: auto;
 }
 
+.individual {
+	border-radius: 200px;
+	max-height: 55%;
+	max-width: 55%;
+	margin: auto;
+}
+
+.role {
+  margin-top: 1em;
+}
+
 @media screen and (max-width:770px){
   .container {
     padding: 0 40px;
@@ -458,5 +469,19 @@ input:-webkit-autofill:active {
     width: 100%;
     margin: auto;
     margin-top: -3px;
+  }
+
+  .giffy {
+    border-radius: 200px;
+    max-height: 55%;
+    max-width: 55%;
+    margin: auto;
+  }
+
+  .individual {
+    border-radius: 200px;
+    max-height: 30%;
+    max-width: 30%;
+    margin: auto;
   }
 }
