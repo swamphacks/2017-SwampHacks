@@ -15,6 +15,9 @@ $('#submit-info').click(e => {
   var email = $('#email').val();
   var password = $('#password').val();
   var passwordConfirm = $('#password-confirm').val();
+  var radioVal = $('#r2');
+  var radioVal2 = $('#r4');
+  console.log(radioVal);
 
   if(email, password, passwordConfirm == "") {
     error.text( "Please don't leave any fields blank!" );
@@ -24,6 +27,10 @@ $('#submit-info').click(e => {
     error.text( "Passwords must match!" );
   } else if(password.length < 6) {
     error.text( "Password must be at least 6 characters in length!" );
+  } else if (radioVal.is(':checked')) {
+    error.text("You must agree to the MLH Code of Conduct!")
+  } else if (radioVal2.is(':checked')) {
+    error.text("You must agree to the privacy policy!");
   } else {
     submitData(email, password, passwordConfirm);
   }
