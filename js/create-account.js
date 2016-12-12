@@ -54,7 +54,7 @@ var submitData = function(email, pass) {
   })
   .then(() => {
     setTimeout(() => {
-      window.location.href = 'index.html';
+      window.location.href = 'http://swamphacks.com';
     }, 3000);
   })
   .catch(err => { console.log(err.message); });
@@ -75,7 +75,7 @@ $('#login').click(() => {
     .then(() => { toastr.success('Login successful!') })
     .then(() => {
       setTimeout(() => {
-        window.location.href = 'account.html';
+        window.location.href = 'http://swamphacks.com/account';
       }, 500);
     })
     .catch(err => { toastr.error(err.message); });
