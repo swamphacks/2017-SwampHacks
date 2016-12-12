@@ -38,7 +38,9 @@ $('#cancel-attendance').click(() => {
 	const email = $('#cancel-email').val();
 
 
-	if (userEmail.match(email)) {
+	if(email == "") {
+		$('.error').text("Please enter an email address!");
+	} else if (userEmail.match(email)) {
 		//DESTROY
 		user.delete()
 		.then(() => {
@@ -46,7 +48,7 @@ $('#cancel-attendance').click(() => {
 		})
 		.then(() => {
 			setTimeout(() => {
-				window.location.href = 'index.html';
+				window.location.href = 'http://swamphacks.com';
 			}, 2000);
 		})
 		.catch(err => { toastr.error(err.message); });
@@ -78,7 +80,7 @@ $('#submit-travel').click(() => {
     .then(() => {
       toastr.success("You have applied for travel reimbursement. Keep an eye on your inbox regarding your status.");
       setTimeout(() => {
-        window.location.href = "account.html";
+        window.location.href = "http://swamphacks.com/account";
       }, 2000);
     })
     .catch(err => { toastr.error(err.message); });

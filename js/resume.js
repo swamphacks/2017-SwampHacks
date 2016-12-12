@@ -4,7 +4,7 @@ var url_params = window.location.href.split(/[&#]/);
 
 if (url_params.length > 1) {
   var access_token = url_params[1].replace('access_token=', '');
-  var request_url = "https://my.mlh.io/api/v1/user/?access_token=" + access_token;
+  var request_url = "https://my.mlh.io/api/v2/user/?access_token=" + access_token;
   console.log(request_url);
 
 
@@ -33,6 +33,8 @@ if (url_params.length > 1) {
       var school = items["school"]["name"];
       var diet = items["dietary_restrictions"];
       var shirt = items["shirt_size"];
+      var levelOfStudy = items["level_of_study"];
+      console.log(levelOfStudy);
 
 
       //put them in the fields
@@ -43,11 +45,10 @@ if (url_params.length > 1) {
       $('#phone').val(phone);
       $('#major').val(major);
       $('#email').val(email);
-      //grad year?
       $('#school').val(school);
       $('#diet').val(diet);
       $('#shirt').val(shirt);
-      //todo: see if there are any more fields we can get
+      $('#study').val(levelOfStudy);
 
       //submit to the database
   };
@@ -109,8 +110,8 @@ if (url_params.length > 1) {
       school, diet, shirt, study, linkedin, github
   })
   .then(() => {
-      window.location.replace('complete.html');
-  });
+      window.location.replace('http://swamphacks.com/complete');
+  	});
   }
   });
 }

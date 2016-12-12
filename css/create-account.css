@@ -123,21 +123,49 @@ input[type=password]
   margin-bottom: 0px !important;
 }
 
+input[type=radio],
+input[type=checkbox]{
+  /* Hide original inputs */
+  visibility: hidden;
+  position: absolute;
+}
+input[type=radio] + label:before,
+input[type=checkbox] + label:before{
+  height:12px;
+  width:12px;
+  margin-right: .5em;
+  content: " ";
+  display:inline-block;
+  vertical-align: baseline;
+  border:1px solid #777;
+}
+input[type=radio]:checked + label:before,
+input[type=checkbox]:checked + label:before{
+  background:white;
+}
 
+/* CUSTOM RADIO AND CHECKBOX STYLES */
+input[type=radio] + label:before{
+  border-radius:50%;
+}
+input[type=checkbox] + label:before{
+  border-radius:2px;
+}
 
 @media screen and (max-width:770px)
 {
-  body
-  {
-    text-align: center;
-  }
   .col-md-4
   {
     margin-bottom: 8%;
+    text-align: center;
   }
-  #header
+  #image-header
   {
     text-align: left;
     margin-left: 0;
+  }
+  .cancel, .travel
+  {
+  	width: 100%;
   }
 }
