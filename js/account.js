@@ -34,6 +34,7 @@ $('#cancel-attendance').click(() => {
 	const user = firebase.auth().currentUser;
 	console.log(user)
 	const userEmail = user.email;
+  const name = user.displayName;
 	const email = $('#cancel-email').val();
 
 
@@ -83,4 +84,3 @@ $('#submit-travel').click(() => {
     .catch(err => { toastr.error(err.message); });
   }
 })
-
