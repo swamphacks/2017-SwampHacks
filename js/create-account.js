@@ -10,16 +10,16 @@ $('#resume').on("change", function (event) {
   console.log(selected);
 });
 
-$('#submit-info').click(e => {
-  e.preventDefault();
+$('#submit-info').click(() => {
   var email = $('#email').val();
   var password = $('#password').val();
   var passwordConfirm = $('#password-confirm').val();
+  var name = $('#name').val();
   var radioVal = $('#r2');
   var radioVal2 = $('#r4');
   console.log(radioVal);
 
-  if(email, password, passwordConfirm == "") {
+  if(email, password, passwordConfirm, name == "") {
     error.text( "Please don't leave any fields blank!" );
   } else if(!email.match(re)) {
     error.text( "Please enter a valid email address!" );
@@ -32,23 +32,26 @@ $('#submit-info').click(e => {
   } else if (radioVal2.is(':checked')) {
     error.text("You must agree to the privacy policy!");
   } else {
-    submitData(email, password, passwordConfirm);
+    submitData(email, password, name);
   }
 });
 
-var submitData = function(email, pass) {
+var submitData = function(email, pass, name) {
 	//submit the resume
     const fileName = selected.name;
     const storageRef = firebase.storage().ref('/resumes/' + fileName);
     const uploadTask = storageRef.put(selectedFile);
   firebase.database().ref('confirmed-attendees').push({
-    email
+    email, name
   })
   .then(() => {
     // create the user and redirect to the home page
     auth.createUserWithEmailAndPassword(email, pass)
     .then(user => {
     	user.sendEmailVerification();
+      user.updateProfile({
+        displayName : name
+      });
     });
     toastr.success('Check your email to confirm your account! Taking you home.');
   })
@@ -99,6 +102,7 @@ firebase.auth().onAuthStateChanged(user => {
     $('.login').addClass("hide");
     $('.logout').removeClass("hide");
     $('.account').removeClass("hide");
+    console.log(user.displayName);
   } else {
     console.log('not logged in');
     $('nav').removeClass("logged-in");
