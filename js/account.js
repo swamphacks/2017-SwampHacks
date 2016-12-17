@@ -3,11 +3,11 @@
 var selectedFile;
 
 var config = {
-  apiKey: "AIzaSyDz1rvxuYDgsqMrGMdZ4iBIOqUBGETAo04",
-  authDomain: "swamphacks-confirmed-attendees.firebaseapp.com",
-  databaseURL: "https://swamphacks-confirmed-attendees.firebaseio.com",
-  storageBucket: "swamphacks-confirmed-attendees.appspot.com",
-  messagingSenderId: "1008919618491"
+  apiKey: confirmed_keys.apiKey,
+  authDomain: confirmed_keys.authDomain,
+  databaseURL: confirmed_keys.databaseURL,
+  storageBucket: confirmed_keys.storageBucket,
+  messagingSenderId: confirmed_keys.messagingSenderId
 };
 var app = firebase.initializeApp(config);
 var auth = app.auth();
