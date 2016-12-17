@@ -76,4 +76,44 @@ $(function() {
       $(this).attr("src", "img/gifs/stills/jeff.jpg");
     }
   );
+  $(".killian").hover(
+    function() {
+      $(this).attr("src", "img/gifs/Killian.gif");
+    },
+    function() {
+      $(this).attr("src", "img/gifs/stills/Killian.jpg");
+    }
+  );
+  $(".nikhil").hover(
+    function() {
+      $(this).attr("src", "img/gifs/nikhil.gif");
+    },
+    function() {
+      $(this).attr("src", "img/gifs/stills/nikhil.jpg");
+    }
+  );
+  $(".sam").hover(
+    function() {
+      $(this).attr("src", "img/gifs/sam.gif");
+    },
+    function() {
+      $(this).attr("src", "img/gifs/stills/sam.jpg");
+    }
+  );
+  $(".susanne").hover(
+    function() {
+      $(this).attr("src", "img/gifs/susanne.gif");
+    },
+    function() {
+      $(this).attr("src", "img/gifs/stills/susanne.jpg");
+    }
+  );
+  $(".takashi").hover(
+    function() {
+      $(this).attr("src", "img/gifs/takashi.gif");
+    },
+    function() {
+      $(this).attr("src", "img/gifs/stills/takashi.jpg");
+    }
+  );
 });
