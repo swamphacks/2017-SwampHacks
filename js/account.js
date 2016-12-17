@@ -34,6 +34,7 @@ $('#cancel-attendance').click(() => {
 	const user = firebase.auth().currentUser;
 	console.log(user)
 	const userEmail = user.email;
+  const name = user.displayName;
 	const email = $('#cancel-email').val();
 
 
@@ -47,7 +48,7 @@ $('#cancel-attendance').click(() => {
 		})
 		.then(() => {
 			setTimeout(() => {
-				window.location.href = 'index.html';
+				window.location.href = 'http://swamphacks.com';
 			}, 2000);
 		})
 		.catch(err => { toastr.error(err.message); });
@@ -79,7 +80,7 @@ $('#submit-travel').click(() => {
     .then(() => {
       toastr.success("You have applied for travel reimbursement. Keep an eye on your inbox regarding your status.");
       setTimeout(() => {
-        window.location.href = "account.html";
+        window.location.href = "http://swamphacks.com/account";
       }, 2000);
     })
     .catch(err => { toastr.error(err.message); });

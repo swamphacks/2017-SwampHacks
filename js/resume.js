@@ -110,7 +110,7 @@ if (url_params.length > 1) {
       school, diet, shirt, study, linkedin, github
   })
   .then(() => {
-      window.location.replace('complete.html');
+      window.location.replace('http://swamphacks.com/complete');
   	});
   }
   });
