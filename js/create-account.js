@@ -41,7 +41,7 @@ var submitData = function(email, pass, name) {
     const fileName = selected.name;
     const storageRef = firebase.storage().ref('/resumes/' + fileName);
     const uploadTask = storageRef.put(selectedFile);
-  firebase.database().ref('confirmed-attendees').child(email.toString().replace(".", "").replace("@", "")).set({
+  firebase.database().ref('confirmed').child(email.toString().replace(".", "").replace("@", "")).set({
     email, name
   })
   .then(() => {
