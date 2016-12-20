@@ -41,8 +41,12 @@ var submitData = function(email, pass, name) {
     const fileName = selected.name;
     const storageRef = firebase.storage().ref('/resumes/' + fileName);
     const uploadTask = storageRef.put(selectedFile);
+    var events = "";
+    var points = 0;
+    var qr = "";
+    var volunteer = false;
   firebase.database().ref('confirmed').child(email.toString().replace(".", "").replace("@", "")).set({
-    email, name
+    email, name, events, points, qr, volunteer
   })
   .then(() => {
     // create the user and redirect to the home page
