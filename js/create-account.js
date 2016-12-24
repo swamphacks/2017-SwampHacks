@@ -45,7 +45,7 @@ var submitData = function(email, pass, name) {
     var points = 0;
     var qr = "";
     var volunteer = false;
-  firebase.database().ref('confirmed').child(email.toString().replace(".", "").replace("@", "")).set({
+  firebase.database().ref('confirmed').child(email.split('.').join('').split('@').join('')).set({
     email, name, events, points, qr, volunteer
   })
   .then(() => {
