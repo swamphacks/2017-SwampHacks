@@ -34,15 +34,19 @@ $("#submit-name").click( () => {
   var mail = email.split("@").join("").split(".").join("");
   var name = $("#name").val();
   console.log(name);
-  user.updateProfile({
-    displayName : name
-  });
-  firebase.database().ref('confirmed').child(mail).update({ 'name' : name })
-  .then( () => {
-    setTimeout(() => {
-      window.location.href = 'account.html';
-    }, 1000)
-  });
+  if (name == "")
+    $(".error").text("Please enter your name!");
+  else {
+      user.updateProfile({
+        displayName : name
+      });
+      firebase.database().ref('confirmed').child(mail).update({ 'name' : name })
+      .then( () => {
+        setTimeout(() => {
+          window.location.href = 'account.html';
+        }, 1000)
+      });
+    }
 })
 
 //cancel
