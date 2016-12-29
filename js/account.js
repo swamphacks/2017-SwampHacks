@@ -28,6 +28,23 @@ $('#reimburse').click(() => {
   }
 })
 
+$("#submit-name").click( () => {
+  var user = firebase.auth().currentUser;
+  var email = user.email;
+  var mail = email.split("@").join("").split(".").join("");
+  var name = $("#name").val();
+  console.log(name);
+  user.updateProfile({
+    displayName : name
+  });
+  firebase.database().ref('confirmed').child(mail).update({ 'name' : name })
+  .then( () => {
+    setTimeout(() => {
+      window.location.href = 'account.html';
+    }, 1000)
+  });
+})
+
 //cancel
 
 $('#cancel-attendance').click(() => {
@@ -60,7 +77,7 @@ $('#resume').on("change", function (event) {
   selectedFile = event.target.files[0];
 });
 
-$('#submit-travel').click(() => {
+/**$('#submit-travel').click(() => {
   const usr = firebase.auth().currentUser;
   const usrEmail = usr.email;
   const location = $('#location').val();
@@ -85,4 +102,8 @@ $('#submit-travel').click(() => {
     })
     .catch(err => { toastr.error(err.message); });
   }
-})
+}) **/
+
+firebase.auth().onAuthStateChanged(user => {
+    $("#logged-name").text(user.displayName);
+});

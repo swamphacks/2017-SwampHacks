@@ -3,7 +3,6 @@ var err = $('.err');
 var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 var selected;
 
-
 //resume listener
 $('#resume').on("change", function (event) {
   selected = event.target.files[0];
@@ -72,22 +71,25 @@ $('#login').click(() => {
   var eMail = $('#eMail').val();
   var passWord = $('#passWord').val();
 
-  if(eMail, passWord == "") {
-    err.text( "Please don't leave any fields blank!" );
-  } else if(!eMail.match(re)) {
-    err.text( "Please enter a valid e-mail address!" );
-  } else {
-    //log them in
-    firebase.auth().signInWithEmailAndPassword(eMail, passWord)
-    .then(() => { toastr.success('Login successful!') })
-    .then(() => {
-      setTimeout(() => {
-        window.location.href = 'http://swamphacks.com/account';
-      }, 500);
-    })
-    .catch(err => { toastr.error(err.message); });
-  }
-
+    if(eMail, passWord == "") {
+      err.text( "Please don't leave any fields blank!" );
+    } else if(!eMail.match(re)) {
+      err.text( "Please enter a valid e-mail address!" );
+    } else {
+      //log them in
+      firebase.auth().signInWithEmailAndPassword(eMail, passWord)
+      .then( (user) => {
+        if (user.displayName == null) {
+          window.location.href = 'name.html';
+        } else {
+          setTimeout(() => {
+            window.location.href = 'http://swamphacks.com/account';
+          }, 500);
+        }
+      })
+      .then(() => { toastr.success('Login successful!') })
+      .catch(err => { toastr.error(err.message); });
+    }
 });
 
 //log out event
@@ -106,7 +108,9 @@ firebase.auth().onAuthStateChanged(user => {
     $('.login').addClass("hide");
     $('.logout').removeClass("hide");
     $('.account').removeClass("hide");
-    console.log(user.displayName);
+    if (user.displayName == null) {
+      window.location.href = 'name.html';
+    }
   } else {
     console.log('not logged in');
     $('nav').removeClass("logged-in");
