@@ -401,6 +401,33 @@ input:-webkit-autofill:active {
 	text-align: center;
 }
 
+.organizers img {
+  max-width: 40%;
+  max-height: 40%;
+}
+
+.directors img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.members img {
+  max-width: 75%;
+  max-height: 75%;
+}
+
+.directors p {
+  font-size: 16px;
+}
+
+.members p {
+  font-size: 14px;
+}
+
+.members-text {
+  text-align: center;
+}
+
 .gif {
 	text-align: center;
 }
@@ -420,7 +447,11 @@ input:-webkit-autofill:active {
 }
 
 .role {
-  margin-top: 1em;
+  margin-top: .5em;
+}
+
+.col-md-2 {
+  left: -40px;
 }
 
 @media screen and (max-width:770px){
