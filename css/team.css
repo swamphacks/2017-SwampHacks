@@ -1,0 +1,92 @@
+/** TEAM PAGE STYLES **/
+.our-team {
+	text-align: center;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+#team-header {
+  width: 630px;
+  margin: auto;
+}
+
+#team-members {
+  width: 780px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+#thankyou-header h2 {
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: -20px;
+}
+
+
+.organizers img {
+  max-width: 160px;
+}
+
+.directors img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.members img {
+  max-width: 75%;
+  max-height: 75%;
+}
+
+.directors p {
+  font-size: 16px;
+}
+
+.members p {
+  font-size: 14px;
+}
+
+.members-text {
+  text-align: center;
+}
+
+.gif {
+	text-align: center;
+}
+
+.giffy {
+	border-radius: 200px;
+	max-width: 300px;
+	margin: auto;
+}
+
+.individual {
+	border-radius: 200px;
+	max-height: 55%;
+	max-width: 55%;
+	margin: auto;
+}
+
+.name {
+  font-size: 24px;
+}
+
+.role {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.description {
+  font-size: 14px;
+}
+
+.col-md-2 {
+  left: -40px;
+}
+
+.col-md-4 {
+
+}
+
+.col-md-6 {
+
+}
