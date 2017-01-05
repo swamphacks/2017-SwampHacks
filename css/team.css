@@ -1,7 +1,8 @@
 /** TEAM PAGE STYLES **/
 .our-team {
 	text-align: center;
-  font-weight: bold;
+  font-weight: normal;
+  line-height: 30px;
 }
 
 #team-header {
@@ -10,12 +11,20 @@
 }
 
 #team-members {
-  width: 60vw;
+  width: 780px;
   margin: auto;
+  margin-top: 40px;
 }
 
+#thankyou-header h2 {
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: -20px;
+}
+
+
 .organizers img {
-  max-width: 210px;
+  max-width: 160px;
 }
 
 .directors img {
@@ -58,15 +67,24 @@
 }
 
 .name {
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .role {
-  margin-top: .5em;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.description {
+  font-size: 14px;
 }
 
 .col-md-2 {
   left: -40px;
+}
+
+.col-md-4 {
+
 }
 
 .col-md-6 {
