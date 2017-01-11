@@ -260,21 +260,21 @@ h4.date {
   opacity: 1;
   background-color: white;
   border-radius: 30px;
-  margin-top: 14px !important;
+  margin-top: 20px !important;
   transition: opacity 0.4s ease-in-out;
 }
 
 .nav-apply a {
   color: #49ace7 !important;
-  font-size: 18px !important;
-  padding: 10px 20px !important;
+  font-size: 14px !important;
+  width: 200px;
   border-radius: 30px;
   transition: box-shadow 0.2s ease-in-out;
   margin-right: 5% !important;
 }
 
 .nav-apply a:hover{
-  background-color: #49ace7 !important;
+  background-color: #cccccc !important;
   color: white !important;
   -webkit-box-shadow:inset 0px 0px 0px 3px white;
   -moz-box-shadow:inset 0px 0px 0px 3px white;
@@ -523,7 +523,7 @@ h4.date {
 #title button {
   font-size: 20px;
   width: 180px;
-  padding: 10px 0;
+  padding: 10px 8px;
   font-weight: bold;
   background-color: #fff;
   color: #73aeee;
@@ -534,7 +534,7 @@ h4.date {
 
 #title button:active {
   font-size: 20px;
-  width: 180px;
+  width: 250px;
   padding: 10px 0;
   font-weight: bold;
   background-color: #73aeee;
@@ -567,21 +567,21 @@ button {
 }
 
 #title button {
-  width: 180px;
+  width: 250px;
   background-color: #fff;
   color: #73aeee;
 }
 
 #title button:hover {
   color: white;
-  background-color: #73aeee;
+  background-color: #cccccc;
   -webkit-box-shadow:inset 0px 0px 0px 3px white;
   -moz-box-shadow:inset 0px 0px 0px 3px white;
   box-shadow:inset 0px 0px 0px 3px white !important;
 }
 
 #action button {
-    width: 180px;
+    width: 250px;
     background-color: #73aeee;
     color: white;
 }
@@ -595,8 +595,8 @@ button {
 }
 
 #action button:hover {
-  color: currentColor;
-  background-color: white;
+  color: white;
+  background-color: #cccccc;
   -webkit-box-shadow:inset 0px 0px 0px 3px #73aeee;
   -moz-box-shadow:inset 0px 0px 0px 3px #73aeee;
   box-shadow:inset 0px 0px 0px 3px #73aeee !important;
