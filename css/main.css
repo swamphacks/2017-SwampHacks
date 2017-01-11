@@ -581,7 +581,7 @@ button {
 }
 
 #action button {
-    width: 250px;
+    width: 200px;
     background-color: #73aeee;
     color: white;
 }
@@ -595,8 +595,8 @@ button {
 }
 
 #action button:hover {
-  color: white;
-  background-color: #cccccc;
+  color: currentColor;
+  background-color: white;
   -webkit-box-shadow:inset 0px 0px 0px 3px #73aeee;
   -moz-box-shadow:inset 0px 0px 0px 3px #73aeee;
   box-shadow:inset 0px 0px 0px 3px #73aeee !important;
