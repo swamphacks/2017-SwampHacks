@@ -110,4 +110,5 @@ $('#resume').on("change", function (event) {
 
 firebase.auth().onAuthStateChanged(user => {
     $("#logged-name").text(user.displayName);
+    console.log(user.displayName);
 });
