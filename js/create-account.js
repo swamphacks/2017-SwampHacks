@@ -108,9 +108,6 @@ firebase.auth().onAuthStateChanged(user => {
     $('.login').addClass("hide");
     $('.logout').removeClass("hide");
     $('.account').removeClass("hide");
-    if (user.displayName == null) {
-      window.location.href = 'name.html';
-    }
   } else {
     console.log('not logged in');
     $('nav').removeClass("logged-in");
