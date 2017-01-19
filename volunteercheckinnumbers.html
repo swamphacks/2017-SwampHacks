@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Counter</title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1>Total number of hackers checked in:</h1>
+        <h2 id="counter"></h2>
+        <h3 id="stop"></h3>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDz1rvxuYDgsqMrGMdZ4iBIOqUBGETAo04",
+        authDomain: "swamphacks-confirmed-attendees.firebaseapp.com",
+        databaseURL: "https://swamphacks-confirmed-attendees.firebaseio.com",
+        storageBucket: "swamphacks-confirmed-attendees.appspot.com",
+        messagingSenderId: "1008919618491"
+    };
+
+    firebase.initializeApp(config);
+    var ref = firebase.database().ref('attendees');
+    var counter = document.getElementById("counter");
+    var stop = document.getElementById("stop");
+    ref.on('value', function (snapshot) {
+        counter.innerText = snapshot.numChildren();
+        if (snapshot.numChildren() >= 500)
+            stop.innerText = "We've hit 500 attendees! Do not check in anyone else!"
+    });
+
+
+</script>
+<!-- Scripts -->
+</body>
+
+</html>
