@@ -110,7 +110,7 @@ $(function() {
   );
   $(".takashi").hover(
     function() {
-      $(this).attr("src", "img/gifs/takashi.gif");
+      $(this).attr("src", "img/gifs/Takashi.gif");
     },
     function() {
       $(this).attr("src", "img/gifs/stills/takashi.jpg");
