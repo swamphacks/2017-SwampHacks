@@ -14,11 +14,11 @@ $('#submit-info').click(() => {
   var password = $('#password').val();
   var passwordConfirm = $('#password-confirm').val();
   var name = $('#name').val();
+  var school = $("#school").val();
   var radioVal = $('#r2');
   var radioVal2 = $('#r4');
-  console.log(radioVal);
 
-  if(email, password, passwordConfirm, name == "") {
+  if(email, password, passwordConfirm, name, school == "") {
     error.text( "Please don't leave any fields blank!" );
   } else if(!email.match(re)) {
     error.text( "Please enter a valid email address!" );
@@ -31,21 +31,21 @@ $('#submit-info').click(() => {
   } else if (radioVal2.is(':checked')) {
     error.text("You must agree to the privacy policy!");
   } else {
-    submitData(email, password, name);
+    submitData(email, password, name, school);
   }
 });
 
-var submitData = function(email, pass, name) {
+var submitData = function(email, pass, name, school) {
 	//submit the resume
-    const fileName = selected.name;
-    const storageRef = firebase.storage().ref('/resumes/' + fileName);
-    const uploadTask = storageRef.put(selectedFile);
+    //const fileName = selected.name;
+    //const storageRef = firebase.storage().ref('/resumes/' + fileName);
+    //const uploadTask = storageRef.put(selectedFile);
     var events = "";
     var points = 0;
     var qr = "";
     var volunteer = false;
   firebase.database().ref('confirmed').child(email.split('.').join('').split('@').join('')).set({
-    email, name, events, points, qr, volunteer
+    email, name, events, points, qr, volunteer, school
   })
   .then(() => {
     // create the user and redirect to the home page
@@ -56,11 +56,11 @@ var submitData = function(email, pass, name) {
         displayName : name
       });
     });
-    toastr.success('Check your email to confirm your account! Taking you home.');
+    toastr.success('Thanks for creating an account!');
   })
   .then(() => {
     setTimeout(() => {
-      window.location.href = 'http://swamphacks.com';
+      window.location.reload();
     }, 3000);
   })
   .catch(err => { console.log(err.message); });
