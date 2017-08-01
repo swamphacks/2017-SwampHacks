@@ -223,7 +223,7 @@ h4.date {
 }
 
 .nav-up {
-  top: -74px;
+  top: -144px;
 }
 
 .nav-top {
@@ -928,7 +928,7 @@ button {
   }
 
   .nav-up {
-    top: -52px;
+    top: -122px;
   }
 
   .nav-apply, .nav-top .nav-apply {
@@ -1151,4 +1151,116 @@ button {
     padding: 0;
     top: 70px;
   }
+}
+
+
+/* Adding Banner to Redirect to 2018 Site */
+
+#demo {
+  transition: 0.3s;
+  height: 70px;
+  background: #4eabe0;
+  width: 100%;
+  /*border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: white;*/
+  -webkit-box-shadow: 0px 4px 0px 0px rgba(73,172,231,0.28);
+  -moz-box-shadow: 0px 4px 0px 0px rgba(73,172,231,0.28);
+  box-shadow: 0px 4px 0px 0px rgba(10,135,198,0.2);
+
+}
+
+
+.closebtn {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  -webkit-box-shadow: 0px 0px 8px 8px rgba(73,172,231,0.1);
+  -moz-box-shadow: 0px 0px 8px 8px rgba(73,172,231,0.1);
+  box-shadow: 0px 0px 8px 8px rgba(73,172,231,0.1);
+}
+
+.closebtn {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #73aeee;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+
+  cursor: pointer;
+}
+
+#bannertitle {
+  color: white;
+  font-size: 16px;
+  margin-left: 140px;
+  line-height: 70px;
+
+}
+
+.toggleimg {
+  height: 25px;
+  width: 25px;
+}
+
+.excla {
+  margin-right: 6px;
+}
+
+.inlinebtn {
+  border-style: solid;
+  border-color: white;
+  border-bottom-width: 2px;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  padding-bottom: 2px;
+}
+
+@media screen and (min-width:770px) {
+
+  .nav-top #bannertitle {
+    padding-left: 110px;
+    transition: margin-left 0.4s ease-in-out;
+  }
+
+  .nav-down #bannertitle {
+    margin-left: 30px;
+    transition: margin-left 0.4s ease-in-out;
+  }
+
+}
+
+@media screen and (max-width:770px) {
+
+  #bannertitle {
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 14px;
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .closebtn {
+    display: none;
+  }
+
+
 }
